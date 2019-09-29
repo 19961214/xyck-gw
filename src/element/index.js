@@ -7,7 +7,8 @@ import {
 	Steps,
 	Icon,
 	Select,
-  	Option,
+	  Option,
+	  Carousel,
 } from 'element-ui';
 Vue.use(Row);
 Vue.use(Col);
@@ -16,6 +17,7 @@ Vue.use(Steps);
 Vue.use(Icon);
 Vue.use(Select);
 Vue.use(Option);
+Vue.use(Carousel);
 export default {
 	
 }

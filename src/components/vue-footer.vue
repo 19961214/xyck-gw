@@ -42,7 +42,7 @@ export default {
   // padding: 50px 0 50px 0;
   position: relative;
   .content {
-    margin-top: 176px;
+    margin-top: 76px;
     .content-top {
       font-size: 20px;
       color: #fff;
@@ -78,7 +78,7 @@ export default {
     }
   }
   .tel {
-    margin-top: 139px;
+    margin-top: 39px;
     img {
       padding: 10px 0 0 10px;
       width: 100px;

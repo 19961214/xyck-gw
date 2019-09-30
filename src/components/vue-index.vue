@@ -16,31 +16,26 @@
         </div>
       </el-col>
     </el-row>
-
-    <el-row class="index-intro">
-      <div class="index-intro-title">产品介绍</div>
-      <el-col :span="16" :offset="4">
-        <el-col :span="12" :offset="0">
-          <div class="img-wrap">
-            <img src="../assets/img/back-img3.png" alt />
-          </div>
-        </el-col>
-		<el-col :span="12" :offset="0">
-          <div class="img-wrap">
-            <div>掌税通</div>
-			<div>SaaS服务平台，专注于“互联网+税收优化”</div>
-			<div>解决企业服务端与自由职业者之间的佣金结算发放、代征税收等服务</div>
-			<div>了解更多 ></div>
-          </div>
-        </el-col>
-      </el-col>
-    </el-row>
+    <indexItem1></indexItem1>
+    <indexItem2></indexItem2>
+    <indexItem3></indexItem3>
+    <indexItem4></indexItem4>
   </div>
 </template>
 
 <script>
+import indexItem1 from "./indexList/indexItem1.vue";
+import indexItem2 from "./indexList/indexItem2.vue";
+import indexItem3 from "./indexList/indexItem3.vue";
+import indexItem4 from "./indexList/indexItem4.vue";
 export default {
-  name: "vue-index"
+  name: "vue-index",
+  components: {
+    indexItem1,
+    indexItem2,
+    indexItem3,
+    indexItem4
+  }
 };
 </script>
 <style lang="less">
@@ -187,23 +182,5 @@ export default {
     background-color: rgb(28, 54, 111);
   }
 }
-.index-intro {
-  background-color: #fff;
-  .index-intro-title {
-    width: 100%;
-    height: 143px;
-	color: #333;
-	font-size: 24px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
-  .img-wrap {
-    background-color: red;
-    img {
-      width: 600px;
-      height: 350px;
-    }
-  }
-}
+
 </style>

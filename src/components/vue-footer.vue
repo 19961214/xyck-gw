@@ -12,8 +12,9 @@
             <img src="../assets/img/icon_address.png" alt />
             <div class="text2">深圳市南山区高新园科技南十二路朗诗大厦1209室</div>
           </div>
-		  <div class="item-wrap"><div class="text3">掌掌财服务平台入口 ></div></div>
-          
+          <div class="item-wrap">
+            <div class="text3">掌掌财服务平台入口 ></div>
+          </div>
         </div>
       </div>
     </el-col>
@@ -33,7 +34,6 @@ export default {
 };
 </script>
 <style lang="less">
-
 .footer {
   background-color: #223a53;
   height: 360px;
@@ -52,30 +52,36 @@ export default {
       padding-top: 5px;
       font-size: 14px;
       color: #617e9a;
-	  border-top: 1px solid #37516b;
-	  .item-wrap{
-		  display: inline-block;
-		  margin-top: 10px;
-	  }
-		img {
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			margin-right: 10px;
-		}
-		.text1 {
-			padding-right: 60px;
-			display: inline-block;
-		}
-		.text2 {
-			padding-right: 90px;
-			display: inline-block;
-		}
-		.text3 {
-			color: #ffffff;
-      display: inline-block;
-      cursor:pointer;
-		}
+      border-top: 1px solid #37516b;
+      display: flex;
+      // flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .item-wrap {
+        // display: inline-block;
+        margin-top: 10px;
+        display: flex;
+      }
+      img {
+        // display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        margin-top: -3px;
+      }
+      // .text1 {
+      //   // padding-right: 60px;
+      //   // display: inline-block;
+      // }
+      // .text2 {
+      //   // padding-right: 90px;
+      //   // display: inline-block;
+      // }
+      .text3 {
+        color: #ffffff;
+        // display: inline-block;
+        cursor: pointer;
+      }
     }
   }
   .tel {

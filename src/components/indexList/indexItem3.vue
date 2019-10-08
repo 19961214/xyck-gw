@@ -76,10 +76,13 @@ export default {
       position: relative;
       overflow: hidden;
       margin-left: 20px;
-      .content3-list:hover {
-        background-color: red;
+      .content3-img1 {
+        width: 100%;
       }
-
+      // .content3-img1:hover{
+      //   transform: translateY(-50px);
+      //   transition-duration:1s;
+      // }
       .content3-img2 {
         position: absolute;
         top: 60px;
@@ -90,7 +93,9 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 29px 48px 0 51px;
+        padding: 29px 48px 54px 51px;
+        background-color: #fff;
+        margin-top: -2px;
         .content3-text1 {
           color: #333;
           font-size: 20px;
@@ -107,6 +112,18 @@ export default {
           line-height: 22px;
         }
       }
+    }
+    .content3-list:hover > .content3-img1 {
+      transform: translateY(-100px);
+      transition-duration: 1s;
+    }
+    .content3-list:hover > .content3-img2 {
+      transform: translateY(-44px);
+      transition-duration: 1s;
+    }
+    .content3-list:hover > .content3-text-wrap {
+      transform: translateY(-100px);
+      transition-duration: 1s;
     }
   }
 }

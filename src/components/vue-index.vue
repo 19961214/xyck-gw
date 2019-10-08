@@ -90,6 +90,7 @@ export default {
       line-height: 20px !important;
       border-radius: 2px !important;
       margin-top: 30px !important;
+      cursor:pointer;
     }
   }
 }
@@ -133,6 +134,7 @@ export default {
       line-height: 20px !important;
       border-radius: 2px !important;
       margin-top: 15px !important;
+      cursor:pointer;
     }
   }
 }
@@ -181,6 +183,7 @@ export default {
       line-height: 40px;
       border-radius: 5px;
       margin-top: 61px;
+      cursor:pointer;
     }
   }
   .content-back-img2 {

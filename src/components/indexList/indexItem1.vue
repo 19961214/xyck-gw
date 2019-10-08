@@ -2,7 +2,7 @@
   <div>
     
     <!-- 产品介绍 -->
-    <el-row class="index-intro">
+    <el-row class="index-intro1">
       <div class="index-intro-title">产品介绍</div>
       <el-col :span="16" :offset="4">
         <el-col :span="12" :offset="0">
@@ -21,7 +21,7 @@
       </el-col>
     </el-row>
 
-    <el-row class="index-intro">
+    <el-row class="index-intro1">
       <el-col :span="16" :offset="4">
         
         <el-col :span="12" :offset="0">
@@ -51,7 +51,7 @@ export default {
 };
 </script>
 <style lang="less">
-.index-intro {
+.index-intro1 {
   background-color: #fff;
   padding-bottom: 60px;
   .index-intro-title {
@@ -90,6 +90,7 @@ export default {
       color: #15abfe;
       font-size: 16px;
       margin-top: 98px;
+      cursor:pointer;
     }
   }
 }

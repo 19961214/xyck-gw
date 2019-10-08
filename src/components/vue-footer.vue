@@ -73,7 +73,8 @@ export default {
 		}
 		.text3 {
 			color: #ffffff;
-			display: inline-block;
+      display: inline-block;
+      cursor:pointer;
 		}
     }
   }

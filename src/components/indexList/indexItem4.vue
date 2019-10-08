@@ -99,12 +99,14 @@ export default {
         text-align: center;
         line-height: 40px;
         margin-top: 57px;
+        cursor:pointer;
       }
       .line2{
           background-color: #fff;
           border: 1px solid #FF7515;
           border-radius: 4px;
           color: #FF7515;
+          cursor:pointer;
       }
     }
   }

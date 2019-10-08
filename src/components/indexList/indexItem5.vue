@@ -1,0 +1,87 @@
+<template>
+  <div>
+    <el-row class="index-intro3">
+      <div class="index-intro-title">合作方式</div>
+      <el-col :span="24" :offset="0">
+        <div class="content">
+          <div class="content-item">
+            <img src="../../assets/img/back5-2.png" alt />
+            <div>1.商务谈判</div>
+          </div>
+          <div class="content-item">
+            <img src="../../assets/img/back5-3.png" alt />
+            <div>2.签约合作</div>
+          </div>
+          <div class="content-item">
+            <img src="../../assets/img/back5-4.png" alt />
+            <div>3.银行打款</div>
+          </div>
+          <div class="content-item">
+            <img src="../../assets/img/back5-5.png" alt />
+            <div>4.代理发放</div>
+          </div>
+          <div class="content-item content-item5">
+            <img src="../../assets/img/back5-6.png" alt />
+            <div>5.开票回执</div>
+          </div>
+        </div>
+        <div class="content2">
+          <div class="content2-btn">申请合作</div>
+        </div>
+      </el-col>
+    </el-row>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "indexItem3"
+};
+</script>
+<style lang="less">
+.index-intro3 {
+  padding-bottom: 35px;
+  height: 500px;
+  background: url("../../assets/img/back5-1.png");
+  .index-intro-title {
+    width: 100%;
+    height: 143px;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content-item {
+      color: #fff;
+      margin-right: 160px;
+      img {
+        margin-bottom: 37px;
+      }
+    }
+    .content-item5 {
+      margin-right: 0px;
+    }
+  }
+  .content2 {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content2-btn {
+      width: 140px;
+      height: 40px;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+}
+</style>

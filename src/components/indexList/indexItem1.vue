@@ -21,6 +21,26 @@
       </el-col>
     </el-row>
 
+    <el-row class="index-intro">
+      <el-col :span="16" :offset="4">
+        
+        <el-col :span="12" :offset="0">
+          <div class="img-wrap2">
+            <div class="img-wrap-text1">掌钱进</div>
+            <div class="img-wrap-text2">为中高收入自由职业者、创客、合伙人提供专属定制的个人税务筹划方案</div>
+            <div class="img-wrap-text3">综合成本可降至0.5%-6.45%</div>
+            <div class="img-wrap-text3">实现客户税负最小化、收益最大化</div>
+            <div class="img-wrap-text4">了解更多 ></div>
+          </div>
+        </el-col>
+        <el-col :span="12" :offset="0">
+          <div class="img-wrap">
+            <img src="../../assets/img/back-img4.png" alt />
+          </div>
+        </el-col>
+      </el-col>
+    </el-row>
+
   </div>
 </template>
 

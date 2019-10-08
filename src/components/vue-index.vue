@@ -20,6 +20,8 @@
     <indexItem2></indexItem2>
     <indexItem3></indexItem3>
     <indexItem4></indexItem4>
+    <indexItem5></indexItem5>
+    <indexItem6></indexItem6>
   </div>
 </template>
 
@@ -28,13 +30,17 @@ import indexItem1 from "./indexList/indexItem1.vue";
 import indexItem2 from "./indexList/indexItem2.vue";
 import indexItem3 from "./indexList/indexItem3.vue";
 import indexItem4 from "./indexList/indexItem4.vue";
+import indexItem5 from "./indexList/indexItem5.vue";
+import indexItem6 from "./indexList/indexItem6.vue";
 export default {
   name: "vue-index",
   components: {
     indexItem1,
     indexItem2,
     indexItem3,
-    indexItem4
+    indexItem4,
+    indexItem5,
+    indexItem6
   }
 };
 </script>

@@ -27,7 +27,7 @@
           <router-link to="/gous">
             <el-col :span="2" :offset="0">加入我们</el-col>
           </router-link>
-          <el-col class="phone" :span="4" :offset="1">0755-25888852</el-col>
+          <el-col class="phone" :span="4" :offset="1"><img class="phone-img" src="../assets/img/tel.png" alt="">0755-25888852</el-col>
         </el-row>
       </div>
       <div class="select">
@@ -125,6 +125,14 @@ export default {
     .phone {
       color: #666666;
       font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .phone-img{
+        width: 21px;
+        height: 20px;
+        margin-right: 5px;
+      }
     }
   }
 }

@@ -12,10 +12,11 @@
             <img src="../assets/img/icon_address.png" alt />
             <div class="text2">深圳市南山区高新园科技南十二路朗诗大厦1209室</div>
           </div>
-          <div class="item-wrap">
+          <div class="item-wrap item-wrap3">
             <div class="text3">掌掌财服务平台入口 ></div>
           </div>
         </div>
+        <div class="text4">联系客服 ></div>
       </div>
     </el-col>
     <el-col :span="8" :offset="2">
@@ -62,6 +63,11 @@ export default {
         margin-top: 10px;
         display: flex;
       }
+      .item-wrap3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
       img {
         // display: inline-block;
         width: 20px;
@@ -82,6 +88,13 @@ export default {
         // display: inline-block;
         cursor: pointer;
       }
+    }
+    .text4 {
+      margin-top: 19px;
+      color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
     }
   }
   .tel {

@@ -16,7 +16,10 @@
             <div class="text3">掌掌财服务平台入口 ></div>
           </div>
         </div>
-        <div class="text4">联系客服 ></div>
+
+        <router-link to="/call">
+          <div class="text4">联系客服 ></div>
+        </router-link>
       </div>
     </el-col>
     <el-col :span="8" :offset="2">
@@ -31,10 +34,12 @@
 
 <script>
 export default {
-  name: "vue-footer"
+  name: "vue-footer",
+  methods: {}
 };
 </script>
 <style lang="less">
+@import url("../assets/css/reset.css");
 .footer {
   background-color: #223a53;
   height: 360px;

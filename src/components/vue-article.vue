@@ -1,73 +1,223 @@
 <template>
-	<el-row class="article">
-		<el-col :span="20" class="waterfall" :offset="2">
-			<div class="item" v-for="(item,index) in articles">
-				<router-link :to=" item.page " append>
-					<img :src=" './dist/article/'+(index+1)+'.jpg' " alt="" />
-					<p v-text="item.description"></p>
-				</router-link>
-			</div>
-		</el-col>
-	</el-row>
+  <div>
+    <el-row>
+      <el-col :span="24" class="cp-content">
+        <img src="../assets/img/gy-1.png" alt />
+        <div class="cp-content-text-wrap">
+          <div class="hd-content-text2">用科技打造更专业的人财税一体化商业服务</div>
+          <div class="cp-content-text3">人力资源 &nbsp|&nbsp 佣金结算 &nbsp|&nbsp 税收优惠</div>
+          <!-- <div class="cp-content-btn">
+            <span>申请试用</span>
+          </div>-->
+        </div>
+      </el-col>
+    </el-row>
+    <articleItem1></articleItem1>
+    <articleItem2></articleItem2>
+  </div>
 </template>
 
 <script>
-	export default {
-		name: "vue-article",
-		data() {
-			return {
-				articles: [
-					{description:"如何顺利申请到美国名校",page:"america"},
-					{description:"被defer和waitlisted的原因及区别",page:"defer"},
-					{description:"美国春季入学和秋季入学",page:"enroll"},
-					{description:"论美国大学转学",page:"transfer"},
-					{description:"托福考试常识问答",page:"ielts"},
-					{description:"解读新SAT",page:"sat"},
-					{description:"关于AP考试(美国大学先修课程)",page:"ap"},
-				]
-			}
-		}
-	}
+import articleItem1 from "./article/articleItem1.vue";
+import articleItem2 from "./article/articleItem2.vue";
+export default {
+  name: "vue-index",
+  components: {
+    articleItem1,
+    articleItem2
+  }
+};
 </script>
-
 <style lang="less">
-	.article {
-		background-color: #d2d3d5;
-		padding: 50px 0;
-		.waterfall {
-			column-count: 3;
-			column-gap: 20px;
-			.item {
-				padding: 10px;
-				margin: 0 0 10px 0;
-				background-color: white;
-				break-inside: avoid;
-				img {
-					width: 100%;
-				}
-				p {
-					padding: 50px 0 20px 10px;
-					font-size: 30px;
-					line-height: 30px;
-				}
-				a {
-					text-decoration: none;
-					color: black;
-				}
-			}
-		}
-	}
-	@media (min-width: 568px) and (max-width: 991px) {
-        .waterfall {
-            column-count: 2 !important;
-        }
-        p {
-            font-size: 24px !important;
-        }
+@import url("../assets/css/reset.css");
+@media (max-width: 1480px) {
+  .cp-content {
+    margin: 0 auto;
+    //   transform: translate(0, -85px);
+    position: relative;
+    img {
+      width: 100%;
     }
-    @media (max-width: 567px) {
-        .waterfall {
-            column-count: 1 !important;
-        }
+    .cp-content-text-wrap {
+      width: 776px;
+      height: 313px;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      margin-left: -388px;
+      margin-top: -156px;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      .hd-content-text2 {
+        color: #fff;
+        font-size: 45px;
+        line-height: 80px;
+        //   letter-spacing: 25px;
+        transform: translateY(50px);
+      }
+      .cp-content-text3 {
+        color: #ffffff;
+        font-size: 20px;
+        margin-top: 60px;
+        line-height: 49px;
+      }
+      .cp-content-btn {
+        color: #fff;
+        font-size: 16px;
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        margin-top: 40px !important;
+        cursor: pointer;
+      }
     }
+  }
+}
+@media (max-width: 1024px) {
+  .cp-content {
+    margin: 0 auto;
+    //   transform: translate(0, -85px);
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .cp-content-text-wrap {
+      width: 776px;
+      height: 313px;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      margin-left: -388px;
+      margin-top: -156px;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      .hd-content-text2 {
+        color: #fff;
+        font-size: 25px !important;
+        line-height: 80px;
+        //   letter-spacing: 25px;
+        transform: translateY(50px);
+      }
+      .cp-content-text3 {
+        color: #ffffff;
+        font-size: 10px !important;
+        margin-top: 30px !important;
+        line-height: 49px;
+      }
+      .cp-content-btn {
+        color: #fff;
+        font-size: 16px;
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        margin-top: 20px !important;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .cp-content {
+    margin: 0 auto;
+    //   transform: translate(0, -85px);
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .cp-content-text-wrap {
+      width: 776px;
+      height: 313px;
+      position: absolute;
+      top: 70% !important;
+      left: 50%;
+      margin-left: -388px;
+      margin-top: -156px;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      .hd-content-text2 {
+        color: #fff;
+        font-size: 18px !important;
+        line-height: 80px;
+        //   letter-spacing: 15px !important;
+        transform: translateY(80px) !important;
+      }
+      .cp-content-text3 {
+        color: #ffffff;
+        font-size: 10px !important;
+        margin-top: 40px !important;
+        line-height: 49px;
+      }
+      .cp-content-btn {
+        color: #fff;
+        font-size: 13px !important;
+        width: 80px !important;
+        height: 20px !important;
+        text-align: center;
+        line-height: 20px !important;
+        border: 1px solid #fff;
+        border-radius: 10px !important;
+        margin-top: -3px !important;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.cp-content {
+  margin: 0 auto;
+  //   transform: translate(0, -85px);
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .cp-content-text-wrap {
+    width: 776px;
+    height: 313px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-left: -388px;
+    margin-top: -156px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    .hd-content-text2 {
+      color: #fff;
+      font-size: 40px;
+      line-height: 80px;
+      //   letter-spacing: 25px;
+      transform: translateY(50px);
+    }
+    .cp-content-text3 {
+      color: #ffffff;
+      font-size: 20px;
+      margin-top: 60px;
+      line-height: 49px;
+    }
+    .cp-content-btn {
+      color: #fff;
+      font-size: 16px;
+      width: 140px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      margin-top: 90px;
+      cursor: pointer;
+    }
+  }
+}
 </style>

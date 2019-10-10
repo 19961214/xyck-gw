@@ -35,7 +35,11 @@ const routes = [
 	},
 	{
 		path: '/gous', 
-		component: resolve => require(['../components/vue-us.vue'], resolve)
+		component: resolve => require(['../components/vue-gous.vue'], resolve)
+	},
+	{
+		path: '/call', 
+		component: resolve => require(['../components/vue-call.vue'], resolve)
 	},
 	{
 		path: '/product/purelove', 

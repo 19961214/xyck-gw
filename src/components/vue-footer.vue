@@ -17,7 +17,7 @@
           </div>
         </div>
 
-        <router-link to="/call">
+        <router-link to="/call" tag="div">
           <div class="text4">联系客服 ></div>
         </router-link>
       </div>

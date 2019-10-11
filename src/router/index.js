@@ -41,50 +41,50 @@ const routes = [
 		path: '/call', 
 		component: resolve => require(['../components/vue-call.vue'], resolve)
 	},
-	{
-		path: '/product/purelove', 
-		component: resolve => require(['../components/product/vue-pure-love.vue'], resolve)
-	},
-	{
-		path: '/product/puppylove', 
-		component: resolve => require(['../components/product/vue-puppy-love.vue'], resolve)
-	},
-	{
-		path: '/product/maturelove', 
-		component: resolve => require(['../components/product/vue-mature-love.vue'], resolve)
-	},
-	{
-		path: '/product/familymember', 
-		component: resolve => require(['../components/product/vue-family-member.vue'], resolve)
-	},
-	{
-		path: '/article/america', 
-		component: resolve => require(['../components/article/vue-america.vue'], resolve)
-	},
-	{
-		path: '/article/defer', 
-		component: resolve => require(['../components/article/vue-defer.vue'], resolve)
-	},
-	{
-		path: '/article/enroll', 
-		component: resolve => require(['../components/article/vue-enroll.vue'], resolve)
-	},
-	{
-		path: '/article/transfer', 
-		component: resolve => require(['../components/article/vue-transfer.vue'], resolve)
-	},
-	{
-		path: '/article/ielts', 
-		component: resolve => require(['../components/article/vue-ielts.vue'], resolve)
-	},
-	{
-		path: '/article/sat', 
-		component: resolve => require(['../components/article/vue-sat.vue'], resolve)
-	},
-	{
-		path: '/article/ap', 
-		component: resolve => require(['../components/article/vue-ap.vue'], resolve)
-	},
+	// {
+	// 	path: '/product/purelove', 
+	// 	component: resolve => require(['../components/product/vue-pure-love.vue'], resolve)
+	// },
+	// {
+	// 	path: '/product/puppylove', 
+	// 	component: resolve => require(['../components/product/vue-puppy-love.vue'], resolve)
+	// },
+	// {
+	// 	path: '/product/maturelove', 
+	// 	component: resolve => require(['../components/product/vue-mature-love.vue'], resolve)
+	// },
+	// {
+	// 	path: '/product/familymember', 
+	// 	component: resolve => require(['../components/product/vue-family-member.vue'], resolve)
+	// },
+	// {
+	// 	path: '/article/america', 
+	// 	component: resolve => require(['../components/article/vue-america.vue'], resolve)
+	// },
+	// {
+	// 	path: '/article/defer', 
+	// 	component: resolve => require(['../components/article/vue-defer.vue'], resolve)
+	// },
+	// {
+	// 	path: '/article/enroll', 
+	// 	component: resolve => require(['../components/article/vue-enroll.vue'], resolve)
+	// },
+	// {
+	// 	path: '/article/transfer', 
+	// 	component: resolve => require(['../components/article/vue-transfer.vue'], resolve)
+	// },
+	// {
+	// 	path: '/article/ielts', 
+	// 	component: resolve => require(['../components/article/vue-ielts.vue'], resolve)
+	// },
+	// {
+	// 	path: '/article/sat', 
+	// 	component: resolve => require(['../components/article/vue-sat.vue'], resolve)
+	// },
+	// {
+	// 	path: '/article/ap', 
+	// 	component: resolve => require(['../components/article/vue-ap.vue'], resolve)
+	// },
 ]
 
 

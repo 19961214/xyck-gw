@@ -6,21 +6,20 @@
         <div class="cp-content-text-wrap">
           <div class="hd-content-text2">用科技打造更专业的人财税一体化商业服务</div>
           <div class="cp-content-text3">人力资源 &nbsp|&nbsp 佣金结算 &nbsp|&nbsp 税收优惠</div>
-          <!-- <div class="cp-content-btn">
-            <span>申请试用</span>
-          </div> -->
+          
         </div>
       </el-col>
     </el-row>
+    <usItem1></usItem1>
   </div>
 </template>
 
 <script>
-import storyItem1 from "./story/storyItem1.vue";
+import usItem1 from "./us/usItem1.vue";
 export default {
   name: "vue-index",
   components: {
-	storyItem1,
+	usItem1,
   }
 };
 </script>

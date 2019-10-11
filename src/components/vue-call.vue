@@ -124,6 +124,7 @@ export default {
     text-align: center;
     line-height: 40px;
     margin-top: 40px;
+    cursor: pointer;
   }
 }
 </style>

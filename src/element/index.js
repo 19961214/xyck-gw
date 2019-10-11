@@ -9,6 +9,7 @@ import {
 	Select,
 	  Option,
 	  Carousel,
+	  CarouselItem
 } from 'element-ui';
 Vue.use(Row);
 Vue.use(Col);
@@ -18,6 +19,7 @@ Vue.use(Icon);
 Vue.use(Select);
 Vue.use(Option);
 Vue.use(Carousel);
+Vue.use(CarouselItem);
 export default {
 	
 }

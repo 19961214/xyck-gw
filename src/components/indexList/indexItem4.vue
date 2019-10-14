@@ -29,7 +29,7 @@
               class="content-text"
             >为客户在设立个体工商户企业或个人工作室，并为其提供财税一站式代理服务，帮助客户合法获得免缴企业所得税资格并申请个税核定，从而为客户实现税负最低化，收益最大化。主要适用于年收入较高较稳定的自由职业者、创客、合伙人。</div>
             <div class="content-btn-wrap">
-              <div class="content-btn line2" @click="gotoCall">获取免费方案</div>
+              <div class="line2" @click="gotoCall">获取免费方案</div>
             </div>
           </div>
         </el-col>
@@ -111,6 +111,26 @@ export default {
       .content-btn:hover {
         background-color: #15abfe;
         border: 1px solid #15abfe;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .line2{
+        width: 160px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid #ff7515;
+        color: #ff7515;
+
+        font-size: 14px;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 57px;
+        cursor: pointer;
+      }
+      .line2:hover {
+        background-color: #ff7515;
+        border: 1px solid #ff7515;
         border-radius: 4px;
         color: #fff;
         cursor: pointer;

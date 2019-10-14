@@ -1,13 +1,13 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="24" class="content">
+      <el-col :span="24" id="content">
         <img src="../assets/img/back-img1.png" alt />
         <div class="content-text-wrap">
           <div class="content-text1">用科技打造</div>
           <div class="content-text2">更专业的人财税一体化商业服务</div>
           <div class="content-text3">人 力 资 源 &nbsp/&nbsp 佣 金 结 算 &nbsp/&nbsp 税 收 优 惠</div>
-          <div class="content-btn">
+          <div class="content-btn" @click="experience">
             <span>立即体验</span>
           </div>
         </div>
@@ -34,6 +34,30 @@ import indexItem5 from "./indexList/indexItem5.vue";
 import indexItem6 from "./indexList/indexItem6.vue";
 export default {
   name: "vue-index",
+  methods: {
+    experience() {
+      // var dis = document.getElementById("content-back-img2");
+      // dis.scrollIntoView()
+      // console.log(dis)
+
+
+
+      var dis = document.getElementById("content").getBoundingClientRect()
+        .height;
+      console.log(dis);
+
+      var top = 0;
+      var time1 = setInterval(function() {
+        top = top + 10;
+        document.documentElement.scrollTop = top;
+        document.body.srcollTop = top;
+        if (top >= dis-20) {
+          clearTimeout(time1);
+          return;
+        }
+      });
+    }
+  },
   components: {
     indexItem1,
     indexItem2,
@@ -90,7 +114,7 @@ export default {
       line-height: 20px !important;
       border-radius: 2px !important;
       margin-top: 30px !important;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
 }
@@ -134,11 +158,11 @@ export default {
       line-height: 20px !important;
       border-radius: 2px !important;
       margin-top: 15px !important;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
 }
-.content {
+#content {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;
@@ -183,7 +207,7 @@ export default {
       line-height: 40px;
       border-radius: 5px;
       margin-top: 61px;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
   .content-back-img2 {
@@ -191,5 +215,4 @@ export default {
     background-color: rgb(28, 54, 111);
   }
 }
-
 </style>

@@ -1,7 +1,7 @@
 <template>
   <el-row>
-    <el-col :span="24" class>
-      <div class="bg-black">
+    <el-col :span="24">
+      <div :class="{'headerBack':headerColor}" class="bg-black">
         <el-row class="nav">
           <el-col :span="2" :offset="2">
             <img src="../assets/img/logo.png" alt />
@@ -27,7 +27,9 @@
           <router-link to="/gous">
             <el-col :span="2" :offset="0">加入我们</el-col>
           </router-link>
-          <el-col class="phone" :span="4" :offset="1"><img class="phone-img" src="../assets/img/tel.png" alt="">0755-25888852</el-col>
+          <el-col class="phone" :span="4" :offset="1">
+            <img class="phone-img" src="../assets/img/tel.png" alt />0755-25888852
+          </el-col>
         </el-row>
       </div>
       <div class="select">
@@ -58,12 +60,31 @@ export default {
         { label: "联系我们", value: "us" },
         { label: "加入我们", value: "gous" }
       ],
-      option: "index"
+      option: "index",
+      headerColor: false
     };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.menu);
   },
   methods: {
     link: function() {
       this.$router.push({ path: "/" + this.option });
+    },
+    menu() {
+      this.scroll =
+        document.documentElement.scrollTop || document.body.srcollTop;
+      var timer = null;
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        if (this.scroll >= 100) {
+          this.headerColor = true;
+          // console.log(this.headerColor)
+        } else {
+          this.headerColor = false;
+          // console.log(this.headerColor)
+        }
+      }, 200);
     }
   }
 };
@@ -77,9 +98,9 @@ export default {
   }
   .select {
     display: block !important;
-	position: absolute !important;
-	z-index: 100;
-	width: 100%;
+    position: absolute !important;
+    z-index: 100;
+    width: 100%;
     top: 0;
     left: 0;
   }
@@ -92,7 +113,7 @@ export default {
 }
 .bg-black {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0);
@@ -128,12 +149,15 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      .phone-img{
+      .phone-img {
         width: 21px;
         height: 20px;
         margin-right: 5px;
       }
     }
   }
+}
+.headerBack {
+  background-color: #1a334d;
 }
 </style>

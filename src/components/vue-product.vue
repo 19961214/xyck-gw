@@ -6,7 +6,7 @@
         <div class="cp-content-text-wrap">
           <div class="cp-content-text2">我们的产品</div>
           <div class="cp-content-text3">掌税通 &nbsp/&nbsp 掌钱进 &nbsp/&nbsp 掌掌财</div>
-          <div class="cp-content-btn">
+          <div class="cp-content-btn" @click="gotoCall">
             <span>申请试用</span>
           </div>
         </div>
@@ -34,6 +34,11 @@ export default {
 	productItem3,
 	productItem4,
 	productItem5
+  },
+  methods: {
+    gotoCall(){
+       this.$router.push({path:"/call"})
+    }
   }
 };
 </script>

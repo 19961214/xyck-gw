@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 产品介绍 -->
-    <el-row class="cp-index-intro1">
+    <el-row id="cp-index-intro3">
       <el-col :span="16" :offset="4">
         <el-col :span="12" :offset="0">
           <div class="img-wrap">
@@ -16,7 +16,7 @@
             >掌掌财APP，是厦云创科推出的一款企业服务者及自由职业者均可使用的移动端应用程序，企业可使用企业账号登录在APP上进行合同管理、佣金管理、佣金代发、一键开票等业务，自由职业者可使用个人账号登录在APP上进行合同签约、佣金收款、明细查询等业务。随时随地使用、操作安全便捷。</div>
             <div class="cp3-img-wrap-text3">自由职业者APP一键签约，一键收款，一键理财</div>
             <div class="cp3-img-wrap-texts">企业服务端APP一键结算，一键打款，一键开票</div>
-            <div class="cp-img-wrap-text4">申请试用</div>
+            <div class="cp-img-wrap-text4" @click="gotoCall">申请试用</div>
           </div>
         </el-col>
       </el-col>
@@ -26,11 +26,24 @@
 
 <script>
 export default {
-  name: "productItem3"
+  name: "productItem3",
+  methods: {
+    gotoCall(){
+       this.$router.push({path:"/call"})
+    }
+  },
+  mounted() {
+    const a = window.localStorage.getItem("a");
+    if (a == 3) {
+      var dis = document.getElementById("cp-index-intro3");
+      dis.scrollIntoView();
+      window.localStorage.clear();
+    }
+  }
 };
 </script>
 <style lang="less">
-.cp-index-intro1 {
+#cp-index-intro3 {
   background-color: #fff;
   //   padding-bottom: 60px;
   .img-wrap {

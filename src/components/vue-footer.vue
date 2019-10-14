@@ -17,9 +17,9 @@
           </div>
         </div>
 
-        <router-link to="/call" tag="div">
-          <div class="text4">联系客服 ></div>
-        </router-link>
+        <!-- <router-link to="/call" tag="div"> -->
+          <div class="text4" @click="gotoCall">联系客服 ></div>
+        <!-- </router-link> -->
       </div>
     </el-col>
     <el-col :span="8" :offset="2">
@@ -35,7 +35,11 @@
 <script>
 export default {
   name: "vue-footer",
-  methods: {}
+  methods: {
+    gotoCall(){
+       this.$router.push({path:"/call"})
+    }
+  }
 };
 </script>
 <style lang="less">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="call-header-back"></div>
+    <div id="call-header-back"></div>
     <el-row>
       <el-col :span="16" :offset="4">
         <div class="call-content">
@@ -28,12 +28,15 @@
 <script>
 export default {
   name: "vue-index",
-  components: {}
+  mounted() {
+      var dis = document.getElementById("call-header-back");
+      dis.scrollIntoView();
+  }
 };
 </script>
 <style lang="less">
 @import url("../assets/css/reset.css");
-.call-header-back {
+#call-header-back {
   width: 100%;
   height: 60px;
   background-color: #1a334d;

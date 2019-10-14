@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 产品介绍 -->
-    <el-row class="cp2-index-intro1">
+    <el-row id="cp2-index-intro2">
       <el-col :span="16" :offset="4">
         
         <el-col :span="12" :offset="0">
@@ -11,7 +11,7 @@
               class="cp-img-wrap-text2"
             >针对企业税负成本高、缺少进项发票、高收入个人税负压力大等高收入群体用户痛点，厦云创科提供出一套专属定制的“掌钱进”计划，为客户提供一站式税务筹划和代理服务，为客户在税优地注册个人独资企业/个人工作室，帮助客户合法获得免缴企业所得税资格并申请个税核定，从而综合成本可降至0.5%-6.45%，为客户节省最大的成本，实现最大的收益。</div>
             <!-- <div class="cp-img-wrap-text3">客户在掌税通平台为自由职业者支付款项掌税通平台为自由职业者代缴税费</div> -->
-            <div class="cp-img-wrap-text4">申请试用</div>
+            <div class="cp-img-wrap-text4" @click="gotoCall">申请试用</div>
           </div>
         </el-col>
         <el-col :span="12" :offset="0">
@@ -26,11 +26,24 @@
 
 <script>
 export default {
-  name: "productItem2"
+  name: "productItem2",
+  methods: {
+    gotoCall(){
+       this.$router.push({path:"/call"})
+    }
+  },
+  mounted() {
+    const a = window.localStorage.getItem("a");
+    if (a == 2) {
+      var dis = document.getElementById("cp2-index-intro2");
+      dis.scrollIntoView();
+      window.localStorage.clear();
+    }
+  }
 };
 </script>
 <style lang="less">
-.cp2-index-intro1 {
+#cp2-index-intro2 {
   background-color: #F7FCFF;
 //   padding-bottom: 60px;
   .img-wrap {

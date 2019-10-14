@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="content2">
-          <div class="content2-btn">申请合作</div>
+          <div class="content2-btn" @click="gotoCall">申请合作</div>
         </div>
       </el-col>
     </el-row>
@@ -35,7 +35,12 @@
 
 <script>
 export default {
-  name: "indexItem3"
+  name: "indexItem3",
+  methods: {
+    gotoCall(){
+       this.$router.push({path:"/call"})
+    }
+  }
 };
 </script>
 <style lang="less">

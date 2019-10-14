@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 产品介绍 -->
-    <el-row class="cp4-index-intro1">
+    <el-row id="cp4-index-intro4">
       <el-col :span="16" :offset="4">
         <el-col :span="12" :offset="0">
           <div class="img-wrap2">
@@ -28,11 +28,19 @@
 
 <script>
 export default {
-  name: "productItem4"
+  name: "productItem4",
+  mounted() {
+    const a = window.localStorage.getItem("a");
+    if (a == 4) {
+      var dis = document.getElementById("cp4-index-intro4");
+      dis.scrollIntoView();
+      window.localStorage.clear();
+    }
+  }
 };
 </script>
 <style lang="less">
-.cp4-index-intro1 {
+#cp4-index-intro4 {
   background-color: #f7fcff;
   //   padding-bottom: 60px;
   .img-wrap {

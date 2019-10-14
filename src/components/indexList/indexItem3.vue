@@ -115,15 +115,15 @@ export default {
     }
     .content3-list:hover > .content3-img1 {
       transform: translateY(-100px);
-      transition-duration: 1s;
+      transition-duration: 0.7s;
     }
     .content3-list:hover > .content3-img2 {
       transform: translateY(-44px);
-      transition-duration: 1s;
+      transition-duration: 0.7s;
     }
     .content3-list:hover > .content3-text-wrap {
       transform: translateY(-100px);
-      transition-duration: 1s;
+      transition-duration: 0.7s;
     }
   }
 }

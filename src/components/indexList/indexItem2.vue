@@ -3,7 +3,7 @@
     <el-row class="index-intro2">
       <div class="index-intro-title">云生态网络—全方位服务</div>
       <div class="index-intro-title2">
-        <div :class="{'div-one':state==1}" class="div-two" @click="cut1">掌掌财管理系统</div>
+        <div :class="{'div-one':state==1}" class="div-two" @click="cut1">厦云创科云端管理系统</div>
         <div :class="{'div-one':state==2}" @click="cut2">掌掌财APP</div>
         <div :class="{'div-one':state==3}" @click="cut3">掌掌财小程序</div>
       </div>
@@ -15,7 +15,7 @@
         </el-col>
         <el-col :span="12" :offset="0">
           <div class="img-wrap2">
-            <div class="img-wrap-text1">掌掌财云端管理系统</div>
+            <div class="img-wrap-text1">厦云创科云端管理系统</div>
             <div class="img-wrap-text2">一站式佣金结算、发票开具、个税申报管理系统</div>
             <div class="img-wrap-text3">提供云端应用技术，7X24 贴心服务</div>
             <div class="img-wrap-text4">专业运营管理团队、技术研发团队</div>
@@ -37,7 +37,7 @@
             <div class="img-wrap-text4">一键签约，一键收款，一键理财</div>
             <div class="img-wrap-text2">企业服务端APP</div>
             <div class="img-wrap-text5">一键结算，一键打款，一键开票</div>
-            <div class="img-wrap-btn">了解更多 ></div>
+            <div class="img-wrap-btn" @click="gotoProduct3">了解更多 ></div>
           </div>
         </el-col>
       </el-col>
@@ -53,7 +53,7 @@
             <div class="img-wrap-text1">掌掌财小程序</div>
             <div class="img-wrap-text2">轻量级应用，无需登录APP也可一步实现电子合同签约</div>
             <div class="img-wrap-text4">收款记录实时查询，便捷高效</div>
-            <div class="img-wrap-btn">了解更多 ></div>
+            <div class="img-wrap-btn" @click="gotoProduct4">了解更多 ></div>
             <!-- <div class="img-wrap-text4">专业运营管理团队、技术研发团队</div>
             <div class="img-wrap-text5">打造人财税一体化云生态网络</div>-->
           </div>
@@ -80,6 +80,14 @@ export default {
     },
     cut3() {
       this.state = 3;
+    },
+    gotoProduct3(){
+      window.localStorage.setItem("a", "3");
+       this.$router.push({path:"/product"})
+    },
+    gotoProduct4(){
+      window.localStorage.setItem("a", "4");
+       this.$router.push({path:"/product"})
     }
   }
 };

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 产品介绍 -->
-    <el-row class="cp-index-intro1">
+    <el-row id="cp-index-intro1">
       <el-col :span="16" :offset="4">
         <el-col :span="12" :offset="0">
           <div class="img-wrap">
@@ -15,7 +15,7 @@
               class="cp-img-wrap-text2"
             >共享经济下自由职业者与平台客户企业进行服务合作，平台客户企业通过平台完成对自由职业者的佣金核算，并将佣金款项和税费打款给平台，平台收款后开具相应发票给客户，并将代发的佣金款项汇入自由职业者的收款账户，平台依据款项支付流水完成对自由职业者税款的代扣代缴工作。</div>
             <div class="cp-img-wrap-text3">客户在掌税通平台为自由职业者支付款项掌税通平台为自由职业者代缴税费</div>
-            <div class="cp-img-wrap-text4">申请试用</div>
+            <div class="cp-img-wrap-text4" @click="gotoCall">申请试用</div>
           </div>
         </el-col>
       </el-col>
@@ -25,13 +25,26 @@
 
 <script>
 export default {
-  name: "productItem1"
+  name: "productItem1",
+  methods: {
+    gotoCall() {
+      this.$router.push({ path: "/call" });
+    }
+  },
+  mounted() {
+    const a = window.localStorage.getItem("a");
+    if (a == 1) {
+      var dis = document.getElementById("cp-index-intro1");
+      dis.scrollIntoView();
+      window.localStorage.clear();
+    }
+  }
 };
 </script>
 <style lang="less">
-.cp-index-intro1 {
+#cp-index-intro1 {
   background-color: #fff;
-//   padding-bottom: 60px;
+  //   padding-bottom: 60px;
   .img-wrap {
     img {
       width: 100%;
@@ -59,12 +72,12 @@ export default {
       line-height: 26px;
     }
     .cp-img-wrap-text4 {
-        width: 120px;
-        height: 40px;
-        border: 1px solid #15ABFE;
-        border-radius: 4px;
-        text-align: center;
-        line-height: 40px;
+      width: 120px;
+      height: 40px;
+      border: 1px solid #15abfe;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 40px;
       color: #15abfe;
       font-size: 16px;
       margin-top: 27px;

@@ -1,6 +1,5 @@
 <template>
   <div>
-    
     <!-- 产品介绍 -->
     <el-row class="index-intro1">
       <div class="index-intro-title">产品介绍</div>
@@ -15,7 +14,7 @@
             <div class="img-wrap-text1">掌税通</div>
             <div class="img-wrap-text2">SaaS服务平台，专注于“互联网+税收优化”</div>
             <div class="img-wrap-text3">解决企业服务端与自由职业者之间的佣金结算发放、代征税收等服务</div>
-            <div class="img-wrap-text4">了解更多 ></div>
+            <div class="img-wrap-text4" @click="gotoProduct1">了解更多 ></div>
           </div>
         </el-col>
       </el-col>
@@ -23,14 +22,13 @@
 
     <el-row class="index-intro1">
       <el-col :span="16" :offset="4">
-        
         <el-col :span="12" :offset="0">
           <div class="img-wrap2">
             <div class="img-wrap-text1">掌钱进</div>
             <div class="img-wrap-text2">为中高收入自由职业者、创客、合伙人提供专属定制的个人税务筹划方案</div>
             <div class="img-wrap-text3">综合成本可降至0.5%-6.45%</div>
             <div class="img-wrap-text3">实现客户税负最小化、收益最大化</div>
-            <div class="img-wrap-text4">了解更多 ></div>
+            <div class="img-wrap-text4" @click="gotoProduct2">了解更多 ></div>
           </div>
         </el-col>
         <el-col :span="12" :offset="0">
@@ -40,14 +38,23 @@
         </el-col>
       </el-col>
     </el-row>
-
   </div>
 </template>
 
 <script>
-
 export default {
-  name: "indexItem1"
+  name: "indexItem1",
+  methods: {
+    gotoProduct1() {
+      window.localStorage.setItem("a", "1");
+      this.$router.push({ path: "/product" });
+    },
+    gotoProduct2() {
+      window.localStorage.setItem("a", "2");
+      this.$router.push({ path: "/product" });
+    }
+  },
+  mounted() {}
 };
 </script>
 <style lang="less">
@@ -90,7 +97,7 @@ export default {
       color: #15abfe;
       font-size: 16px;
       margin-top: 98px;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
 }

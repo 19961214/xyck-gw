@@ -6,25 +6,26 @@
         <div class="content-bottom">
           <div class="item-wrap">
             <img src="../assets/img/icon_phone.png" alt />
-            <div class="text1">0755-8288 5278</div>
+            <div class="text1">0571-87299551</div>
           </div>
           <div class="item-wrap">
             <img src="../assets/img/icon_address.png" alt />
-            <div class="text2">深圳市南山区高新园科技南十二路朗诗大厦1209室</div>
+            <div class="text2">浙江省杭州市西湖区桃岭路桃源坞基金小镇16幢3A</div>
           </div>
           <div class="item-wrap item-wrap3">
-            <div class="text3">掌掌财服务平台入口 ></div>
+            <!-- <div class="text3">掌掌财服务平台入口 </div> -->
+            <div class="text3" @click="gotoCall">联系客服 ></div>
           </div>
         </div>
 
         <!-- <router-link to="/call" tag="div"> -->
-          <div class="text4" @click="gotoCall">联系客服 ></div>
+          <!-- <div class="text4" @click="gotoCall">联系客服 ></div> -->
         <!-- </router-link> -->
       </div>
     </el-col>
     <el-col :span="8" :offset="2">
       <div class="tel content">
-        <img src="../assets/img/code.png" alt />
+        <img src="../assets/img/code.jpg" alt />
         <div class="img-text">关注掌掌财小程序</div>
       </div>
     </el-col>
@@ -46,7 +47,7 @@ export default {
 @import url("../assets/css/reset.css");
 .footer {
   background-color: #223a53;
-  height: 360px;
+  height: 270px;
   color: white;
   font-size: 14px;
   // padding: 50px 0 50px 0;

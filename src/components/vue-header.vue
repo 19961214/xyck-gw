@@ -4,7 +4,10 @@
       <div :class="{'headerBack':headerColor}" class="bg-black">
         <el-row class="nav">
           <el-col :span="2" :offset="2">
-            <img src="../assets/img/logo.png" alt />
+            <div class="header-img-wrap">
+              <img src="../assets/img/logo1.png" alt />
+            </div>
+            
           </el-col>
           <router-link to="/index">
             <el-col :span="2" :offset="1">首页</el-col>
@@ -16,7 +19,7 @@
             <el-col :span="2" :offset="0">解决方案</el-col>
           </router-link>
           <router-link to="/story">
-            <el-col :span="2" :offset="0">活动咨询</el-col>
+            <el-col :span="2" :offset="0">活动资讯</el-col>
           </router-link>
           <router-link to="/article">
             <el-col :span="2" :offset="0">关于厦云</el-col>
@@ -28,7 +31,7 @@
             <el-col :span="2" :offset="0">加入我们</el-col>
           </router-link>
           <el-col class="phone" :span="4" :offset="1">
-            <img class="phone-img" src="../assets/img/tel.png" alt />0755-25888852
+            <img class="phone-img" src="../assets/img/tel.png" alt />0571-87299551
           </el-col>
         </el-row>
       </div>
@@ -55,7 +58,7 @@ export default {
         { label: "首页", value: "index" },
         { label: "产品介绍", value: "product" },
         { label: "解决方案", value: "team" },
-        { label: "活动咨询", value: "story" },
+        { label: "活动资讯", value: "story" },
         { label: "关于厦云", value: "article" },
         { label: "联系我们", value: "us" },
         { label: "加入我们", value: "gous" }
@@ -122,6 +125,17 @@ export default {
   line-height: 60px;
   .nav {
     font-size: 14px;
+    .header-img-wrap{
+      width: 136px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 136px;
+        height: 50px;
+      }
+    }
     .router-link-active {
       color: red;
     }
@@ -144,7 +158,7 @@ export default {
       }
     }
     .phone {
-      color: #666666;
+      color: #fff;
       font-size: 14px;
       display: flex;
       justify-content: center;

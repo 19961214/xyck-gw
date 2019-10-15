@@ -80,6 +80,7 @@ export default {
         .jj-content1-p2 {
           font-size: 14px;
           margin-top: 17px;
+          line-height: 22px;
         }
       }
     }

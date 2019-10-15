@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
-
+ 
 // lazy-load
 const routes = [
 	{
@@ -41,10 +41,30 @@ const routes = [
 		path: '/call', 
 		component: resolve => require(['../components/vue-call.vue'], resolve)
 	},
-	// {
-	// 	path: '/product/purelove', 
-	// 	component: resolve => require(['../components/product/vue-pure-love.vue'], resolve)
-	// },
+	{
+		path: '/story/item1', 
+		component: resolve => require(['../components/vue-storyitem.vue'], resolve)
+	},
+	{
+		path: '/story/item2', 
+		component: resolve => require(['../components/vue-storyitem2.vue'], resolve)
+	},
+	{
+		path: '/story/item3', 
+		component: resolve => require(['../components/vue-storyitem3.vue'], resolve)
+	},
+	{
+		path: '/story/item4', 
+		component: resolve => require(['../components/vue-storyitem4.vue'], resolve)
+	},
+	{
+		path: '/story/item5', 
+		component: resolve => require(['../components/vue-storyitem5.vue'], resolve)
+	},
+	{
+		path: '/story/item6', 
+		component: resolve => require(['../components/vue-storyitem6.vue'], resolve)
+	},
 	// {
 	// 	path: '/product/puppylove', 
 	// 	component: resolve => require(['../components/product/vue-puppy-love.vue'], resolve)
@@ -89,6 +109,7 @@ const routes = [
 
 
 export default new VueRouter({
+	mode:'history',
  	base: __dirname,
 	routes
 })

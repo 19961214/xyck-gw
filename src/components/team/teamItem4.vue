@@ -37,7 +37,7 @@
                   class="jj-content4-text2"
                 >某上海贷运代理公司，主要经营贷运代理业务，服务于该公司的司机属于自然人类别，收到该公司的劳务报酬后无条件办理开票，导致公司无法建账等问题。</div>
                 <div
-                  class="jj-content4-text3"
+                  class="jj-content4-text3 jj-content4-text3s"
                 >后来该货运公司通过与我司达成合作，将司机的报酬通过掌税通平台进行发放，掌税通帮助司机进行完税结算，司机收到劳务报酬后，由掌税通代开发票，从而降低了企业经营风险。</div>
               </div>
             </el-col>
@@ -137,6 +137,9 @@ export default {
       padding: 0 96px 0 60px;
       margin-top: 30px;
       padding-bottom: 78px;
+    }
+    .jj-content4-text3s{
+      margin-top: 10px;
     }
   }
 }

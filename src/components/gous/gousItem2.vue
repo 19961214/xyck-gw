@@ -24,13 +24,13 @@
           </div>
 
           <div class="jr-content2-item4">
-            <div :class="{'jr-items':state}" class="jr-content2-item" @click="select">
+            <div :class="{'jr-items':state}" class="jr-content2-item">
               <p class="jr-p1">行政专员&nbsp &nbsp &nbsp</p>
               <p class="jr-p2">8-15K</p>
               <img :class="{'img-items':state}" src="../../assets/img/jiantou.png" alt />
             </div>
           </div>
-          <div class="jr-content2-item4s" v-if="state">
+          <div class="jr-content2-item4s" v-if="false">
             <div class="jr-content2-item4s-wrap">
               <div class="content2-item4s-title">【岗位职责】</div>
               <p class="content2-item4s-text1">
@@ -80,9 +80,9 @@ export default {
     };
   },
   methods: {
-    select() {
-      this.state = !this.state;
-    }
+    // select() {
+    //   this.state = !this.state;
+    // }
   }
 };
 </script>
@@ -104,7 +104,7 @@ export default {
       padding: 0 21px 0 21px;
       background-color: #fff;
       height: 60px;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #eee;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -131,7 +131,7 @@ export default {
       }
     }
     .jr-content2-item2 {
-      border-top: 1px solid #ccc;
+      border-top: 1px solid #eee;
     }
     .jr-items {
       background-color: #f4fafe;

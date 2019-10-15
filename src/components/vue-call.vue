@@ -7,18 +7,18 @@
           <div class="call-content-text1">联系我们</div>
           <div class="call-content-text2">留下您的联系方式，我们的客服将与您联系，并向您提供免费税务筹划方案。</div>
           <div class="call-content-text3">
-              <img src="../assets/img/call1.png" alt="">
-            <input class="call-content-input1" type="text" placeholder="姓名" />
+            <img src="../assets/img/call1.png" alt />
+            <input class="call-content-input1" v-model="input1" type="text" placeholder="姓名" />
           </div>
           <div class="call-content-text4">
-              <img src="../assets/img/call2.png" alt="">
-            <input class="call-content-input2" type="text" placeholder="电话号码" />
+            <img src="../assets/img/call2.png" alt />
+            <input class="call-content-input2" v-model="input2" type="text" placeholder="电话号码" />
           </div>
           <div class="call-content-text5">
-              <img src="../assets/img/call3.png" alt="">
-            <input class="call-content-input3" type="text" placeholder="企业名称" />
+            <img src="../assets/img/call3.png" alt />
+            <input class="call-content-input3" v-model="input3" type="text" placeholder="企业名称" />
           </div>
-          <div class="call-content-text6">提交</div>
+          <div class="call-content-text6" @click="selectCommit">提交</div>
         </div>
       </el-col>
     </el-row>
@@ -26,11 +26,39 @@
 </template>
 
 <script>
+
 export default {
   name: "vue-index",
+  data() {
+    return {
+      input1: "",
+      input2: "",
+      input3: ""
+    };
+  },
+  methods: {
+    selectCommit() {
+      // var FileSaver = require("file-saver");
+      if (this.input1 && this.input2 && this.input3) {
+        this.input1 = "";
+        this.input2 = "";
+        this.input3 = "";
+        // let data = {
+        //   name: "hanmeimei",
+        //   age: 88
+        // };
+        // var content = JSON.stringify(data);
+        // var blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+        // FileSaver.saveAs(blob, "user.txt");
+        alert("您的信息我们已收到，稍后会有客服人员联系您，请注意接听来电，谢谢！");
+      } else {
+        alert("输入不能为空");
+      }
+    }
+  },
   mounted() {
-      var dis = document.getElementById("call-header-back");
-      dis.scrollIntoView();
+    var dis = document.getElementById("call-header-back");
+    dis.scrollIntoView();
   }
 };
 </script>
@@ -60,17 +88,17 @@ export default {
     height: 37px;
     font-size: 14px;
     font-weight: 400;
-    line-height:22px;
+    line-height: 22px;
     color: rgba(102, 102, 102, 1);
     margin-top: 28px;
   }
   .call-content-text3 {
     margin-top: 24px;
     position: relative;
-    img{
-        position: absolute;
-        top: 10px;
-        left: 20px;
+    img {
+      position: absolute;
+      top: 10px;
+      left: 20px;
     }
     .call-content-input1 {
       width: 250px;
@@ -85,10 +113,10 @@ export default {
   .call-content-text4 {
     margin-top: 15px;
     position: relative;
-    img{
-        position: absolute;
-        top: 10px;
-        left: 20px;
+    img {
+      position: absolute;
+      top: 10px;
+      left: 20px;
     }
     .call-content-input2 {
       width: 250px;
@@ -103,10 +131,10 @@ export default {
   .call-content-text5 {
     margin-top: 15px;
     position: relative;
-    img{
-        position: absolute;
-        top: 10px;
-        left: 20px;
+    img {
+      position: absolute;
+      top: 10px;
+      left: 20px;
     }
     .call-content-input3 {
       width: 250px;

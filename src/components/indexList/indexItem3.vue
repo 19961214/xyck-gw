@@ -76,6 +76,7 @@ export default {
       position: relative;
       overflow: hidden;
       margin-left: 20px;
+      border-radius: 4px;
       .content3-img1 {
         width: 100%;
       }

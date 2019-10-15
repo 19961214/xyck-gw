@@ -76,6 +76,7 @@ export default {
       .content-title2 {
         width: 65px;
         height: 20px;
+        color: #fff;
         background-color: #15abfe;
         text-align: center;
         line-height: 20px;
@@ -101,7 +102,7 @@ export default {
         background-color: #fff;
         border: 1px solid #15abfe;
         color: #15abfe;
-
+        border-radius: 4px;
         font-size: 14px;
         text-align: center;
         line-height: 40px;
@@ -121,7 +122,7 @@ export default {
         background-color: #fff;
         border: 1px solid #ff7515;
         color: #ff7515;
-
+        border-radius: 4px;
         font-size: 14px;
         text-align: center;
         line-height: 40px;

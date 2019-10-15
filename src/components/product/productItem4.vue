@@ -12,7 +12,7 @@
             <div class="cp4-img-wrap-text3">轻量级应用，无需登录APP也可一步实现电子合同签约</div>
             <div class="cp3-img-wrap-texts">收款记录实时查询，便捷高效</div>
             <div class="cp4-code">
-              <img src="../../assets/img/code.png" alt />
+              <img src="../../assets/img/code.jpg" alt />
             </div>
           </div>
         </el-col>
@@ -83,6 +83,10 @@ export default {
       height: 100px;
       margin-top: 36px;
       cursor: pointer;
+      img{
+        width: 100px;
+        height: 100px;
+      }
     }
   }
 }

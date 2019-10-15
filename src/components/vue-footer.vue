@@ -28,7 +28,7 @@
         <div class="img-text">关注掌掌财小程序</div>
       </div>
     </el-col>
-    <div class="bottom">2019 杭州厦云创科信息技术有限公司 粤ICP备17126097号-2</div>
+    <div class="bottom">2019 杭州厦云创科信息技术有限公司 浙ICP备19033904号-1</div>
   </el-row>
 </template>
 

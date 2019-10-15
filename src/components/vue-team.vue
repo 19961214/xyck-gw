@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="24" class="cp-content">
+      <el-col :span="24" id="cp-content2">
         <img src="../assets/img/jj-1.png" alt />
       </el-col>
     </el-row>
@@ -27,13 +27,17 @@ export default {
     teamItem3,
     teamItem4,
     teamItem5
+  },
+  mounted() {
+      var dis = document.getElementById("cp-content2");
+      dis.scrollIntoView();
   }
 };
 </script>
 <style lang="less">
 @import url("../assets/css/reset.css");
 @media (max-width: 1480px) {
-  .cp-content {
+  #cp-content2 {
     margin: 0 auto;
     //   transform: translate(0, -85px);
     position: relative;
@@ -43,7 +47,7 @@ export default {
   }
 }
 @media (max-width: 1024px) {
-  .cp-content {
+  #cp-content2 {
     margin: 0 auto;
     //   transform: translate(0, -85px);
     position: relative;
@@ -53,7 +57,7 @@ export default {
   }
 }
 @media (max-width: 768px) {
-  .cp-content {
+  #cp-content2 {
     margin: 0 auto;
     //   transform: translate(0, -85px);
     position: relative;
@@ -62,7 +66,7 @@ export default {
     }
   }
 }
-.cp-content {
+#cp-content2 {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="24" class="cp-content">
+      <el-col :span="24" id="cp-content">
         <img src="../assets/img/cp-1.png" alt />
         <div class="cp-content-text-wrap">
           <div class="cp-content-text2">我们的产品</div>
@@ -39,13 +39,17 @@ export default {
     gotoCall(){
        this.$router.push({path:"/call"})
     }
+  },
+  mounted() {
+      var dis = document.getElementById("cp-content");
+      dis.scrollIntoView();
   }
 };
 </script>
 <style lang="less">
 @import url("../assets/css/reset.css");
 @media (max-width: 1480px) {
-  .cp-content {
+  #cp-content {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;
@@ -93,7 +97,7 @@ export default {
 }
 }
 @media (max-width: 1024px) {
-  .cp-content {
+  #cp-content {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;
@@ -141,7 +145,7 @@ export default {
 }
 }
 @media (max-width: 768px) {
-  .cp-content {
+  #cp-content {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;
@@ -188,7 +192,7 @@ export default {
   }
 }
 }
-.cp-content {
+#cp-content {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;

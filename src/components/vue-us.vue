@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="24" class="cp-content">
+      <el-col :span="24" id="cp-content5">
         <img src="../assets/img/lx-1.png" alt />
         <div class="cp-content-text-wrap">
           <div class="hd-content-text2">用科技打造更专业的人财税一体化商业服务</div>
@@ -23,13 +23,17 @@ export default {
   components: {
   usItem1,
   usItem2
+  },
+  mounted() {
+      var dis = document.getElementById("cp-content5");
+      dis.scrollIntoView();
   }
 };
 </script>
 <style lang="less">
 @import url("../assets/css/reset.css");
 @media (max-width: 1480px) {
-  .cp-content {
+  #cp-content5 {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;
@@ -77,7 +81,7 @@ export default {
 }
 }
 @media (max-width: 1024px) {
-  .cp-content {
+  #cp-content5 {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;
@@ -125,7 +129,7 @@ export default {
 }
 }
 @media (max-width: 768px) {
-  .cp-content {
+  #cp-content5 {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;
@@ -172,7 +176,7 @@ export default {
   }
 }
 }
-.cp-content {
+#cp-content5 {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;

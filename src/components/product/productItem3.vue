@@ -28,17 +28,19 @@
 export default {
   name: "productItem3",
   methods: {
-    gotoCall(){
-       this.$router.push({path:"/call"})
+    gotoCall() {
+      this.$router.push({ path: "/call" });
     }
   },
   mounted() {
-    const a = window.localStorage.getItem("a");
-    if (a == 3) {
-      var dis = document.getElementById("cp-index-intro3");
-      dis.scrollIntoView();
-      window.localStorage.clear();
-    }
+    setTimeout(() => {
+      const a = window.localStorage.getItem("a");
+      if (a == 3) {
+        var dis = document.getElementById("cp-index-intro3");
+        dis.scrollIntoView();
+        window.localStorage.clear();
+      }
+    }, 0);
   }
 };
 </script>

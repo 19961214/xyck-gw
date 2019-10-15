@@ -99,8 +99,8 @@ export default {
         width: 160px;
         height: 40px;
         background-color: #fff;
-        border: 1px solid #ff7515;
-        color: #ff7515;
+        border: 1px solid #15abfe;
+        color: #15abfe;
 
         font-size: 14px;
         text-align: center;

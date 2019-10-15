@@ -32,12 +32,14 @@ export default {
     }
   },
   mounted() {
-    const a = window.localStorage.getItem("a");
-    if (a == 1) {
-      var dis = document.getElementById("cp-index-intro1");
-      dis.scrollIntoView();
-      window.localStorage.clear();
-    }
+    setTimeout(() => {
+      const a = window.localStorage.getItem("a");
+      if (a == 1) {
+        var dis = document.getElementById("cp-index-intro1");
+        dis.scrollIntoView();
+        window.localStorage.clear();
+      }
+    }, 0);
   }
 };
 </script>

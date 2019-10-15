@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="24" class="cp-content">
+      <el-col :span="24" id="cp-content4">
         <img src="../assets/img/gy-1.png" alt />
         <div class="cp-content-text-wrap">
           <div class="hd-content-text2">用科技打造更专业的人财税一体化商业服务</div>
@@ -25,13 +25,17 @@ export default {
   components: {
     articleItem1,
     articleItem2
+  },
+  mounted() {
+      var dis = document.getElementById("cp-content4");
+      dis.scrollIntoView();
   }
 };
 </script>
 <style lang="less">
 @import url("../assets/css/reset.css");
 @media (max-width: 1480px) {
-  .cp-content {
+  #cp-content4 {
     margin: 0 auto;
     //   transform: translate(0, -85px);
     position: relative;
@@ -79,7 +83,7 @@ export default {
   }
 }
 @media (max-width: 1024px) {
-  .cp-content {
+  #cp-content4 {
     margin: 0 auto;
     //   transform: translate(0, -85px);
     position: relative;
@@ -127,7 +131,7 @@ export default {
   }
 }
 @media (max-width: 768px) {
-  .cp-content {
+  #cp-content4 {
     margin: 0 auto;
     //   transform: translate(0, -85px);
     position: relative;
@@ -174,7 +178,7 @@ export default {
     }
   }
 }
-.cp-content {
+#cp-content4 {
   margin: 0 auto;
   //   transform: translate(0, -85px);
   position: relative;

@@ -3,7 +3,6 @@
     <!-- 产品介绍 -->
     <el-row id="cp2-index-intro2">
       <el-col :span="16" :offset="4">
-        
         <el-col :span="12" :offset="0">
           <div class="img-wrap2">
             <div class="img-wrap-text1">掌钱进</div>
@@ -28,24 +27,26 @@
 export default {
   name: "productItem2",
   methods: {
-    gotoCall(){
-       this.$router.push({path:"/call"})
+    gotoCall() {
+      this.$router.push({ path: "/call" });
     }
   },
   mounted() {
-    const a = window.localStorage.getItem("a");
-    if (a == 2) {
-      var dis = document.getElementById("cp2-index-intro2");
-      dis.scrollIntoView();
-      window.localStorage.clear();
-    }
+    setTimeout(() => {
+      const a = window.localStorage.getItem("a");
+      if (a == 2) {
+        var dis = document.getElementById("cp2-index-intro2");
+        dis.scrollIntoView();
+        window.localStorage.clear();
+      }
+    }, 0);
   }
 };
 </script>
 <style lang="less">
 #cp2-index-intro2 {
-  background-color: #F7FCFF;
-//   padding-bottom: 60px;
+  background-color: #f7fcff;
+  //   padding-bottom: 60px;
   .img-wrap {
     img {
       width: 100%;
@@ -73,12 +74,12 @@ export default {
       line-height: 26px;
     }
     .cp-img-wrap-text4 {
-        width: 120px;
-        height: 40px;
-        border: 1px solid #15ABFE;
-        border-radius: 4px;
-        text-align: center;
-        line-height: 40px;
+      width: 120px;
+      height: 40px;
+      border: 1px solid #15abfe;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 40px;
       color: #15abfe;
       font-size: 16px;
       margin-top: 27px;

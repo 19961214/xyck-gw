@@ -30,12 +30,14 @@
 export default {
   name: "productItem4",
   mounted() {
-    const a = window.localStorage.getItem("a");
-    if (a == 4) {
-      var dis = document.getElementById("cp4-index-intro4");
-      dis.scrollIntoView();
-      window.localStorage.clear();
-    }
+    setTimeout(() => {
+      const a = window.localStorage.getItem("a");
+      if (a == 4) {
+        var dis = document.getElementById("cp4-index-intro4");
+        dis.scrollIntoView();
+        window.localStorage.clear();
+      }
+    }, 0);
   }
 };
 </script>

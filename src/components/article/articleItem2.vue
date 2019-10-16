@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row class="gy-index-intro2">
-      <div class="gy-intro-title2">新闻动态</div>
+      <div class="gy-intro-title2">创始人团队</div>
       <el-col :span="16" :offset="4">
         <div class="gy-content2-wrap">
           <div class="gy-content-item gy-content-item1">

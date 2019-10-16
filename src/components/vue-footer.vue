@@ -110,9 +110,10 @@ export default {
   .tel {
     margin-top: 39px;
     img {
-      padding: 10px 0 0 10px;
+      margin: 10px 0 0 10px;
       width: 100px;
       height: 100px;
+      border-radius: 5px;
     }
     .img-text {
       color: #6986a3;

@@ -37,10 +37,10 @@
         <div class="lx-content2-wrap">
           <img src="../../assets/img/lx1.png" alt />
           <div class="lx-content2-text">
-            <p class="lx-content2-text1">广州分公司</p>
-            <p class="lx-content2-text2">浙江省杭州市西湖区桃岭路桃源坞基金小镇16幢3A</p>
+            <p class="lx-content2-text1">广州办事处</p>
+            <p class="lx-content2-text2">广州市天河区科韵路12号之一801室</p>
           </div>
-          <div class="lx-content2-texts">电话：0571-87299551</div>
+          <div class="lx-content2-texts">电话：15815814891</div>
         </div>
         <div class="lx-content2-wrap">
           <img src="../../assets/img/lx4.png" alt />
@@ -48,7 +48,7 @@
             <p class="lx-content2-text1">深圳分公司</p>
             <p class="lx-content2-text2">广东省深圳市南山区高新园科技南十二路朗诗大厦1209室</p>
           </div>
-          <div class="lx-content2-texts">电话：0571-87299551</div>
+          <div class="lx-content2-texts">电话：13316807117</div>
         </div>
         <div class="lx-content2-wrap">
           <img src="../../assets/img/lx3.png" alt />
@@ -56,7 +56,7 @@
             <p class="lx-content2-text1">江西分公司</p>
             <p class="lx-content2-text2">江西省鹰潭市月湖区佳诚美丽园9栋3单元301</p>
           </div>
-          <div class="lx-content2-texts">电话：0571-87299551</div>
+          <div class="lx-content2-texts">电话：18970187060</div>
         </div>
       </el-col>
     </el-row>

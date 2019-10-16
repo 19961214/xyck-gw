@@ -20,9 +20,6 @@
           <div class="img-item">
             <img src="../../assets/img/back6-5.png" alt />
           </div>
-        </div>
-
-        <div class="content-wrap content-wraps">
           <div class="img-item">
             <img src="../../assets/img/back6-6.png" alt />
           </div>
@@ -38,9 +35,6 @@
           <div class="img-item">
             <img src="../../assets/img/back6-10.png" alt />
           </div>
-        </div>
-
-        <div class="content-wrap content-wraps">
           <div class="img-item">
             <img src="../../assets/img/back6-11.png" alt />
           </div>
@@ -81,21 +75,21 @@ export default {
     align-items: center;
   }
   .content-wrap {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
     .img-item {
+      display: inline-block;
       background-color: #fff;
       width: 208px;
       height: 80px;
+      margin: 30px 0 0 30px;
       display: flex;
       justify-content: center;
       align-items: center;
       box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
       border-radius: 4px;
+      float: left;
     }
-  }
-  .content-wraps{
-      margin-top: 30px;
   }
 }
 </style>

@@ -10,7 +10,7 @@
           </div>
           <div class="item-content-wrap">
             <div class="item-content-text1">明年1月1日社保入税 这10大变化财务要注意</div>
-            <div class="item-content-text2">2019-10-10</div>
+            <div class="item-content-text2">2019-06-05</div>
             <div class="item-content-text3">
               国地税合并，税局征收社保，国家的这一系列措施，你是否都弄明白了？明年1月1日社保入税，厦云创科小编提醒各位财务人员，下面这10大变化要注意。
             </div>

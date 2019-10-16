@@ -10,7 +10,7 @@
           </div>
           <div class="item-content-wrap">
             <div class="item-content-text1">2018小微企业认定标准 小微企业优惠政策解读</div>
-            <div class="item-content-text2">2019-10-10</div>
+            <div class="item-content-text2">2019-09-20</div>
             <div class="item-content-text3">
               近年来，国家针对小微企业推出了不少扶持优惠政策，创业者大多会选择创立小微企业。下面，厦云创科将为大家讲解小微企业认定标准及小微企业的优惠政策。
               <br />小微企业认定标准

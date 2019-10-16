@@ -10,7 +10,7 @@
           </div>
           <div class="item-content-wrap">
             <div class="item-content-text1">两会提议：自由职业者要纳入正式社会职业体系？</div>
-            <div class="item-content-text2">2019-10-10</div>
+            <div class="item-content-text2">2019-08-07</div>
             <div class="item-content-text3">
               互联网时代进一步迈向人工智能时代，人人都是自媒体，服务产业，共享经济成为新潮流，自由职业在兴起，而高额的劳务报酬所得税，却成为自由职业者迈不过去的一道坎。<br>
               十三届全国人大二次会议上，2019政府工作报告提出，要“加强对灵活就业、新就业形态的支持”。对于这一点，有人大代表提出《关于关注自由职业者社会保障、完善社会治理的建议》，希望国家出台相关政策支持和保障自由职业者发展。

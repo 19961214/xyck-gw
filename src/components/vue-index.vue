@@ -2,7 +2,7 @@
   <div>
     <el-row>
       <el-col :span="24" id="content">
-        <img src="../assets/img/back-img1.png" alt />
+        <img src="../assets/img/background.png" alt />
         <div class="content-text-wrap">
           <div class="content-text1">用科技打造</div>
           <div class="content-text2">更专业的人财税一体化商业服务</div>
@@ -10,9 +10,6 @@
           <div class="content-btn" @click="experience">
             <span>立即体验</span>
           </div>
-        </div>
-        <div class="content-back-img2">
-          <img src="../assets/img/back-img2.png" alt />
         </div>
       </el-col>
     </el-row>
@@ -44,19 +41,34 @@ export default {
 
       var dis = document.getElementById("content").getBoundingClientRect()
         .height;
-      console.log(dis);
-
+      
       var top = 0;
       var time1 = setInterval(function() {
         top = top + 10;
         document.documentElement.scrollTop = top;
         document.body.srcollTop = top;
+        
         if (top >= dis-20) {
           clearTimeout(time1);
           return;
         }
       });
+    },
+    menus() {
+      this.scroll =
+        document.documentElement.scrollTop || document.body.srcollTop;
+      var timer = null;
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        if (this.scroll <60) {
+          document.documentElement.scrollTop = 0;
+        document.body.srcollTop = 0;
+        }
+      }, 200);
     }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.menus);
   },
   components: {
     indexItem1,
@@ -70,11 +82,6 @@ export default {
 </script>
 <style lang="less">
 @import url("../assets/css/reset.css");
-@media (max-width: 1535px) {
-  .content-back-img2 {
-    display: none !important;
-  }
-}
 @media (max-width: 1024px) {
   .content .content-text-wrap {
     width: 341px !important;
@@ -209,10 +216,6 @@ export default {
       margin-top: 61px;
       cursor: pointer;
     }
-  }
-  .content-back-img2 {
-    margin-top: -453px;
-    background-color: rgb(28, 54, 111);
   }
 }
 </style>

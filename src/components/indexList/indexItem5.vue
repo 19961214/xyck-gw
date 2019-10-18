@@ -2,7 +2,7 @@
   <div>
     <el-row class="index-intro3">
       <div class="index-intro-title">合作方式</div>
-      <el-col :span="24" :offset="0">
+      <el-col :span="16" :offset="4">
         <div class="content">
           <div class="content-item">
             <img src="../../assets/img/back5-2.png" alt />
@@ -61,10 +61,9 @@ export default {
     margin-top: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     .content-item {
       color: #fff;
-      margin-right: 160px;
       img {
         margin-bottom: 37px;
       }
@@ -87,6 +86,11 @@ export default {
       text-align: center;
       line-height: 40px;
       cursor:pointer;
+    }
+    .content2-btn:hover{
+      background-color: #fff;
+      color: #15abfe;
+      border: 1px solid #fff;
     }
   }
 }

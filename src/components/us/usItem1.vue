@@ -2,7 +2,7 @@
   <div>
     <el-row class="lx-index-intro2">
       <div class="lx-intro-title">联系我们</div>
-      <el-col :span="16" :offset="4">
+      <div class="lx-content-wrap">
         <div class="lx-content1-wrap">
           <div class="lx-content1-top">商务合作联系</div>
           <div class="lx-content1-bottom">
@@ -58,7 +58,7 @@
           </div>
           <div class="lx-content2-texts">电话：18970187060</div>
         </div>
-      </el-col>
+      </div>
     </el-row>
   </div>
 </template>
@@ -81,82 +81,90 @@ export default {
     justify-content: center;
     align-items: center;
   }
-  .lx-content1-wrap {
-    height: 240px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 0px 20px 0px rgba(32, 148, 235, 0.15);
-    border-radius: 4px;
+  .lx-content-wrap {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .lx-content1-top {
-      font-size: 20px;
-      font-family: PingFang SC;
-      font-weight: 400;
-      color: rgba(51, 51, 51, 1);
-      line-height: 90px;
-    }
-    .lx-content1-bottom {
+    .lx-content1-wrap {
+      width: 63%;
+      height: 240px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 0px 20px 0px rgba(32, 148, 235, 0.15);
+      border-radius: 4px;
       display: flex;
-      .lx-content1-girl {
-        display: flex;
-        padding: 0 65px;
-        .lx-content1-text {
-          margin-left: 19px;
-          font-size: 14px;
-          font-family: PingFang SC;
-          font-weight: 600;
-          color: rgba(102, 102, 102, 1);
-          line-height: 22px;
-          .lx-content1-text1 {
-            color: #666;
-          }
-          .lx-content1-text2 {
-            color: #666;
-          }
-          .lx-content1-text3 {
-            color: #15abfe;
-          }
-        }
-      }
-    }
-  }
-  .lx-content2-wrap {
-    height: 140px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 0px 20px 0px rgba(32, 148, 235, 0.1);
-    border-radius: 4px;
-    margin-top: 30px;
-    overflow: hidden;
-    img {
-      padding: 10px;
-      float: left;
-    }
-    .lx-content2-text {
-      float: left;
-      .lx-content2-text1 {
+      flex-direction: column;
+      align-items: center;
+      .lx-content1-top {
         font-size: 20px;
         font-family: PingFang SC;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
         line-height: 90px;
       }
-      .lx-content2-text2 {
+      .lx-content1-bottom {
+        display: flex;
+        .lx-content1-girl {
+          display: flex;
+          padding: 0 65px;
+          .lx-content1-text {
+            margin-left: 19px;
+            font-size: 14px;
+            font-family: PingFang SC;
+            font-weight: 600;
+            color: rgba(102, 102, 102, 1);
+            line-height: 22px;
+            .lx-content1-text1 {
+              color: #666;
+            }
+            .lx-content1-text2 {
+              color: #666;
+            }
+            .lx-content1-text3 {
+              color: #15abfe;
+            }
+          }
+        }
+      }
+    }
+    .lx-content2-wrap {
+      width: 63%;
+      height: 140px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 0px 20px 0px rgba(32, 148, 235, 0.1);
+      border-radius: 4px;
+      margin-top: 30px;
+      overflow: hidden;
+      img {
+        padding: 10px;
+        float: left;
+      }
+      .lx-content2-text {
+        float: left;
+        .lx-content2-text1 {
+          font-size: 20px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(51, 51, 51, 1);
+          line-height: 90px;
+        }
+        .lx-content2-text2 {
+          font-size: 14px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(153, 153, 153, 1);
+          line-height: 22px;
+        }
+      }
+      .lx-content2-texts {
         font-size: 14px;
         font-family: PingFang SC;
         font-weight: 400;
-        color: rgba(153, 153, 153, 1);
-        line-height: 22px;
+        color: rgba(21, 171, 254, 1);
+        margin-right: 31px;
+        line-height: 140px;
+        float: right;
       }
-    }
-    .lx-content2-texts {
-      font-size: 14px;
-      font-family: PingFang SC;
-      font-weight: 400;
-      color: rgba(21, 171, 254, 1);
-      margin-right: 31px;
-      line-height: 140px;
-      float: right;
     }
   }
 }

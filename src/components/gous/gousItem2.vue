@@ -121,6 +121,9 @@ export default {
         transition-duration: 0.3s;
       }
     }
+    .jr-content2-item:hover{
+      background-color: #f4fafe;
+    }
     .jr-content2-item1 {
       color: #15abfe;
       div {
@@ -133,6 +136,7 @@ export default {
     .jr-content2-item2 {
       border-top: 1px solid #eee;
     }
+    
     .jr-items {
       background-color: #f4fafe;
     }

@@ -82,8 +82,8 @@ export default {
       timer = setTimeout(() => {
         if (this.scroll >= 100) {
           this.headerColor = true;
-          // console.log(this.headerColor)
-        } else {
+          // console.log(this.headerColor) 
+        }else {
           this.headerColor = false;
           // console.log(this.headerColor)
         }

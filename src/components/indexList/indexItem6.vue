@@ -4,51 +4,103 @@
       <div class="index-intro-title">合作伙伴</div>
 
       <el-col :span="16" :offset="4">
-        <div class="content-wrap">
-          <div class="img-item">
-            <img src="../../assets/img/back6-1.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-2.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-3.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-4.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-5.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-6.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-7.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-8.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-9.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-10.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-11.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-12.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-13.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-14.png" alt />
-          </div>
-          <div class="img-item">
-            <img src="../../assets/img/back6-15.png" alt />
+        <div class="hz-content-wrap">
+          <div class="content-wrap">
+            <div class="img-item-wrap">
+              <div class="img-item img-items">
+                <img src="../../assets/img/back6-1.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-2.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-3.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-4.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-5.png" alt />
+              </div>
+              <div class="img-item img-items">
+                <img src="../../assets/img/back6-6.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-7.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-8.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-9.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-10.png" alt />
+              </div>
+              <div class="img-item img-items">
+                <img src="../../assets/img/back6-11.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-12.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-13.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-14.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-15.png" alt />
+              </div>
+            </div>
+
+            <div class="img-item-wrap">
+              <div class="img-item img-items">
+                <img src="../../assets/img/back6-1.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-2.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-3.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-4.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-5.png" alt />
+              </div>
+              <div class="img-item img-items">
+                <img src="../../assets/img/back6-6.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-7.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-8.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-9.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-10.png" alt />
+              </div>
+              <div class="img-item img-items">
+                <img src="../../assets/img/back6-11.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-12.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-13.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-14.png" alt />
+              </div>
+              <div class="img-item">
+                <img src="../../assets/img/back6-15.png" alt />
+              </div>
+            </div>
           </div>
         </div>
       </el-col>
@@ -74,21 +126,44 @@ export default {
     justify-content: center;
     align-items: center;
   }
-  .content-wrap {
+  .hz-content-wrap {
     width: 100%;
+    height: 330px;
     overflow: hidden;
-    .img-item {
-      display: inline-block;
-      background-color: #fff;
-      width: 208px;
-      height: 80px;
-      margin: 30px 0 0 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-      border-radius: 4px;
-      float: left;
+    .content-wrap {
+      width: 2480px;
+      height: 330px;
+      animation: move 8s linear infinite;
+      .img-item-wrap {
+        width: 1240px;
+        height: 330px;
+        float: left;
+        overflow: hidden;
+        .img-item {
+          display: inline-block;
+          background-color: #fff;
+          width: 208px;
+          height: 80px;
+          margin: 30px 0 0 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+          border-radius: 4px;
+          float: left;
+        }
+        .img-items{
+          margin-right: 0;
+        }
+      }
+    }
+    @keyframes move {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(-1240px);
+      }
     }
   }
 }

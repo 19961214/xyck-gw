@@ -1,9 +1,7 @@
 <template>
   <div>
     <!-- 产品介绍 -->
-    <el-row id="cp4-index-intro4">
-      <el-col :span="16" :offset="4">
-        <el-col :span="12" :offset="0">
+    <div id="cp4-index-intro4">
           <div class="img-wrap2">
             <div class="img-wrap-text1">掌掌财小程序</div>
             <div
@@ -15,14 +13,10 @@
               <img src="../../assets/img/code.jpg" alt />
             </div>
           </div>
-        </el-col>
-        <el-col :span="12" :offset="0">
           <div class="img-wrap">
             <img src="../../assets/img/back2-3.png" alt />
           </div>
-        </el-col>
-      </el-col>
-    </el-row>
+    </div>
   </div>
 </template>
 
@@ -43,15 +37,22 @@ export default {
 </script>
 <style lang="less">
 #cp4-index-intro4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f7fcff;
   //   padding-bottom: 60px;
   .img-wrap {
+    width: 600px;
+    height: 350px;
     img {
       width: 100%;
       height: 100%;
     }
   }
   .img-wrap2 {
+    width: 600px;
+    height: 350px;
     padding: 59px 0 67px 60px;
     .img-wrap-text1 {
       color: #15abfe;

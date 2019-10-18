@@ -3,8 +3,8 @@
     <!-- 产品介绍 -->
     <el-row class="jj-index-intro">
       <div class="jj-intro-title">典型应用行业</div>
-      <el-col :span="16" :offset="4">
-        <div class="jj-content1-wrap">
+      <div class="jj-content1-wrap">
+        <div class="jj-content1-top">
           <div class="jj-content1-item1">
             <div class="jj-content1-text">
               <p class="jj-content1-p1">直播与短视频</p>
@@ -20,7 +20,9 @@
               >互联网医疗，是互联网在医疗行业的新应用，其包括了以互联网为载体和技术手段的健康教育、医疗信息查询、电子健康档案、疾病风险评估、在线疾病咨询、电子处方、远程会诊、及远程治疗和康复等多种形式的健康医疗服务。互联网医疗代表了医疗行业新的发展方向，有利于解决中国医疗资源不平衡和人们日益增加的健康医疗需求之间的矛盾，是卫生部积极引导和支持的医疗发展模式。</p>
             </div>
           </div>
+        </div>
 
+        <div class="jj-content1-bottom">
           <div class="jj-content1-item1 jj-back3">
             <div class="jj-content1-text">
               <p class="jj-content1-p1">在线教育</p>
@@ -39,7 +41,7 @@
             </div>
           </div>
         </div>
-      </el-col>
+      </div>
     </el-row>
   </div>
 </template>
@@ -63,14 +65,25 @@ export default {
     align-items: center;
   }
   .jj-content1-wrap {
-      overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .jj-content1-top{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .jj-content1-bottom{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .jj-content1-item1 {
       width: 590px;
       height: 200px;
       display: inline-block;
       background: url("../../assets/img/jj1.png") center center no-repeat;
       color: #fff;
-      float: left;
       margin: 20px;
       .jj-content1-text {
         padding: 31px 44px 0 30px;

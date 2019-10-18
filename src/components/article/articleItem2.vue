@@ -18,6 +18,7 @@
             </p>
           </div>
         </div>
+        
         <div class="gy-content-item">
           <div class="item-header-photo">
             <img src="../../assets/img/yubenjin.png" alt />
@@ -119,7 +120,7 @@ export default {
       }
       .item-content-bottom {
         width: 216px;
-        height: 300px;
+        height: 391px;
         background: rgba(255, 255, 255, 1);
         opacity: 0.8;
         display: flex;

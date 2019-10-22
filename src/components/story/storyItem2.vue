@@ -62,7 +62,7 @@
             <p class="hd2-content2-text3">发布日期：2019.09.09</p>
           </div>
         </div>
-      </el-col> -->
+      </el-col>-->
     </el-row>
   </div>
 </template>
@@ -71,16 +71,68 @@
 export default {
   name: "storyItem2",
   methods: {
-    gotoitem5(){
-       this.$router.push({path:"/story/item5"})
+    gotoitem5() {
+      this.$router.push({ path: "/story/item5" });
     },
-    gotoitem6(){
-       this.$router.push({path:"/story/item6"})
+    gotoitem6() {
+      this.$router.push({ path: "/story/item6" });
     }
   }
 };
 </script>
 <style lang="less">
+@media (max-width: 1200px) {
+  .index-intro1 {
+    background-color: #fff;
+    padding-bottom: 60px;
+    .index-intro-title {
+      width: 100%;
+      height: 98px !important;
+      color: #333;
+      font-size: 22px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hd2-content-wrap {
+      height: 130px;
+      background-color: #fafafa;
+      border-bottom: 1px solid #f2f2f2;
+      display: flex;
+      cursor: pointer;
+      img {
+        width: 120px;
+        height: 91px;
+        padding: 19px 0 20px 22px !important;
+      }
+      .hd2-content2 {
+        padding: 19px 0 20px 20px !important;
+        position: relative;
+        .hd2-content2-text1 {
+          font-size: 16px;
+          font-weight: 400;
+          color: rgba(21, 171, 254, 1);
+          line-height: 26px;
+        }
+        .hd2-content2-text2 {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(102, 102, 102, 1);
+          line-height: 26px;
+        }
+        .hd2-content2-text3 {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(153, 153, 153, 1);
+          line-height: 26px;
+          position: absolute;
+          right: 20px !important;
+          bottom: 5px !important;
+        }
+      }
+    }
+  }
+}
 .index-intro1 {
   background-color: #fff;
   padding-bottom: 60px;
@@ -96,7 +148,7 @@ export default {
   .hd2-content-wrap {
     height: 130px;
     background-color: #fafafa;
-    border-bottom: 1px solid #F2F2F2;
+    border-bottom: 1px solid #f2f2f2;
     display: flex;
     cursor: pointer;
     img {

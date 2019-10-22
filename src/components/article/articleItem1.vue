@@ -35,6 +35,51 @@ export default {
 };
 </script>
 <style lang="less">
+@media (max-width: 1260px) {
+  .gy-index-intro1 {
+    background-color: #fff;
+    padding-top: 70px !important;
+    padding-bottom: 40px !important;
+    .gy-content1-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .gy-content1-text {
+        width: 450px !important;
+        height: 260px !important;
+
+        padding-bottom: 38px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .gy-content1-text1 {
+          color: #333;
+          font-size: 24px;
+        }
+        .gy-content1-text2 {
+          width: 397px !important;
+          line-height: 22px;
+          margin-top: 28px;
+          color: #666;
+          font-size: 14px;
+        }
+      }
+      .gy-content1-texts {
+        padding: 0 0 0 30px !important;
+      }
+      .gy-img-wrap {
+        width: 450px !important;
+        height: 260px !important;
+        padding-bottom: 40px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
 .gy-index-intro1 {
   background-color: #fff;
   padding-top: 91px;
@@ -64,7 +109,7 @@ export default {
         font-size: 14px;
       }
     }
-    .gy-content1-texts{
+    .gy-content1-texts {
       padding: 0 0 0 61px;
     }
     .gy-img-wrap {

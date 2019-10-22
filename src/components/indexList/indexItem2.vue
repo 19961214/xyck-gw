@@ -81,6 +81,96 @@ export default {
 };
 </script>
 <style lang="less">
+@media (max-width: 1024px) {
+  .index2-intro2 {
+    background-color: #f7fcff;
+    .index-intro-title {
+      width: 100%;
+      height: 98px !important;
+      color: #333;
+      font-size: 22px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .index-intro-title2 {
+      display: flex;
+      justify-content: center;
+      div {
+        margin-left: 102px;
+        padding-bottom: 11px;
+        font-size: 16px;
+        color: #333333;
+        cursor: pointer;
+      }
+      .div-one {
+        color: #15abfe;
+        border-bottom: 2px solid #15abfe !important;
+      }
+      .div-two {
+        margin-left: 0;
+      }
+    }
+    .index2-content-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img-wrap {
+        width: 450px !important;
+        height: 340px !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px !important;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .img-wrap2 {
+        width: 450px !important;
+        height: 340px !important;
+        margin-top: 30px !important;
+        padding: 55px 0 0 70px !important;
+        .img-wrap-text1 {
+          color: #15abfe;
+          font-size: 20px;
+        }
+        .img-wrap-text2 {
+          color: #333333;
+          font-size: 14px;
+          margin-top: 40px;
+        }
+        .img-wrap-text3 {
+          color: #333333;
+          font-size: 14px;
+          margin-top: 40px;
+          line-height: 26px;
+        }
+        .img-wrap-text4 {
+          color: #333333;
+          font-size: 14px;
+          line-height: 26px;
+        }
+        .img-wrap-text5 {
+          color: #333333;
+          font-size: 14px;
+          line-height: 26px;
+        }
+        .img-wrap-btn {
+          font-size: 16px;
+          color: #15abfe;
+          line-height: 90px;
+          cursor: pointer;
+        }
+        .img-wrap-btn:hover {
+          color: #018ddb;
+        }
+      }
+    }
+  }
+}
+
 .index2-intro2 {
   background-color: #f7fcff;
   // padding-bottom: 35px;

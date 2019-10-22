@@ -3,8 +3,13 @@
     <!-- 产品介绍 -->
     <el-row class="jj-index-intro4">
       <div class="jj-intro-title4">应用案例</div>
-      <el-col :span="16" :offset="4">
-        <el-carousel trigger="click" arrow="always" indicator-position="outside">
+      <div class="lb-content4-wrap">
+        <el-carousel
+          trigger="click"
+          arrow="always"
+          indicator-position="outside"
+          class="lb4-cartoon"
+        >
           <el-carousel-item>
             <div class="lb-item-wrap">
               <div class="jj-content4-img">
@@ -69,7 +74,7 @@
             </div>
           </el-carousel-item>
         </el-carousel>
-      </el-col>
+      </div>
     </el-row>
   </div>
 </template>
@@ -80,6 +85,78 @@ export default {
 };
 </script>
 <style lang="less">
+@media (max-width: 1170px) {
+  .jj-index-intro4 {
+    background-color: #fff;
+    padding-bottom: 87px;
+    .jj-intro-title4 {
+      width: 100%;
+      height: 98px !important;
+      color: #333;
+      font-size: 22px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .lb-content4-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .lb4-cartoon {
+        width: 900px;
+        height: 350px;
+        .lb-item-wrap {
+          height: 350px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .jj-content4-img {
+            width: 450px !important;
+            height: 350px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .jj-content4-text {
+            width: 450px !important;
+            height: 350px;
+            .jj-content4-text1 {
+              font-size: 20px;
+              font-family: PingFang SC;
+              font-weight: 500;
+              color: rgba(21, 171, 254, 1);
+              line-height: 90px;
+              padding: 29px 0 0 29px !important;
+            }
+            .jj-content4-text2 {
+              font-size: 14px;
+              font-family: PingFang SC;
+              font-weight: 400;
+              color: rgba(51, 51, 51, 1);
+              line-height: 22px;
+              padding: 0 91px 0 30px !important;
+            }
+            .jj-content4-text3 {
+              font-size: 14px;
+              font-family: PingFang SC;
+              font-weight: 400;
+              color: rgba(51, 51, 51, 1);
+              line-height: 22px;
+              padding: 0 91px 0 30px !important;
+              margin-top: 10px;
+              padding-bottom: 80px !important;
+            }
+            .jj-content4-text3s {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .jj-index-intro4 {
   background-color: #fff;
   padding-bottom: 87px;
@@ -92,50 +169,60 @@ export default {
     justify-content: center;
     align-items: center;
   }
-  .lb-item-wrap {
-    height: 350px;
+  .lb-content4-wrap {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    .jj-content4-img {
-      width: 600px;
+    .lb4-cartoon {
+      width: 1200px;
       height: 350px;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .jj-content4-text {
-      width: 600px;
-      height: 350px;
-      .jj-content4-text1 {
-        font-size: 20px;
-        font-family: PingFang SC;
-        font-weight: 500;
-        color: rgba(21, 171, 254, 1);
-        line-height: 90px;
-        padding: 67px 0 0 60px;
-      }
-      .jj-content4-text2 {
-        font-size: 14px;
-        font-family: PingFang SC;
-        font-weight: 400;
-        color: rgba(51, 51, 51, 1);
-        line-height: 22px;
-        padding: 0 96px 0 60px;
-      }
-      .jj-content4-text3 {
-        font-size: 14px;
-        font-family: PingFang SC;
-        font-weight: 400;
-        color: rgba(51, 51, 51, 1);
-        line-height: 22px;
-        padding: 0 96px 0 60px;
-        margin-top: 10px;
-        padding-bottom: 78px;
-      }
-      .jj-content4-text3s {
-        margin-top: 10px;
+      .lb-item-wrap {
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .jj-content4-img {
+          width: 600px;
+          height: 350px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .jj-content4-text {
+          width: 600px;
+          height: 350px;
+          .jj-content4-text1 {
+            font-size: 20px;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: rgba(21, 171, 254, 1);
+            line-height: 90px;
+            padding: 67px 0 0 60px;
+          }
+          .jj-content4-text2 {
+            font-size: 14px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: rgba(51, 51, 51, 1);
+            line-height: 22px;
+            padding: 0 96px 0 60px;
+          }
+          .jj-content4-text3 {
+            font-size: 14px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: rgba(51, 51, 51, 1);
+            line-height: 22px;
+            padding: 0 96px 0 60px;
+            margin-top: 10px;
+            padding-bottom: 78px;
+          }
+          .jj-content4-text3s {
+            margin-top: 10px;
+          }
+        }
       }
     }
   }

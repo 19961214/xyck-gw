@@ -3,7 +3,7 @@
     <!-- 产品介绍 -->
     <el-row class="index-intro1">
       <div class="index-intro-title">新闻动态</div>
-      <el-col :span="16" :offset="4">
+      <div class="hd1-content1-wrap">
         <div class="hd1-content-wrap hd1-content-left" @click="gotoitem">
           <img src="../../assets/img/item.png" alt />
           <div class="hd1-content-text1">中小企业怎么做税务筹划 中小企如何做好税务筹划</div>
@@ -43,8 +43,8 @@
           <img src="../../assets/img/hd1.png" alt />
           <div class="hd1-content-text1">厦云创科荣获2019中国人力资源科技创新奖</div>
           <div class="hd1-content-text2">2019.09.09</div>
-        </div> -->
-      </el-col>
+        </div>-->
+      </div>
     </el-row>
   </div>
 </template>
@@ -53,22 +53,72 @@
 export default {
   name: "storyItem1",
   methods: {
-    gotoitem(){
-       this.$router.push({path:"/story/item1"})
+    gotoitem() {
+      this.$router.push({ path: "/story/item1" });
     },
-    gotoitem2(){
-       this.$router.push({path:"/story/item2"})
+    gotoitem2() {
+      this.$router.push({ path: "/story/item2" });
     },
-    gotoitem3(){
-       this.$router.push({path:"/story/item3"})
+    gotoitem3() {
+      this.$router.push({ path: "/story/item3" });
     },
-    gotoitem4(){
-       this.$router.push({path:"/story/item4"})
+    gotoitem4() {
+      this.$router.push({ path: "/story/item4" });
     }
   }
 };
 </script>
 <style lang="less">
+@media (max-width: 1270px) {
+  .index-intro1 {
+    background-color: #fff;
+    padding-bottom: 60px;
+    .index-intro-title {
+      width: 100%;
+      height: 98px !important;
+      color: #333;
+      font-size: 22px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hd1-content1-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .hd1-content-wrap {
+        width: 210px !important;
+        height: 280px !important;
+        display: inline-block;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(238, 238, 238, 1);
+        border-radius: 4px;
+        position: relative;
+        margin-left: 20px !important;
+        cursor: pointer;
+        img {
+          width: 210px !important;
+          height: 160px !important;
+        }
+        .hd1-content-text1 {
+          color: #333;
+          font-size: 16px;
+          padding: 19px 24px 0 19px !important;
+          line-height: 22px;
+        }
+        .hd1-content-text2 {
+          color: #333;
+          font-size: 16px;
+          position: absolute;
+          right: 13px !important;
+          bottom: 17px !important;
+        }
+      }
+    }
+
+  }
+}
 .index-intro1 {
   background-color: #fff;
   padding-bottom: 60px;
@@ -81,35 +131,42 @@ export default {
     justify-content: center;
     align-items: center;
   }
-  .hd1-content-wrap {
-    width: 270px;
-    height: 320px;
-    display: inline-block;
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(238, 238, 238, 1);
-    border-radius: 4px;
-    position: relative;
-    margin-left: 40px;
-    cursor: pointer;
-    img{
+  .hd1-content1-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hd1-content-wrap {
       width: 270px;
-      height: 205px;
-    }
-    .hd1-content-text1 {
-      color: #333;
-      font-size: 16px;
-      padding: 14px 22px 0 15px;
-      line-height: 22px;
-    }
-    .hd1-content-text2 {
-      color: #333;
-      font-size: 16px;
-      position: absolute;
-      right: 16px;
-      bottom: 19px;
+      height: 320px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(238, 238, 238, 1);
+      border-radius: 4px;
+      position: relative;
+      margin-left: 40px;
+      cursor: pointer;
+      img {
+        width: 270px;
+        height: 205px;
+      }
+      .hd1-content-text1 {
+        color: #333;
+        font-size: 16px;
+        padding: 14px 22px 0 15px;
+        line-height: 22px;
+      }
+      .hd1-content-text2 {
+        color: #333;
+        font-size: 16px;
+        position: absolute;
+        right: 16px;
+        bottom: 19px;
+      }
     }
   }
-  .hd1-content-bottom{
+
+  .hd1-content-bottom {
     margin-top: 40px;
   }
   // .hd1-content-left{

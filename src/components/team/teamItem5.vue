@@ -35,6 +35,57 @@ export default {
 };
 </script>
 <style lang="less">
+@media (max-width: 1110px) {
+  .jj-index-intro5 {
+    background-color: #f7fcff;
+    padding-bottom: 87px;
+    .jj-intro-title {
+      width: 100%;
+      height: 98px !important;
+      color: #333;
+      font-size: 22px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .jj-content5-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .jj-content5-item {
+        width: 445px !important;
+        height: 465px !important;
+        padding-bottom: 5px !important;
+        margin-right: 44px !important;
+        .jj-content5-item1 {
+          font-size: 16px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(51, 51, 51, 1);
+          line-height: 26px;
+          margin-top: 20px;
+        }
+        .jj-content5-item2 {
+          font-size: 14px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(102, 102, 102, 1);
+          line-height: 22px;
+          margin-top: 20px;
+        }
+      }
+      .jj-content5-items {
+        width: 410px !important;
+        height: 300px;
+        img {
+          width: 410px !important;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
 .jj-index-intro5 {
   background-color: #f7fcff;
   padding-bottom: 87px;

@@ -75,12 +75,16 @@ export default {
       this.$router.push({ path: "/" + this.option });
     },
     menu() {
-      this.scroll =
-        document.documentElement.scrollTop || document.body.srcollTop;
+      // this.scroll =
+      //   document.documentElement.scrollTop || document.body.srcollTop;
+      //   console.log(this.scroll)
+      var scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop; //变量windowHeight是可视区的高度
+          // console.log(scrollTop)
       var timer = null;
       clearTimeout(timer);
       timer = setTimeout(() => {
-        if (this.scroll >= 100) {
+        if (scrollTop >= 100) {
           this.headerColor = true;
           // console.log(this.headerColor) 
         }else {

@@ -45,6 +45,108 @@ export default {
 };
 </script>
 <style lang="less">
+@media (max-width: 1024px) {
+  .index-intro {
+    background-color: rgb(247, 252, 255);
+    padding-bottom: 87px;
+    .index-intro-title {
+      width: 100%;
+      height: 98px !important;
+      color: #333;
+      font-size: 22px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .index3-content-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .wrap1 {
+        margin-right: 20px !important;
+      }
+      .content-wrap {
+        width: 440px !important;
+        height: 360px !important;
+        background-color: #fff;
+        padding: 39px 37px 40px 30px !important;
+        .content-title {
+          display: flex;
+          .content-title1 {
+            color: #333;
+            font-size: 20px;
+          }
+          .content-title2 {
+            width: 65px;
+            height: 20px;
+            font-size: 14px !important;
+            color: #fff;
+            background-color: #15abfe;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 10px;
+            margin-left: 10px;
+          }
+          .line {
+            background-color: #ff7515;
+          }
+        }
+        .content-text {
+          margin-top: 52px;
+          color: #999;
+          font-size: 14px;
+          line-height: 22px;
+        }
+        .content-btn-wrap {
+          display: flex;
+          justify-content: center;
+          .content-btn {
+            width: 160px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #15abfe;
+            color: #15abfe;
+            border-radius: 4px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 43px !important;
+            cursor: pointer;
+          }
+          .content-btn:hover {
+            background-color: #15abfe;
+            border: 1px solid #15abfe;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+          }
+          .line2 {
+            width: 160px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #ff7515;
+            color: #ff7515;
+            border-radius: 4px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 60px !important;
+            cursor: pointer;
+          }
+          .line2:hover {
+            background-color: #ff7515;
+            border: 1px solid #ff7515;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
 .index-intro {
   background-color: rgb(247, 252, 255);
   padding-bottom: 87px;

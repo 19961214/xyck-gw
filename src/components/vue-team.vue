@@ -36,40 +36,9 @@ export default {
 </script>
 <style lang="less">
 @import url("../assets/css/reset.css");
-@media (max-width: 1480px) {
-  #cp-content2 {
-    margin: 0 auto;
-    //   transform: translate(0, -85px);
-    position: relative;
-    img {
-      width: 100%;
-    }
-  }
-}
-@media (max-width: 1024px) {
-  #cp-content2 {
-    margin: 0 auto;
-    //   transform: translate(0, -85px);
-    position: relative;
-    img {
-      width: 100%;
-    }
-  }
-}
-@media (max-width: 768px) {
-  #cp-content2 {
-    margin: 0 auto;
-    //   transform: translate(0, -85px);
-    position: relative;
-    img {
-      width: 100%;
-    }
-  }
-}
 #cp-content2 {
   margin: 0 auto;
   //   transform: translate(0, -85px);
-  position: relative;
   img {
     width: 100%;
   }

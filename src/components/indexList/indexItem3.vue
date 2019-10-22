@@ -2,7 +2,7 @@
   <div>
     <el-row class="index-intro8">
       <div class="index-intro-title">全国数十家税优地资源，一站式代理服务，四大税务服务保障</div>
-      <el-col :span="16" :offset="4">
+      
         <div class="content3-list-wrap">
           <div class="content3-list">
             <img class="content3-img1" src="../../assets/img/back3-1.png" alt />
@@ -44,7 +44,6 @@
             </div>
           </div>
         </div>
-      </el-col>
     </el-row>
   </div>
 </template>
@@ -55,6 +54,83 @@ export default {
 };
 </script>
 <style lang="less">
+@media (max-width: 1024px) {
+  .index-intro8 {
+    padding-bottom: 111px !important;
+    .index-intro-title {
+      width: 100%;
+      height: 98px !important;
+      color: #fff;
+      font-size: 22px !important;
+      text-align: center;
+      line-height: 90px !important;
+    }
+      .content3-list-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content3-list {
+          display: inline-block;
+          width: 185px !important;
+          height: 179.6px !important;
+          position: relative;
+          overflow: hidden;
+          margin-left: 20px;
+          border-radius: 4px;
+          margin-top: 40px;
+          .content3-img1 {
+            width: 100%;
+          }
+          .content3-img2 {
+            width: 32px !important;
+            height: 34px !important;
+            position: absolute;
+            top: 47px !important;
+            left: 84px !important;
+          }
+          .content3-text-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 21px 33px 24px 33px !important;
+            background-color: #fff;
+            margin-top: -2px;
+            .content3-text1 {
+              color: #333;
+              font-size: 14px !important;
+            }
+            .content3-text2 {
+              font-size: 11px !important;
+              color: #333;
+              margin-top: 23px !important;
+              line-height: 12px;
+            }
+            .content3-text3 {
+              font-size: 11px !important;
+              color: #333;
+              line-height: 12px;
+            }
+          }
+        }
+        .content3-list:hover > .content3-img1 {
+          transform: translateY(-80px) !important;
+          transition-duration: 0.7s;
+        }
+        .content3-list:hover > .content3-img2 {
+          transform: translateY(-43px) !important;
+          transition-duration: 0.7s;
+        }
+        .content3-list:hover > .content3-text-wrap {
+          transform: translateY(-80px) !important;
+          transition-duration: 0.7s;
+        }
+      }
+    
+  }
+}
+
 .index-intro8 {
   padding-bottom: 35px;
   background: url("../../assets/img/back5-1.png");
@@ -66,66 +142,66 @@ export default {
     text-align: center;
     line-height: 143px;
   }
-  .content3-list-wrap {
-    width: 100%;
-    .content3-list {
-      display: inline-block;
-      width: 285px;
-      height: 260px;
-      position: relative;
-      overflow: hidden;
-      margin-left: 20px;
-      border-radius: 4px;
-      margin-top: 40px;
-      .content3-img1 {
-        width: 100%;
-      }
-      // .content3-img1:hover{
-      //   transform: translateY(-50px);
-      //   transition-duration:1s;
-      // }
-      .content3-img2 {
-        position: absolute;
-        top: 60px;
-        left: 113px;
-      }
-      .content3-text-wrap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 29px 48px 54px 51px;
-        background-color: #fff;
-        margin-top: -2px;
-        .content3-text1 {
-          color: #333;
-          font-size: 20px;
+    .content3-list-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .content3-list {
+        display: inline-block;
+        width: 285px;
+        height: 260px;
+        position: relative;
+        overflow: hidden;
+        margin-left: 20px;
+        border-radius: 4px;
+        margin-top: 40px;
+        .content3-img1 {
+          width: 100%;
         }
-        .content3-text2 {
-          font-size: 14px;
-          color: #333;
-          margin-top: 28px;
-          line-height: 22px;
+        .content3-img2 {
+          position: absolute;
+          top: 60px;
+          left: 113px;
         }
-        .content3-text3 {
-          font-size: 14px;
-          color: #333;
-          line-height: 22px;
+        .content3-text-wrap {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 29px 48px 54px 51px;
+          background-color: #fff;
+          margin-top: -2px;
+          .content3-text1 {
+            color: #333;
+            font-size: 20px;
+          }
+          .content3-text2 {
+            font-size: 14px;
+            color: #333;
+            margin-top: 28px;
+            line-height: 22px;
+          }
+          .content3-text3 {
+            font-size: 14px;
+            color: #333;
+            line-height: 22px;
+          }
         }
       }
+      .content3-list:hover > .content3-img1 {
+        transform: translateY(-100px);
+        transition-duration: 0.7s;
+      }
+      .content3-list:hover > .content3-img2 {
+        transform: translateY(-44px);
+        transition-duration: 0.7s;
+      }
+      .content3-list:hover > .content3-text-wrap {
+        transform: translateY(-100px);
+        transition-duration: 0.7s;
+      }
     }
-    .content3-list:hover > .content3-img1 {
-      transform: translateY(-100px);
-      transition-duration: 0.7s;
-    }
-    .content3-list:hover > .content3-img2 {
-      transform: translateY(-44px);
-      transition-duration: 0.7s;
-    }
-    .content3-list:hover > .content3-text-wrap {
-      transform: translateY(-100px);
-      transition-duration: 0.7s;
-    }
-  }
+  
 }
 </style>

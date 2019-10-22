@@ -38,6 +38,60 @@ export default {
 };
 </script>
 <style lang="less">
+@media (max-width: 1024px) {
+  #cp-index-intro1 {
+    margin-top: 30px !important;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //   padding-bottom: 60px;
+    .img-wrap {
+      width: 450px !important;
+      height: 350px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .img-wrap2 {
+      width: 450px !important;
+      height: 350px;
+      padding: 0 19px 27px 0 !important;
+      .img-wrap-text1 {
+        color: #15abfe;
+        font-size: 30px;
+      }
+      .cp-img-wrap-text2 {
+        width: 430px;
+        margin-top: 41px;
+        color: #333333;
+        font-size: 14px;
+        line-height: 26px;
+      }
+      .cp-img-wrap-text3 {
+        width: 258px;
+        margin-top: 30px;
+        color: #ff9900;
+        font-size: 14px;
+        line-height: 26px;
+      }
+      .cp-img-wrap-text4 {
+        width: 120px;
+        height: 40px;
+        border: 1px solid #15abfe;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 40px;
+        color: #15abfe;
+        font-size: 16px;
+        margin-top: 27px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 #cp-index-intro1 {
   background-color: #fff;
   display: flex;

@@ -90,6 +90,10 @@ export default {
         margin-top: 27px;
         cursor: pointer;
       }
+      .cp-img-wrap-text4:hover {
+        background-color: #15abfe;
+        color: #fff;
+      }
     }
   }
 }
@@ -141,6 +145,10 @@ export default {
       font-size: 16px;
       margin-top: 27px;
       cursor: pointer;
+    }
+    .cp-img-wrap-text4:hover {
+      background-color: #15abfe;
+      color: #fff;
     }
   }
 }

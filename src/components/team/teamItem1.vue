@@ -53,6 +53,7 @@ export default {
         height: 360px !important;
         margin-left: 21px !important;
         position: relative;
+        transition: all 0.4s ease-in-out;
         img {
           width: 100%;
           height: 100%;
@@ -94,6 +95,10 @@ export default {
           left: 57px !important;
         }
       }
+      .jj-content1-item:hover {
+        transform: translateY(-50px);
+        transition: all 0.4s ease-in-out;
+      }
     }
   }
 }
@@ -118,6 +123,7 @@ export default {
       height: 360px;
       margin-left: 30px;
       position: relative;
+      transition: all 0.4s ease-in-out;
       img {
         width: 100%;
         height: 100%;
@@ -158,6 +164,10 @@ export default {
         top: 168px;
         left: 87px;
       }
+    }
+    .jj-content1-item:hover {
+      transform: translateY(-50px);
+      transition: all 0.4s ease-in-out;
     }
   }
 }

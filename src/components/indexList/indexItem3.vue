@@ -54,7 +54,7 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .index-intro8 {
     padding-bottom: 111px !important;
     .index-intro-title {
@@ -81,6 +81,7 @@ export default {
           margin-top: 40px;
           .content3-img1 {
             width: 100%;
+            transition: all 0.7s;
           }
           .content3-img2 {
             width: 32px !important;
@@ -88,6 +89,7 @@ export default {
             position: absolute;
             top: 47px !important;
             left: 84px !important;
+            transition: all 0.7s;
           }
           .content3-text-wrap {
             display: flex;
@@ -97,6 +99,7 @@ export default {
             padding: 21px 33px 24px 33px !important;
             background-color: #fff;
             margin-top: -2px;
+            transition: all 0.7s;
             .content3-text1 {
               color: #333;
               font-size: 14px !important;
@@ -158,11 +161,13 @@ export default {
         margin-top: 40px;
         .content3-img1 {
           width: 100%;
+          transition: all 0.7s;
         }
         .content3-img2 {
           position: absolute;
           top: 60px;
           left: 113px;
+          transition: all 0.7s;
         }
         .content3-text-wrap {
           display: flex;
@@ -172,6 +177,7 @@ export default {
           padding: 29px 48px 54px 51px;
           background-color: #fff;
           margin-top: -2px;
+          transition: all 0.7s;
           .content3-text1 {
             color: #333;
             font-size: 20px;

@@ -133,6 +133,9 @@ export default {
             margin-top: 0 !important;
           }
         }
+        .jj-content2-item2:hover {
+          box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+        }
       }
     }
   }
@@ -213,12 +216,13 @@ export default {
             margin-top: 0 !important;
           }
         }
+        .jj-content2-item2:hover {
+          box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+        }
       }
     }
   }
 }
-
-
 
 @media (max-width: 1150px) {
   .jj-index-intro2 {
@@ -296,13 +300,13 @@ export default {
             margin-top: 0 !important;
           }
         }
+        .jj-content2-item2:hover {
+          box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+        }
       }
     }
   }
 }
-
-
-
 
 .jj-index-intro2 {
   background-color: #f7fcff;
@@ -321,7 +325,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     .jj-content2-wrap {
       overflow: hidden;
       margin: 0 300px;
@@ -378,6 +382,9 @@ export default {
         .jj-content2-text2 {
           margin-top: 0;
         }
+      }
+      .jj-content2-item2:hover {
+        box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
       }
     }
   }

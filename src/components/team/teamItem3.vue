@@ -39,7 +39,7 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .jj-index-intro3 {
     background-color: #232433;
     padding-bottom: 87px;
@@ -76,6 +76,8 @@ export default {
           margin-top: 39px !important;
         }
         .jj-content3-text2 {
+          display: inline-block;
+          width: 229px !important;
           font-size: 14px;
           font-family: PingFang SC;
           font-weight: 300;
@@ -124,6 +126,8 @@ export default {
         margin-top: 50px;
       }
       .jj-content3-text2 {
+        display: inline-block;
+        width: 286px;
         font-size: 14px;
         font-family: PingFang SC;
         font-weight: 300;

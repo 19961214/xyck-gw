@@ -24,6 +24,7 @@
     "webpack-dev-server": "^2.2.0"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "element-ui": "^1.4.8",
     "less": "^2.7.3",
     "vue": "^2.2.1",

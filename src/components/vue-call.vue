@@ -4,7 +4,7 @@
     <el-row>
       <el-col :span="16" :offset="4">
         <div class="call-content">
-          <div class="call-content-text1">联系我们</div>
+          <div class="call-content-text1">联系客服</div>
           <div class="call-content-text2">留下您的联系方式，我们的客服将与您联系，并向您提供免费税务筹划方案。</div>
           <div class="call-content-text3">
             <img src="../assets/img/call1.png" alt />
@@ -110,11 +110,11 @@ export default {
       padding-left: 50px;
     }
   }
-  .call-content-text3:hover >.call-content-input1{
-    background-color: #ccc;
-  }
+  // .call-content-text3:hover >.call-content-input1{
+  //   background-color: #ccc;
+  // }
   .call-content-text3:hover{
-    background-color: #ccc;
+    border: 2px solid #15ABFE;
   }
   .call-content-text4 {
     margin-top: 15px;
@@ -134,11 +134,11 @@ export default {
       padding-left: 50px;
     }
   }
-  .call-content-text4:hover >.call-content-input2{
-    background-color: #ccc;
-  }
+  // .call-content-text4:hover >.call-content-input2{
+  //   background-color: #ccc;
+  // }
   .call-content-text4:hover{
-    background-color: #ccc;
+    border: 2px solid #15ABFE;
   }
   .call-content-text5 {
     margin-top: 15px;
@@ -158,11 +158,11 @@ export default {
       padding-left: 50px;
     }
   }
-  .call-content-text5:hover >.call-content-input3{
-    background-color: #ccc;
-  }
+  // .call-content-text5:hover >.call-content-input3{
+  //   background-color: #ccc;
+  // }
   .call-content-text5:hover{
-    background-color: #ccc;
+    border: 2px solid #15ABFE;
   }
   .call-content-text6 {
     width: 100px;
@@ -174,6 +174,9 @@ export default {
     line-height: 40px;
     margin-top: 40px;
     cursor: pointer;
+  }
+  .call-content-text6:hover{
+    background-color: #0183D2;
   }
 }
 </style>

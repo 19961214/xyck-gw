@@ -50,7 +50,7 @@ export default {
   name: "vue-index",
   data() {
     return {
-      cartoon: true
+      cartoon: false
     };
   },
   methods: {
@@ -115,7 +115,7 @@ export default {
   #content {
   width: 100%;
   height: 876px !important;
-  background: url("../assets/img/background.png");
+  background: url("../assets/img/background2.png") !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,8 +127,8 @@ export default {
     .index1-content-img1 {
       width: 100%;
       height: 100%;
-      transform: translateX(-300px);
-      opacity: 0;
+      // transform: translateX(-300px);
+      // opacity: 0;
     }
     .cartoon2 {
       animation: cartoons2 2s linear 1;
@@ -153,8 +153,8 @@ export default {
       position: absolute;
       left: 28px !important;
       bottom: 25px !important;
-      transform: translateX(300px);
-      opacity: 0;
+      // transform: translateX(300px);
+      // opacity: 0;
     }
     .cartoon3 {
       animation: cartoons3 2s linear 1;
@@ -181,8 +181,8 @@ export default {
       position: absolute;
       left: 14px !important;
       top: 79px !important;
-      transform: translateY(-200px);
-      opacity: 0;
+      // transform: translateY(-200px);
+      // opacity: 0;
     }
     .cartoon1 {
       animation: cartoons1 2s linear 1;
@@ -205,8 +205,8 @@ export default {
   .index1-content-title {
     display: flex;
     margin-top: 19px !important;
-    transform: translateY(200px);
-    opacity: 0;
+    // transform: translateY(200px);
+    // opacity: 0;
     .index1-content-title1 {
       display: flex;
       justify-content: center;
@@ -245,8 +245,8 @@ export default {
     }
   }
   .index1-content-btn {
-    width: 100px !important;
-    height: 40px !important;
+    width: 120px !important;
+    height: 36px !important;
     background: rgba(21, 171, 254, 1);
     border-radius: 4px;
     font-size: 14px !important;
@@ -258,6 +258,9 @@ export default {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+  .index1-content-btn:hover{
+    background-color: #018DDB;
   }
 }
 
@@ -279,8 +282,8 @@ export default {
     .index1-content-img1 {
       width: 100%;
       height: 100%;
-      transform: translateX(-300px);
-      opacity: 0;
+      // transform: translateX(-300px);
+      // opacity: 0;
     }
     .cartoon2 {
       animation: cartoons2 2s linear 1;
@@ -305,8 +308,8 @@ export default {
       position: absolute;
       left: 56px;
       bottom: 35px;
-      transform: translateX(300px);
-      opacity: 0;
+      // transform: translateX(300px);
+      // opacity: 0;
     }
     .cartoon3 {
       animation: cartoons3 2s linear 1;
@@ -333,8 +336,8 @@ export default {
       position: absolute;
       left: 17px;
       top: 126px;
-      transform: translateY(-200px);
-      opacity: 0;
+      // transform: translateY(-200px);
+      // opacity: 0;
     }
     .cartoon1 {
       animation: cartoons1 2s linear 1;
@@ -357,8 +360,8 @@ export default {
   .index1-content-title {
     display: flex;
     margin-top: 34px;
-    transform: translateY(200px);
-    opacity: 0;
+    // transform: translateY(200px);
+    // opacity: 0;
     .index1-content-title1 {
       display: flex;
       justify-content: center;
@@ -397,11 +400,11 @@ export default {
     }
   }
   .index1-content-btn {
-    width: 173px;
-    height: 69px;
+    width: 140px;
+    height: 40px;
     background: rgba(21, 171, 254, 1);
     border-radius: 4px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
     line-height: 156px;
@@ -410,6 +413,9 @@ export default {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+  .index1-content-btn:hover{
+    background-color: #018DDB;
   }
 }
 

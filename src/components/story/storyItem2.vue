@@ -131,6 +131,9 @@ export default {
         }
       }
     }
+    .hd2-content-wrap:hover {
+      box-shadow: 0px 0px 30px 0px rgba(3, 49, 83, 0.15);
+    }
   }
 }
 .index-intro1 {
@@ -181,6 +184,9 @@ export default {
         bottom: 19px;
       }
     }
+  }
+  .hd2-content-wrap:hover {
+    box-shadow: 0px 0px 30px 0px rgba(3, 49, 83, 0.15);
   }
 }
 </style>

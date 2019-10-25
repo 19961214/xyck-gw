@@ -92,6 +92,9 @@ export default {
         }
       }
     }
+    .img-wrap2:hover {
+      box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+    }
   }
 }
 
@@ -148,6 +151,9 @@ export default {
         height: 100px;
       }
     }
+  }
+  .img-wrap2:hover {
+    box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
   }
 }
 </style>

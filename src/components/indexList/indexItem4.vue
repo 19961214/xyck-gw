@@ -143,6 +143,9 @@ export default {
           }
         }
       }
+      .content-wrap:hover {
+        box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+      }
     }
   }
 }
@@ -242,6 +245,9 @@ export default {
           cursor: pointer;
         }
       }
+    }
+    .content-wrap:hover {
+      box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
     }
   }
 }

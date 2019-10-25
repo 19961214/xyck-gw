@@ -30,7 +30,8 @@
             <p class="gy-text3">
               厦门大学EMBA。
               <br />香港大学组织与人力资源管理研究生
-              <br />曾任华夏邓白氏中国商业信息咨询顾问；中智关爱通华南大区负责人。具有超过10年的销售及市场、公共关系管理经验。曾带领团队服务过广汽丰田、周大福、HSBC、平安银行、迅雷、医联、固生堂等重要项目。
+              <br />曾任华夏邓白氏中国商业信息咨询顾问；中智关爱通华南大区负责人。具有超过10年的销售及市场、公共关系管理经验。
+              <br />曾带领团队服务过广汽丰田、周大福、HSBC、平安银行、迅雷、医联、固生堂等重要项目。
             </p>
           </div>
         </div>
@@ -91,7 +92,6 @@ export default {
 @media (max-width: 1260px) {
   .gy-index-intro2 {
     background-color: #f7fcff;
-    padding-bottom: 60px;
     .gy-intro-title2 {
       width: 100%;
       height: 98px !important;
@@ -121,7 +121,8 @@ export default {
         .item-content-bottom {
           width: 164px !important;
           height: 450px !important;
-          background: rgba(255, 255, 255, 1);
+          // background: rgba(255, 255, 255, 1);
+          background: linear-gradient(to bottom, #fff, #f7fcff);
           opacity: 0.8;
           display: flex;
           flex-direction: column;
@@ -144,6 +145,8 @@ export default {
             font-size: 14px;
           }
           .gy-text3 {
+            display: inline-block;
+            width: 135px !important;
             opacity: 0;
             font-size: 14px;
             font-weight: 400;
@@ -182,7 +185,6 @@ export default {
 
 .gy-index-intro2 {
   background-color: #f7fcff;
-  padding-bottom: 60px;
   .gy-intro-title2 {
     width: 100%;
     height: 143px;
@@ -212,7 +214,8 @@ export default {
       .item-content-bottom {
         width: 216px;
         height: 391px;
-        background: rgba(255, 255, 255, 1);
+        // background: rgba(255, 255, 255, 1);
+        background: linear-gradient(to bottom, #fff, #f7fcff);
         opacity: 0.8;
         display: flex;
         flex-direction: column;
@@ -235,6 +238,8 @@ export default {
           font-size: 14px;
         }
         .gy-text3 {
+          display: inline-block;
+          width: 173px;
           opacity: 0;
           font-size: 14px;
           font-weight: 400;

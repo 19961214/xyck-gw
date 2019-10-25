@@ -2,7 +2,7 @@
   <div>
     <el-row>
       <el-col :span="24" id="cp-content5">
-        <img src="../assets/img/lx-1.png" alt />
+        <img src="../assets/img/hd-1.png" alt />
       </el-col>
     </el-row>
     <usItem1></usItem1>

@@ -1,7 +1,11 @@
 var path = require("path");
 var webpack = require('webpack');
 module.exports = {
-	entry: "./src/index.js",
+	// entry: "./src/index.js",
+	entry: {
+		// app: './src/main.js'
+		app: ["babel-polyfill", "./src/index.js"]
+	  },
     devtool: "#cheap-module-eval-source-map",
 	output: {
 		path: path.join(__dirname, "./dist"),

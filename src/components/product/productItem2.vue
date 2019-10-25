@@ -95,6 +95,9 @@ export default {
         color: #fff;
       }
     }
+    .img-wrap2:hover {
+      box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+    }
   }
 }
 
@@ -150,6 +153,9 @@ export default {
       background-color: #15abfe;
       color: #fff;
     }
+  }
+  .img-wrap2:hover {
+    box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
   }
 }
 </style>

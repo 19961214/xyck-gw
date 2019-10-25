@@ -7,10 +7,12 @@
             <div class="header-img-wrap">
               <img src="../assets/img/logo1.png" alt />
             </div>
-            
           </el-col>
           <router-link to="/index">
             <el-col :span="2" :offset="1">首页</el-col>
+          </router-link>
+          <router-link to="/article">
+            <el-col :span="2" :offset="0">关于厦云</el-col>
           </router-link>
           <router-link to="/product">
             <el-col :span="2" :offset="0">产品介绍</el-col>
@@ -21,9 +23,7 @@
           <router-link to="/story">
             <el-col :span="2" :offset="0">活动资讯</el-col>
           </router-link>
-          <router-link to="/article">
-            <el-col :span="2" :offset="0">关于厦云</el-col>
-          </router-link>
+
           <router-link to="/us">
             <el-col :span="2" :offset="0">联系我们</el-col>
           </router-link>
@@ -56,10 +56,10 @@ export default {
     return {
       options: [
         { label: "首页", value: "index" },
+        { label: "关于厦云", value: "article" },
         { label: "产品介绍", value: "product" },
         { label: "解决方案", value: "team" },
         { label: "活动资讯", value: "story" },
-        { label: "关于厦云", value: "article" },
         { label: "联系我们", value: "us" },
         { label: "加入我们", value: "gous" }
       ],
@@ -79,15 +79,15 @@ export default {
       //   document.documentElement.scrollTop || document.body.srcollTop;
       //   console.log(this.scroll)
       var scrollTop =
-          document.documentElement.scrollTop || document.body.scrollTop; //变量windowHeight是可视区的高度
-          // console.log(scrollTop)
+        document.documentElement.scrollTop || document.body.scrollTop; //变量windowHeight是可视区的高度
+      // console.log(scrollTop)
       var timer = null;
       clearTimeout(timer);
       timer = setTimeout(() => {
         if (scrollTop >= 100) {
           this.headerColor = true;
-          // console.log(this.headerColor) 
-        }else {
+          // console.log(this.headerColor)
+        } else {
           this.headerColor = false;
           // console.log(this.headerColor)
         }
@@ -129,13 +129,13 @@ export default {
   line-height: 60px;
   .nav {
     font-size: 14px;
-    .header-img-wrap{
+    .header-img-wrap {
       width: 136px;
       height: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
-      img{
+      img {
         width: 136px;
         height: 50px;
       }

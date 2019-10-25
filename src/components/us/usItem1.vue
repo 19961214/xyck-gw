@@ -167,6 +167,9 @@ export default {
           float: right;
         }
       }
+      .lx-content2-wrap:hover {
+        box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+      }
     }
   }
 }
@@ -266,6 +269,9 @@ export default {
         line-height: 140px;
         float: right;
       }
+    }
+    .lx-content2-wrap:hover {
+      box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
     }
   }
 }

@@ -19,7 +19,7 @@
               <div class="img-item">
                 <img src="../../assets/img/back6-4.png" alt />
               </div>
-              <div class="img-item">
+              <div class="img-item img-items">
                 <img src="../../assets/img/back6-5.png" alt />
               </div>
               <div class="img-item img-items">
@@ -34,7 +34,7 @@
               <div class="img-item">
                 <img src="../../assets/img/back6-9.png" alt />
               </div>
-              <div class="img-item">
+              <div class="img-item img-items">
                 <img src="../../assets/img/back6-10.png" alt />
               </div>
               <div class="img-item img-items">
@@ -49,7 +49,7 @@
               <div class="img-item">
                 <img src="../../assets/img/back6-14.png" alt />
               </div>
-              <div class="img-item">
+              <div class="img-item img-items">
                 <img src="../../assets/img/back6-15.png" alt />
               </div>
             </div>
@@ -67,7 +67,7 @@
               <div class="img-item">
                 <img src="../../assets/img/back6-4.png" alt />
               </div>
-              <div class="img-item">
+              <div class="img-item img-items">
                 <img src="../../assets/img/back6-5.png" alt />
               </div>
               <div class="img-item img-items">
@@ -82,7 +82,7 @@
               <div class="img-item">
                 <img src="../../assets/img/back6-9.png" alt />
               </div>
-              <div class="img-item">
+              <div class="img-item img-items">
                 <img src="../../assets/img/back6-10.png" alt />
               </div>
               <div class="img-item img-items">
@@ -97,7 +97,7 @@
               <div class="img-item">
                 <img src="../../assets/img/back6-14.png" alt />
               </div>
-              <div class="img-item">
+              <div class="img-item img-items">
                 <img src="../../assets/img/back6-15.png" alt />
               </div>
             </div>
@@ -131,11 +131,11 @@ export default {
     height: 330px;
     overflow: hidden;
     .content-wrap {
-      width: 2480px;
+      width: 2380px;
       height: 330px;
       animation: move 8s linear infinite;
       .img-item-wrap {
-        width: 1240px;
+        width: 1190px;
         height: 330px;
         float: left;
         overflow: hidden;
@@ -153,7 +153,7 @@ export default {
           float: left;
         }
         .img-items{
-          margin-right: 0;
+          margin: 30px 0 0 30px;
         }
       }
     }
@@ -162,7 +162,7 @@ export default {
         transform: translateX(0px);
       }
       100% {
-        transform: translateX(-1240px);
+        transform: translateX(-1190px);
       }
     }
   }

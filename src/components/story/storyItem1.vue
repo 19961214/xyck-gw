@@ -115,8 +115,10 @@ export default {
           bottom: 17px !important;
         }
       }
+      .hd1-content-wrap:hover {
+        box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+      }
     }
-
   }
 }
 .index-intro1 {
@@ -163,6 +165,9 @@ export default {
         right: 16px;
         bottom: 19px;
       }
+    }
+    .hd1-content-wrap:hover {
+      box-shadow: 0px 0px 30px 0px rgba(12, 61, 99, 0.15);
     }
   }
 

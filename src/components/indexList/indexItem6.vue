@@ -115,13 +115,19 @@ export default {
 </script>
 <style lang="less">
 .index-intro2 {
-  background-color: rgb(247, 252, 255);
+  background: url("../../assets/img/index6-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
   padding-bottom: 122px;
   .index-intro-title {
     width: 100%;
     height: 143px;
     color: #333;
     font-size: 24px;
+    font-weight:600;
     display: flex;
     justify-content: center;
     align-items: center;

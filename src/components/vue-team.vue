@@ -1,14 +1,24 @@
 <template>
   <div>
-    <el-row>
-      <el-col :span="24" id="cp-content2">
-        <img src="../assets/img/jj-1.png" alt />
-      </el-col>
-    </el-row>
+    <div class="index-item1-wrap">
+      <!-- <img  class="index-item1-img" src="../assets/img/index-1.png" alt /> -->
+      <div class="index-item1-text-wrap">
+        <div class="index-item1-text1">厦云：助力企业商业决策税务筹划</div>
+        
+      </div>
+      <div class="product-nav">
+        <div class="product-nav-item">典型应用行业</div>
+        <div class="product-nav-item">行业痛点</div>
+        <div class="product-nav-item">应用案例</div>
+        <div class="product-nav-item2">助力企业商业决策、<div>税务筹划</div></div>
+        <div class="product-nav-item">政策合理性</div>
+      </div>
+    </div>
     <teamItem1></teamItem1>
     <teamItem2></teamItem2>
-    <teamItem3></teamItem3>
+    
     <teamItem4></teamItem4>
+    <teamItem3></teamItem3>
     <teamItem5></teamItem5>
   </div>
 </template>
@@ -29,18 +39,76 @@ export default {
     teamItem5
   },
   mounted() {
-      var dis = document.getElementById("cp-content2");
-      dis.scrollIntoView();
   }
 };
 </script>
 <style lang="less">
 @import url("../assets/css/reset.css");
-#cp-content2 {
-  margin: 0 auto;
-  //   transform: translate(0, -85px);
-  img {
-    width: 100%;
+.index-item1-wrap {
+  width: 100%;
+  height: 500px;
+  margin-top: 59px;
+  background: url("../assets/img/jj-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .index-item1-text-wrap {
+    .index-item1-text1 {
+      font-size: 34px;
+      color: #fff;
+    }
+  }
+  .product-nav {
+    width: 1000px;
+    height: 78px;
+    background: rgba(247, 252, 255, 1);
+    border: 1px solid rgba(247, 252, 255, 1);
+    overflow: hidden;
+    transform: translateY(230px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .product-nav-item {
+      width: 200px;
+      height: 100%;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(102, 102, 102, 1);
+      line-height: 26px;
+      cursor: pointer;
+    }
+    .product-nav-item2{
+      width: 200px;
+      height: 100%;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(102, 102, 102, 1);
+      line-height: 26px;
+      cursor: pointer;
+    }
+    .product-nav-item:hover {
+      color: #15abfe;
+      background-color: #fff;
+    }
+    .product-nav-item2:hover {
+      color: #15abfe;
+      background-color: #fff;
+    }
   }
 }
 </style>

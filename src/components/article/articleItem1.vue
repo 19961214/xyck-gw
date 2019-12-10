@@ -40,19 +40,21 @@ export default {
     background-color: #fff;
     padding-top: 70px !important;
     padding-bottom: 40px !important;
+
     .gy-content1-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // width: 100%;
+      display: inline-block !important;
+      text-align: center;
+      // margin-left: 100px !important;
+      display: flex !important;
+      justify-content: center !important;
       .gy-content1-text {
         width: 450px !important;
         height: 260px !important;
 
         padding-bottom: 38px !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: inline-block !important;
+
         .gy-content1-text1 {
           color: #333;
           font-size: 24px;
@@ -69,12 +71,14 @@ export default {
         padding: 0 0 0 30px !important;
       }
       .gy-img-wrap {
+        display: inline-block !important;
         width: 450px !important;
         height: 260px !important;
         padding-bottom: 40px;
         img {
-          width: 100%;
-          height: 100%;
+          display: inline-block !important;
+          width: 450px !important;
+          height: 260px !important;
         }
       }
     }
@@ -85,14 +89,14 @@ export default {
   padding-top: 91px;
   padding-bottom: 60px;
   .gy-content1-wrap {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     .gy-content1-text {
       width: 600px;
       height: 300px;
-
+      float: left;
       padding-bottom: 40px;
       display: flex;
       flex-direction: column;
@@ -116,6 +120,7 @@ export default {
       width: 600px;
       height: 300px;
       padding-bottom: 40px;
+      float: left;
       img {
         width: 100%;
         height: 100%;

@@ -47,12 +47,18 @@ export default {
 .index-intro3 {
   padding-bottom: 35px;
   height: 500px;
-  background: url("../../assets/img/back5-1.png");
+  background: url("../../assets/img/index5-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
   .index-intro-title {
     width: 100%;
     height: 143px;
     color: #fff;
     font-size: 24px;
+    font-weight:600;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +88,7 @@ export default {
       height: 40px;
       color: #fff;
       border: 1px solid #fff;
-      border-radius: 4px;
+      border-radius:20px;
       text-align: center;
       line-height: 40px;
       cursor:pointer;

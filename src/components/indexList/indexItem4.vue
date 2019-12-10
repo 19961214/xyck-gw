@@ -151,7 +151,12 @@ export default {
 }
 
 .index-intro {
-  background-color: rgb(247, 252, 255);
+  background: url("../../assets/img/index4-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
   padding-bottom: 87px;
   .index-intro-title {
     width: 100%;
@@ -161,6 +166,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight:600;
   }
   .index3-content-wrap {
     width: 100%;

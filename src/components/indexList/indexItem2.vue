@@ -1,53 +1,70 @@
 <template>
   <div>
-    <el-row class="index2-intro2">
+    <div class="index2-intro2">
       <div class="index-intro-title">云生态网络—全方位服务</div>
-      <div class="index-intro-title2">
-        <div :class="{'div-one':state==1}" class="div-two" @click="cut1">厦云创科云端管理系统</div>
-        <div :class="{'div-one':state==2}" @click="cut2">掌掌财APP</div>
-        <div :class="{'div-one':state==3}" @click="cut3">掌掌财小程序</div>
+      <div class="index2-intro2-content-wrap">
+        <div class="index2-intro2-content">
+          <el-carousel :interval="4000" type="card" height="400px">
+            <el-carousel-item>
+              <div class="index2-intro2-content-item">
+                <img src="../../assets/img/index2-3.png" alt />
+                <div class="index2-intro2-content-title">掌掌财APP</div>
+                <div class="index2-intro2-content-text">
+                  <div class="img-wrap-text-wrap">
+                    <div class="img-wrap-quan"></div>
+                    <span class="img-wrap-text3">自由职业者APP一键签约，一键收款，一键理财</span>
+                  </div>
+                  <div class="img-wrap-text-wrap">
+                    <div class="img-wrap-quan"></div>
+                    <span class="img-wrap-text3">企业服务端APP一键结算，一键打款，一键开票</span>
+                  </div>
+                </div>
+              </div>
+            </el-carousel-item>
+            <el-carousel-item>
+              <div class="index2-intro2-content-item">
+                <img src="../../assets/img/index2-2.png" alt />
+                <div class="index2-intro2-content-title">掌掌财云端管理系统</div>
+                <div class="index2-intro2-content-text">
+                  <div class="img-wrap-text-wrap">
+                    <!-- <div class="img-wrap-quan"></div> -->
+                    <span class="img-wrap-text3">一站式佣金结算、发票开具、个税申报管理系统</span>
+                  </div>
+                  <div class="img-wrap-text-wrap">
+                    <div class="img-wrap-quan"></div>
+                    <span class="img-wrap-text3">提供云端应用技术，7X24 贴心服务</span>
+                  </div>
+                  <div class="img-wrap-text-wrap">
+                    <div class="img-wrap-quan"></div>
+                    <span class="img-wrap-text3">专业运营管理团队、技术研发团队</span>
+                  </div>
+                  <div class="img-wrap-text-wrap">
+                    <div class="img-wrap-quan"></div>
+                    <span class="img-wrap-text3">打造人财税一体化云生态网络</span>
+                  </div>
+                </div>
+              </div>
+            </el-carousel-item>
+            <el-carousel-item style="background-color: #d3dce6;">
+              <div class="index2-intro2-content-item">
+                <img src="../../assets/img/index2-1.png" alt />
+                <div class="index2-intro2-content-title">掌掌财小程序</div>
+                <div class="index2-intro2-content-text">
+                  <div class="img-wrap-text-wrap">
+                    <div class="img-wrap-quan"></div>
+                    <span class="img-wrap-text3">轻量级应用，无需登录APP也可一步实现电子合同签约</span>
+                  </div>
+                  <div class="img-wrap-text-wrap">
+                    <div class="img-wrap-quan"></div>
+                    <span class="img-wrap-text3">收款记录实时查询，便捷高效</span>
+                  </div>
+                </div>
+              </div>
+            </el-carousel-item>
+          </el-carousel>
+        </div>
       </div>
-      <div class="index2-content-wrap" v-if="state==1">
-        <div class="img-wrap">
-          <img src="../../assets/img/back-img5.png" alt />
-        </div>
-        <div class="img-wrap2">
-          <div class="img-wrap-text1">厦云创科云端管理系统</div>
-          <div class="img-wrap-text2">一站式佣金结算、发票开具、个税申报管理系统</div>
-          <div class="img-wrap-text3">提供云端应用技术，7X24 贴心服务</div>
-          <div class="img-wrap-text4">专业运营管理团队、技术研发团队</div>
-          <div class="img-wrap-text5">打造人财税一体化云生态网络</div>
-        </div>
-      </div>
-
-      <div class="index2-content-wrap" v-if="state==2">
-        <div class="img-wrap">
-          <img src="../../assets/img/back2-2.png" alt />
-        </div>
-        <div class="img-wrap2">
-          <div class="img-wrap-text1">掌掌财APP</div>
-          <div class="img-wrap-text3">自由职业者APP</div>
-          <div class="img-wrap-text4">一键签约，一键收款，一键理财</div>
-          <div class="img-wrap-text2">企业服务端APP</div>
-          <div class="img-wrap-text5">一键结算，一键打款，一键开票</div>
-          <div class="img-wrap-btn" @click="gotoProduct3">了解更多 ></div>
-        </div>
-      </div>
-
-      <div class="index2-content-wrap" v-if="state==3">
-        <div class="img-wrap">
-          <img src="../../assets/img/back2-3.png" alt />
-        </div>
-        <div class="img-wrap2">
-          <div class="img-wrap-text1">掌掌财小程序</div>
-          <div class="img-wrap-text2">轻量级应用，无需登录APP也可一步实现电子合同签约</div>
-          <div class="img-wrap-text4">收款记录实时查询，便捷高效</div>
-          <div class="img-wrap-btn" @click="gotoProduct4">了解更多 ></div>
-          <!-- <div class="img-wrap-text4">专业运营管理团队、技术研发团队</div>
-          <div class="img-wrap-text5">打造人财税一体化云生态网络</div>-->
-        </div>
-      </div>
-    </el-row>
+    </div>
   </div>
 </template>
 
@@ -82,179 +99,71 @@ export default {
 </script>
 <style lang="less">
 @media (max-width: 1024px) {
-  .index2-intro2 {
-    background-color: #f7fcff;
-    .index-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .index-intro-title2 {
-      display: flex;
-      justify-content: center;
-      div {
-        margin-left: 102px;
-        padding-bottom: 11px;
-        font-size: 16px;
-        color: #333333;
-        cursor: pointer;
-      }
-      .div-one {
-        color: #15abfe;
-        border-bottom: 2px solid #15abfe !important;
-      }
-      .div-two {
-        margin-left: 0;
-      }
-    }
-    .index2-content-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .img-wrap {
-        width: 450px !important;
-        height: 340px !important;
-        display: flex;
-        justify-content: center;
-        margin-top: 30px !important;
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .img-wrap2 {
-        width: 450px !important;
-        height: 340px !important;
-        margin-top: 30px !important;
-        padding: 55px 0 0 70px !important;
-        .img-wrap-text1 {
-          color: #15abfe;
-          font-size: 20px;
-        }
-        .img-wrap-text2 {
-          color: #333333;
-          font-size: 14px;
-          margin-top: 40px;
-        }
-        .img-wrap-text3 {
-          color: #333333;
-          font-size: 14px;
-          margin-top: 40px;
-          line-height: 26px;
-        }
-        .img-wrap-text4 {
-          color: #333333;
-          font-size: 14px;
-          line-height: 26px;
-        }
-        .img-wrap-text5 {
-          color: #333333;
-          font-size: 14px;
-          line-height: 26px;
-        }
-        .img-wrap-btn {
-          font-size: 16px;
-          color: #15abfe;
-          line-height: 90px;
-          cursor: pointer;
-        }
-        .img-wrap-btn:hover {
-          color: #018ddb;
-        }
-      }
-    }
-  }
 }
 
 .index2-intro2 {
-  background-color: #f7fcff;
-  // padding-bottom: 35px;
+  width: 100%;
+  height: 530px;
+  background-color: #fff;
   .index-intro-title {
-    width: 100%;
-    height: 143px;
-    color: #333;
     font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .index-intro-title2 {
-    display: flex;
-    justify-content: center;
-    div {
-      margin-left: 102px;
-      padding-bottom: 11px;
-      font-size: 16px;
-      color: #333333;
-      cursor: pointer;
-    }
-    .div-one {
-      color: #15abfe;
-      border-bottom: 3px solid #15abfe;
-    }
-    .div-two {
-      margin-left: 0;
-    }
-  }
-  .index2-content-wrap {
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+    line-height: 90px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    .img-wrap {
-      width: 600px;
-      height: 440px;
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-      img {
-        width: 100%;
-        height: 100%;
+  }
+  .index2-intro2-content-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .index2-intro2-content {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      width: 1024px;
+      .el-carousel__item:nth-child(2n) {
+        background-color: #fff;
+        box-shadow: 0px 0px 25px 0px rgba(51, 51, 51, 0.1);
       }
-    }
-    .img-wrap2 {
-      width: 600px;
-      height: 440px;
-      margin-top: 40px;
-      padding: 95px 0 0 60px;
-      .img-wrap-text1 {
-        color: #15abfe;
-        font-size: 20px;
+
+      .el-carousel__item:nth-child(2n + 1) {
+        background-color: #F9FCFF;
       }
-      .img-wrap-text2 {
-        color: #333333;
-        font-size: 14px;
-        margin-top: 40px;
-      }
-      .img-wrap-text3 {
-        color: #333333;
-        font-size: 14px;
-        margin-top: 40px;
-        line-height: 26px;
-      }
-      .img-wrap-text4 {
-        color: #333333;
-        font-size: 14px;
-        line-height: 26px;
-      }
-      .img-wrap-text5 {
-        color: #333333;
-        font-size: 14px;
-        line-height: 26px;
-      }
-      .img-wrap-btn {
-        font-size: 16px;
-        color: #15abfe;
-        line-height: 90px;
-        cursor: pointer;
-      }
-      .img-wrap-btn:hover {
-        color: #018ddb;
+      .index2-intro2-content-item {
+        width: 400px;
+        height: 400px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .index2-intro2-content-title {
+          font-size: 20px;
+          font-weight: 600;
+          color: rgba(51, 51, 51, 1);
+          line-height: 90px;
+        }
+        .index2-intro2-content-text {
+          font-size: 14px;
+          font-family: PingFang SC;
+          font-weight: 300;
+          color: rgba(102, 102, 102, 1);
+          line-height: 30px;
+          .img-wrap-text-wrap {
+            .img-wrap-quan {
+              width: 8px;
+              height: 8px;
+              border: 2px solid rgba(21, 171, 254, 1);
+              border-radius: 50%;
+              margin-right: 10px;
+              display: inline-block;
+            }
+          }
+        }
       }
     }
   }

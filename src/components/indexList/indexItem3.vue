@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-row class="index-intro8">
+    <div class="index-intro8">
       <div class="index-intro-title">全国数十家税优地资源，一站式代理服务，四大税务服务保障</div>
 
       <div class="content3-list-wrap">
@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-    </el-row>
+    </div>
   </div>
 </template>
 
@@ -56,6 +56,10 @@ export default {
 <style lang="less">
 @media (max-width: 1280px) {
   .index-intro8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 111px !important;
     .index-intro-title {
       width: 100%;
@@ -137,15 +141,26 @@ export default {
 }
 
 .index-intro8 {
-  padding-bottom: 35px;
-  background: url("../../assets/img/back5-1.png");
+  height: 682px;
+  // padding-bottom: 35px;
+  background: url("../../assets/img/index3-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .index-intro-title {
     width: 100%;
     height: 103px;
-    color: #fff;
+    color: #333;
     font-size: 24px;
     text-align: center;
     line-height: 143px;
+    font-weight: 600;
   }
   .content3-list-wrap {
     width: 100%;

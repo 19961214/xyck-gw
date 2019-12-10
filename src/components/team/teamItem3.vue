@@ -39,18 +39,19 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .jj-index-intro3 {
-    background-color: #232433;
+    background-color: #fafafa;
     padding-bottom: 87px;
     .jj-intro-title {
       width: 100%;
       height: 98px !important;
-      color: #ffffff;
+      color: #333;
       font-size: 22px !important;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight: 600;
     }
     .jj-content3-wrap {
       overflow: hidden;
@@ -58,21 +59,26 @@ export default {
       justify-content: center;
       align-items: center;
       .jj-content3-item {
-        width: 300px !important;
-        height: 350px !important;
+        width: 190px !important;
+        height: 230px !important;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 14px 20px 0px rgba(97, 97, 97, 0.15);
         display: flex;
         flex-direction: column;
         align-items: center;
         float: left;
-        margin-right: 0 !important;
+        margin-right: 20px !important;
+        position: relative;
         img {
-          margin-top: 36px !important;
+          position: absolute;
+        top: 20px;
+        left: -40px;
         }
         .jj-content3-text1 {
           font-size: 16px !important;
           font-family: PingFang SC;
           font-weight: 600;
-          color: rgba(255, 255, 255, 1);
+          color: #333;
           margin-top: 39px !important;
         }
         .jj-content3-text2 {
@@ -81,7 +87,7 @@ export default {
           font-size: 14px;
           font-family: PingFang SC;
           font-weight: 300;
-          color: rgba(153, 154, 171, 1);
+          color: #666;
           line-height: 22px;
           margin-top: 26px !important;
           padding: 0 36px 0 35px !important;
@@ -91,16 +97,17 @@ export default {
   }
 }
 .jj-index-intro3 {
-  background-color: #232433;
+  background-color: #fafafa;
   padding-bottom: 87px;
   .jj-intro-title {
     width: 100%;
     height: 143px;
-    color: #ffffff;
+    color: #333;
     font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
   }
   .jj-content3-wrap {
     overflow: hidden;
@@ -108,21 +115,27 @@ export default {
     justify-content: center;
     align-items: center;
     .jj-content3-item {
-      width: 366px;
-      height: 400px;
+      width: 290px;
+      height: 300px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 14px 20px 0px rgba(97, 97, 97, 0.15);
       display: flex;
       flex-direction: column;
       align-items: center;
       float: left;
       margin-right: 51px;
+      padding: 71px 35px 0 40px;
+      position: relative;
       img {
-        margin-top: 50px;
+        position: absolute;
+        top: 20px;
+        left: -40px;
       }
       .jj-content3-text1 {
         font-size: 18px;
         font-family: PingFang SC;
         font-weight: 600;
-        color: rgba(255, 255, 255, 1);
+        color: #333;
         margin-top: 50px;
       }
       .jj-content3-text2 {
@@ -131,7 +144,7 @@ export default {
         font-size: 14px;
         font-family: PingFang SC;
         font-weight: 300;
-        color: rgba(153, 154, 171, 1);
+        color: #666;
         line-height: 22px;
         margin-top: 25px;
         padding: 0 41px 0 38px;

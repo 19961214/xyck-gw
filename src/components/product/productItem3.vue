@@ -2,18 +2,21 @@
   <div>
     <!-- 产品介绍 -->
     <div id="cp-index-intro3">
-      <div class="img-wrap">
-        <img src="../../assets/img/back2-2.png" alt />
+      <div class="cp-img-wrap">
+        <div class="img-wrap">
+        <img src="../../assets/img/cp-3.png" alt />
       </div>
       <div class="img-wrap2">
         <div class="img-wrap-text1">掌掌财APP</div>
         <div
           class="cp-img-wrap-text2"
         >掌掌财APP，是厦云创科推出的一款企业服务者及自由职业者均可使用的移动端应用程序，企业可使用企业账号登录在APP上进行合同管理、佣金管理、佣金代发、一键开票等业务，自由职业者可使用个人账号登录在APP上进行合同签约、佣金收款、明细查询等业务。随时随地使用、操作安全便捷。</div>
-        <div class="cp3-img-wrap-text3">自由职业者APP一键签约，一键收款，一键理财</div>
-        <div class="cp3-img-wrap-texts">企业服务端APP一键结算，一键打款，一键开票</div>
+        <div class="cp-img-wrap-text3">自由职业者APP一键签约，一键收款，一键理财</div>
+        <div class="cp-img-wrap-text3">企业服务端APP一键结算，一键打款，一键开票</div>
         <div class="cp-img-wrap-text4" @click="gotoCall">申请试用</div>
       </div>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -39,27 +42,26 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   #cp-index-intro3 {
+    margin-top: 30px !important;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     //   padding-bottom: 60px;
     .img-wrap {
-      margin-top: 30px !important;
-      width: 450px !important;
-      height: 350px;
+      width: 400px !important;
+      height: 390px;
       img {
         width: 100%;
         height: 100%;
       }
     }
     .img-wrap2 {
-      margin-top: 30px !important;
       width: 450px !important;
       height: 350px;
-      padding: 0 68px 58px 0 !important;
+      padding: 0 19px 27px 0 !important;
       .img-wrap-text1 {
         color: #15abfe;
         font-size: 30px;
@@ -71,25 +73,18 @@ export default {
         font-size: 14px;
         line-height: 26px;
       }
-      .cp3-img-wrap-text3 {
+      .cp-img-wrap-text3 {
         width: 300px;
-        margin-top: 28px;
-        color: #ff9900;
-        font-size: 14px;
-        line-height: 26px;
-      }
-      .cp3-img-wrap-texts {
-        width: 300px;
-        margin-top: 15px;
+        margin-top: 20px;
         color: #ff9900;
         font-size: 14px;
         line-height: 26px;
       }
       .cp-img-wrap-text4 {
-        width: 120px;
+        width: 140px;
         height: 40px;
-        border: 1px solid #15abfe;
-        border-radius: 4px;
+        border: 1px solid rgba(21, 171, 254, 1);
+        border-radius: 20px;
         text-align: center;
         line-height: 40px;
         color: #15abfe;
@@ -109,20 +104,22 @@ export default {
 }
 
 #cp-index-intro3 {
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
   //   padding-bottom: 60px;
   .img-wrap {
-    width: 600px;
-    height: 350px;
+    display: inline-block;
+    width: 455px;
+    height: 430px;
     img {
       width: 100%;
       height: 100%;
     }
   }
   .img-wrap2 {
+    display: inline-block;
     width: 600px;
     height: 350px;
     padding: 59px 0 67px 60px;
@@ -137,25 +134,18 @@ export default {
       font-size: 14px;
       line-height: 26px;
     }
-    .cp3-img-wrap-text3 {
+    .cp-img-wrap-text3 {
       width: 300px;
-      margin-top: 28px;
-      color: #ff9900;
-      font-size: 14px;
-      line-height: 26px;
-    }
-    .cp3-img-wrap-texts {
-      width: 300px;
-      margin-top: 15px;
+      margin-top: 20px;
       color: #ff9900;
       font-size: 14px;
       line-height: 26px;
     }
     .cp-img-wrap-text4 {
-      width: 120px;
+      width: 140px;
       height: 40px;
-      border: 1px solid #15abfe;
-      border-radius: 4px;
+      border: 1px solid rgba(21, 171, 254, 1);
+      border-radius: 20px;
       text-align: center;
       line-height: 40px;
       color: #15abfe;

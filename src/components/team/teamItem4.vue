@@ -97,6 +97,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight:600;
     }
     .lb-content4-wrap {
       width: 100%;
@@ -121,7 +122,7 @@ export default {
           }
           .jj-content4-text {
             width: 450px !important;
-            height: 350px;
+            height: 162px;
             .jj-content4-text1 {
               font-size: 20px;
               font-family: PingFang SC;
@@ -168,6 +169,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight:600;
   }
   .lb-content4-wrap {
     width: 100%;
@@ -183,8 +185,8 @@ export default {
         justify-content: center;
         align-items: center;
         .jj-content4-img {
-          width: 600px;
-          height: 350px;
+          width: 400px;
+          height: 260px;
           img {
             width: 100%;
             height: 100%;

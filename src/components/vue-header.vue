@@ -64,7 +64,7 @@ export default {
         { label: "加入我们", value: "gous" }
       ],
       option: "index",
-      headerColor: false
+      headerColor: true
     };
   },
   mounted() {
@@ -74,25 +74,25 @@ export default {
     link: function() {
       this.$router.push({ path: "/" + this.option });
     },
-    menu() {
-      // this.scroll =
-      //   document.documentElement.scrollTop || document.body.srcollTop;
-      //   console.log(this.scroll)
-      var scrollTop =
-        document.documentElement.scrollTop || document.body.scrollTop; //变量windowHeight是可视区的高度
-      // console.log(scrollTop)
-      var timer = null;
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        if (scrollTop >= 100) {
-          this.headerColor = true;
-          // console.log(this.headerColor)
-        } else {
-          this.headerColor = false;
-          // console.log(this.headerColor)
-        }
-      }, 200);
-    }
+    // menu() {
+    //   // this.scroll =
+    //   //   document.documentElement.scrollTop || document.body.srcollTop;
+    //   //   console.log(this.scroll)
+    //   var scrollTop =
+    //     document.documentElement.scrollTop || document.body.scrollTop; //变量windowHeight是可视区的高度
+    //   // console.log(scrollTop)
+    //   var timer = null;
+    //   clearTimeout(timer);
+    //   timer = setTimeout(() => {
+    //     if (scrollTop >= 100) {
+    //       this.headerColor = true;
+    //       // console.log(this.headerColor)
+    //     } else {
+    //       this.headerColor = false;
+    //       // console.log(this.headerColor)
+    //     }
+    //   }, 200);
+    // }
   }
 };
 </script>
@@ -162,7 +162,7 @@ export default {
       }
     }
     .phone {
-      color: #fff;
+      color: #FF9933;
       font-size: 14px;
       display: flex;
       justify-content: center;

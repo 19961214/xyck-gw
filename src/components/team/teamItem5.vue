@@ -35,7 +35,8 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1110px) {
+
+@media (max-width: 1250px) {
   .jj-index-intro5 {
     background-color: #f7fcff;
     padding-bottom: 87px;
@@ -47,12 +48,9 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight: 600;
     }
     .jj-content5-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       .jj-content5-item {
         width: 445px !important;
         height: 465px !important;
@@ -77,10 +75,18 @@ export default {
       }
       .jj-content5-items {
         width: 410px !important;
-        height: 300px;
+        height: 300px !important;
+        display: inline-block;
+        position: relative;
         img {
           width: 410px !important;
-          height: 300px;
+          height: 200px !important;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
         }
       }
     }
@@ -89,6 +95,10 @@ export default {
 .jj-index-intro5 {
   background-color: #f7fcff;
   padding-bottom: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .jj-intro-title {
     width: 100%;
     height: 143px;
@@ -97,16 +107,14 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
   }
   .jj-content5-wrap {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .jj-content5-item {
       width: 600px;
       height: 420px;
       margin-right: 26px;
+      display: inline-block;
       .jj-content5-item1 {
         font-size: 16px;
         font-family: PingFang SC;
@@ -125,8 +133,20 @@ export default {
       }
     }
     .jj-content5-items {
-      width: 575px;
-      height: 300px;
+      width: 600px;
+      height: 500px;
+      display: inline-block;
+      position: relative;
+      img {
+        width: 500px;
+        height: 240px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
     }
   }
 }

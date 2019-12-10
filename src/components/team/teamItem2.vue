@@ -152,6 +152,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight:600;
     }
     .jj2-wrap {
       width: 100%;
@@ -236,6 +237,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight:600;
     }
     .jj2-wrap {
       width: 100%;
@@ -319,6 +321,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight:600;
   }
   .jj2-wrap {
     width: 100%;

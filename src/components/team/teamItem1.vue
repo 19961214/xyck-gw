@@ -55,6 +55,7 @@ export default {
 <style lang="less">
 @media (max-width: 1250px) {
   .jj-index-intro {
+    margin-top: 40px;
     background-color: #fff;
     padding-bottom: 87px;
     .jj-intro-title {
@@ -65,6 +66,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight:600;
     }
     .jj-content1-wrap {
       display: flex;
@@ -158,6 +160,7 @@ export default {
   }
 }
 .jj-index-intro {
+  margin-top: 40px;
   background-color: #fff;
   padding-bottom: 87px;
   .jj-intro-title {
@@ -168,6 +171,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight:600;
   }
   .jj-content1-wrap {
     display: flex;

@@ -24,6 +24,23 @@
         </div>
       </div>
     </div>
+    <div class="phone-fiexd-wrap">
+      <div class="phone-fiexd2" v-show="isPhoneShow">
+        <img class="phone-fiexd2-img" src="../assets/img/back-one.png" alt />
+        <div class="phone-fiexd2-content1">
+          <img src="../assets/img/phone1.png" alt />
+          <span>0571-87299551</span>
+        </div>
+        <div class="phone-fiexd2-content2">
+          <img src="../assets/img/phone2.png" alt />
+          <span>136-7243-6880</span>
+        </div>
+      </div>
+      <div class="phone-fiexd1" @click="isPhone">
+        <img src="../assets/img/phone.png" alt />
+        <span>电话咨询</span>
+      </div>
+    </div>
     <indexItem1></indexItem1>
     <indexItem2></indexItem2>
     <indexItem3></indexItem3>
@@ -43,9 +60,15 @@ import indexItem6 from "./indexList/indexItem6.vue";
 export default {
   name: "vue-index",
   data() {
-    return {};
+    return {
+      isPhoneShow:false
+    };
   },
-  methods: {},
+  methods: {
+    isPhone(){
+      this.isPhoneShow = !this.isPhoneShow;
+    }
+  },
   mounted() {},
   components: {
     indexItem1,
@@ -60,6 +83,85 @@ export default {
 <style lang="less">
 @import url("../assets/css/reset.css");
 @media (max-width: 1024px) {
+}
+.phone-fiexd-wrap {
+  z-index: 2000;
+  height: 90px;
+  position: fixed;
+  right: 0;
+  bottom: 270px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .phone-fiexd2 {
+    position: relative;
+    box-shadow: 0px 0px 30px 0px rgba(1, 119, 255, 0.15);
+    .phone-fiexd2-img{
+      width: 198px;
+      height: 90px;
+    }
+    .phone-fiexd2-content1 {
+      width: 158px;
+      height: 30px;
+      background: rgba(248, 248, 248, 1);
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 22px;
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+      }
+    }
+    .phone-fiexd2-content2 {
+      width: 158px;
+      height: 30px;
+      background: rgba(248, 248, 248, 1);
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+      left: 15px;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 22px;
+      img {
+        width: 12px;
+        height: 16px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .phone-fiexd1 {
+    width: 70px;
+    height: 70px;
+    background: rgba(21, 171, 254, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 12px;
+    img {
+      width: 26px;
+      height: 26px;
+      margin-bottom: 10px;
+    }
+  }
 }
 .index-item1-wrap {
   width: 100%;

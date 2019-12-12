@@ -45,7 +45,7 @@
                 </div>
               </div>
             </el-carousel-item>
-            <el-carousel-item style="background-color: #d3dce6;">
+            <el-carousel-item style="background-color: #F9FCFF;">
               <div class="index2-intro2-content-item">
                 <img src="../../assets/img/index2-1.png" alt />
                 <div class="index2-intro2-content-title">掌掌财小程序</div>
@@ -131,7 +131,7 @@ export default {
       }
 
       .el-carousel__item:nth-child(2n + 1) {
-        background-color: #F9FCFF;
+        background-color: rgb(248, 241, 241);
       }
       .index2-intro2-content-item {
         width: 400px;

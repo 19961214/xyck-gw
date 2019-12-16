@@ -69,8 +69,6 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1024px) {
-}
 
 .index-intro1 {
   width: 100%;
@@ -92,6 +90,7 @@ export default {
     justify-content: center;
     align-items: center;
     .index1-content-wraps {
+      width: 1000px;
       overflow: hidden;
       .img-wrap {
         width: 550px;
@@ -103,7 +102,7 @@ export default {
         }
       }
       .img-wrap2 {
-        width: 430px;
+        width: 450px;
         height: 372px;
         float: left;
         .img-wrap-text1 {
@@ -173,6 +172,7 @@ export default {
     justify-content: center;
     align-items: center;
     .index1-content-wraps {
+      width: 1000px;
       overflow: hidden;
       .img-wrap {
         width: 550px;
@@ -184,7 +184,7 @@ export default {
         }
       }
       .img-wrap2 {
-        width: 430px;
+        width: 450px;
         height: 372px;
         float: left;
         .img-wrap-text1 {

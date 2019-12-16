@@ -2,7 +2,7 @@
   <div>
     <el-row class="index-intro3">
       <div class="index-intro-title">合作方式</div>
-      <el-col :span="16" :offset="4">
+      <div class="index-intro3-item6">
         <div class="content">
           <div class="content-item">
             <img src="../../assets/img/back5-2.png" alt />
@@ -28,7 +28,8 @@
         <div class="content2">
           <div class="content2-btn" @click="gotoCall">申请合作</div>
         </div>
-      </el-col>
+      </div>
+        
     </el-row>
   </div>
 </template>
@@ -53,6 +54,10 @@ export default {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-position: center 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .index-intro-title {
     width: 100%;
     height: 143px;
@@ -62,6 +67,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .index-intro3-item6{
+    width: 1000px;
   }
   .content {
     margin-top: 40px;

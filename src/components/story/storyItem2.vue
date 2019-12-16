@@ -3,7 +3,7 @@
     <!-- 产品介绍 -->
     <el-row class="index-intro1">
       <div class="index-intro-title">活动资讯</div>
-      <el-col :span="16" :offset="4">
+      <div class="index-intro1-hd-wrap">
         <div class="hd2-content-wrap" @click="gotoitem5">
           <img src="../../assets/img/item5.png" alt />
           <div class="hd2-content2">
@@ -14,8 +14,6 @@
             <p class="hd2-content2-text3">发布日期：2019.09.10</p>
           </div>
         </div>
-      </el-col>
-      <el-col :span="16" :offset="4">
         <div class="hd2-content-wrap" @click="gotoitem6">
           <img src="../../assets/img/item4.png" alt />
           <div class="hd2-content2">
@@ -26,7 +24,8 @@
             <p class="hd2-content2-text3">发布日期：2019.10.09</p>
           </div>
         </div>
-      </el-col>
+      </div>
+        
       <!-- <el-col :span="16" :offset="4">
         <div class="hd2-content-wrap">
           <img src="../../assets/img/hd2.png" alt />
@@ -81,61 +80,6 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1200px) {
-  .index-intro1 {
-    background-color: #fff;
-    padding-bottom: 60px;
-    .index-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .hd2-content-wrap {
-      height: 130px;
-      background-color: #fafafa;
-      border-bottom: 1px solid #f2f2f2;
-      display: flex;
-      cursor: pointer;
-      img {
-        width: 120px;
-        height: 91px;
-        padding: 19px 0 20px 22px !important;
-      }
-      .hd2-content2 {
-        padding: 19px 0 20px 20px !important;
-        position: relative;
-        .hd2-content2-text1 {
-          font-size: 16px;
-          font-weight: 400;
-          color: rgba(21, 171, 254, 1);
-          line-height: 26px;
-        }
-        .hd2-content2-text2 {
-          font-size: 14px;
-          font-weight: 400;
-          color: rgba(102, 102, 102, 1);
-          line-height: 26px;
-        }
-        .hd2-content2-text3 {
-          font-size: 14px;
-          font-weight: 400;
-          color: rgba(153, 153, 153, 1);
-          line-height: 26px;
-          position: absolute;
-          right: 20px !important;
-          bottom: 5px !important;
-        }
-      }
-    }
-    .hd2-content-wrap:hover {
-      box-shadow: 0px 0px 30px 0px rgba(3, 49, 83, 0.15);
-    }
-  }
-}
 .index-intro1 {
   background-color: #fff;
   padding-bottom: 60px;
@@ -148,20 +92,29 @@ export default {
     justify-content: center;
     align-items: center;
   }
+  .index-intro1-hd-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .hd2-content-wrap {
+    width: 1000px;
     height: 130px;
     background-color: #fafafa;
     border-bottom: 1px solid #f2f2f2;
     display: flex;
+    position: relative;
     cursor: pointer;
     img {
       width: 120px;
       height: 91px;
-      padding: 19px 0 20px 20px;
+      margin: 19px 0 20px 20px;
     }
     .hd2-content2 {
-      padding: 19px 0 20px 30px;
-      position: relative;
+      margin: 19px 0 20px 30px;
+      
       .hd2-content2-text1 {
         font-size: 16px;
         font-weight: 400;
@@ -180,7 +133,7 @@ export default {
         color: rgba(153, 153, 153, 1);
         line-height: 26px;
         position: absolute;
-        right: 21px;
+        right: 18px;
         bottom: 19px;
       }
     }

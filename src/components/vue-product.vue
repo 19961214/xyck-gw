@@ -80,7 +80,7 @@ export default {
     width: 1000px;
     height: 78px;
     background: rgba(247, 252, 255, 1);
-    border: 1px solid rgba(247, 252, 255, 1);
+    border: 1px solid #eee;
     overflow: hidden;
     transform: translateY(210px);
     display: flex;
@@ -102,6 +102,7 @@ export default {
     .product-nav-item:hover {
       color: #15abfe;
       background-color: #fff;
+      border: 1px solid #eee;
     }
   }
 }

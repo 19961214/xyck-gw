@@ -4,7 +4,7 @@
       <div class="index-intro-title">云生态网络—全方位服务</div>
       <div class="index2-intro2-content-wrap">
         <div class="index2-intro2-content">
-          <el-carousel :interval="4000" type="card" height="400px">
+          <el-carousel :interval="4000" type="card" width="440px" height="440px">
             <el-carousel-item>
               <div class="index2-intro2-content-item">
                 <img src="../../assets/img/index2-3.png" alt />
@@ -45,7 +45,7 @@
                 </div>
               </div>
             </el-carousel-item>
-            <el-carousel-item style="background-color: #F9FCFF;">
+            <el-carousel-item>
               <div class="index2-intro2-content-item">
                 <img src="../../assets/img/index2-1.png" alt />
                 <div class="index2-intro2-content-title">掌掌财小程序</div>
@@ -124,15 +124,8 @@ export default {
       // display: flex;
       // justify-content: center;
       // align-items: center;
-      width: 1024px;
-      .el-carousel__item:nth-child(2n) {
-        background-color: #fff;
-        box-shadow: 0px 0px 25px 0px rgba(51, 51, 51, 0.1);
-      }
-
-      .el-carousel__item:nth-child(2n + 1) {
-        background-color: rgb(248, 241, 241);
-      }
+      width: 1000px;
+      margin-left: 100px;
       .index2-intro2-content-item {
         width: 400px;
         height: 400px;
@@ -141,6 +134,9 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #fff;
+        border: 1px solid rgba(51,51,51,0.1);
+        box-shadow:0px 0px 25px 0px rgba(51,51,51,0.1);
         .index2-intro2-content-title {
           font-size: 20px;
           font-weight: 600;

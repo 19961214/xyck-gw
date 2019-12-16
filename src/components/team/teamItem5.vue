@@ -36,62 +36,6 @@ export default {
 </script>
 <style lang="less">
 
-@media (max-width: 1250px) {
-  .jj-index-intro5 {
-    background-color: #f7fcff;
-    padding-bottom: 87px;
-    .jj-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 600;
-    }
-    .jj-content5-wrap {
-      .jj-content5-item {
-        width: 445px !important;
-        height: 465px !important;
-        padding-bottom: 5px !important;
-        margin-right: 44px !important;
-        .jj-content5-item1 {
-          font-size: 16px;
-          font-family: PingFang SC;
-          font-weight: 400;
-          color: rgba(51, 51, 51, 1);
-          line-height: 26px;
-          margin-top: 20px;
-        }
-        .jj-content5-item2 {
-          font-size: 14px;
-          font-family: PingFang SC;
-          font-weight: 400;
-          color: rgba(102, 102, 102, 1);
-          line-height: 22px;
-          margin-top: 20px;
-        }
-      }
-      .jj-content5-items {
-        width: 410px !important;
-        height: 300px !important;
-        display: inline-block;
-        position: relative;
-        img {
-          width: 410px !important;
-          height: 200px !important;
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          margin: auto;
-        }
-      }
-    }
-  }
-}
 .jj-index-intro5 {
   background-color: #f7fcff;
   padding-bottom: 87px;
@@ -111,7 +55,7 @@ export default {
   }
   .jj-content5-wrap {
     .jj-content5-item {
-      width: 600px;
+      width: 470px;
       height: 420px;
       margin-right: 26px;
       display: inline-block;
@@ -133,7 +77,7 @@ export default {
       }
     }
     .jj-content5-items {
-      width: 600px;
+      width: 500px;
       height: 500px;
       display: inline-block;
       position: relative;

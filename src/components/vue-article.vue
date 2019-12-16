@@ -23,6 +23,11 @@
           </div>
         </div>
       </div>
+      <div class="product-nav">
+        <div class="product-nav-item">关于厦云创科</div>
+        <div class="product-nav-item" @click="goLX">联系我们</div>
+        <div class="product-nav-item" @click="goJR">加入我们</div>
+      </div>
     </div>
     <articleItem1></articleItem1>
     <articleItem2></articleItem2>
@@ -37,6 +42,14 @@ export default {
   components: {
     articleItem1,
     articleItem2
+  },
+  methods: {
+    goLX() {
+      this.$router.push({ path: "/us" });
+    },
+    goJR() {
+      this.$router.push({ path: "/gous" });
+    },
   },
   mounted() {
   }
@@ -55,6 +68,7 @@ export default {
   -o-background-size: cover;
   background-position: center 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   .index-item1-text-wrap {
@@ -81,6 +95,36 @@ export default {
           margin-left: 9px;
         }
       }
+    }
+  }
+  .product-nav {
+    width: 1000px;
+    height: 78px;
+    background: rgba(247, 252, 255, 1);
+    border: 1px solid #eee;
+    overflow: hidden;
+    transform: translateY(210px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    .product-nav-item {
+      width: 33.3%;
+      height: 100%;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(102, 102, 102, 1);
+      line-height: 26px;
+      cursor: pointer;
+    }
+    .product-nav-item:hover {
+      color: #15abfe;
+      background-color: #fff;
+      border: 1px solid #eee;
     }
   }
 }

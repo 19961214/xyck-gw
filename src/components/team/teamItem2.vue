@@ -57,258 +57,6 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1859px) {
-  .jj-index-intro2 {
-    background-color: #f7fcff;
-    padding-bottom: 49px !important;
-    .jj-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .jj2-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .jj-content2-wrap {
-        overflow: hidden;
-        margin: 0 300px;
-        .jj-content2-item1 {
-          width: 260px !important;
-          height: 210px !important;
-          background: url("../../assets/img/jj5.png") center center no-repeat;
-          float: left;
-          margin-right: 21px !important;
-          margin-bottom: 28px !important;
-        }
-        .jj-content2-item3 {
-          width: 260px !important;
-          height: 210px !important;
-          background: url("../../assets/img/jj12.png") center center no-repeat;
-          float: left;
-          margin-right: 20px;
-          margin-bottom: 49px !important;
-        }
-        .jj-content2-item2 {
-          width: 193px !important;
-          height: 210px !important;
-          background: rgba(255, 255, 255, 1);
-          border: 1px solid rgba(238, 238, 238, 1);
-          border-radius: 4px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          float: left;
-          margin-right: 20px;
-          margin-bottom: 28px !important;
-          img {
-            margin-top: 21px !important;
-          }
-          .jj-content2-p {
-            font-size: 16px;
-            font-family: PingFang SC;
-            font-weight: 400;
-            color: rgba(51, 51, 51, 1);
-            margin-top: 19px !important;
-          }
-          .jj-content2-text {
-            font-size: 14px;
-            font-family: PingFang SC;
-            font-weight: 400;
-            color: rgba(153, 153, 153, 1);
-            margin-top: 20px !important;
-            line-height: 22px;
-          }
-          .jj-content2-text2s {
-            width: 143px;
-            height: 37px;
-            margin-top: 10px !important;
-          }
-          .jj-content2-text2 {
-            margin-top: 0 !important;
-          }
-        }
-        .jj-content2-item2:hover {
-          box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1550px) {
-  .jj-index-intro2 {
-    background-color: #f7fcff;
-    padding-bottom: 49px !important;
-    .jj-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight:600;
-    }
-    .jj2-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .jj-content2-wrap {
-        overflow: hidden;
-        margin: 0 100px !important;
-        .jj-content2-item1 {
-          width: 260px !important;
-          height: 210px !important;
-          background: url("../../assets/img/jj5.png") center center no-repeat;
-          float: left;
-          margin-right: 21px !important;
-          margin-bottom: 28px !important;
-        }
-        .jj-content2-item3 {
-          width: 260px !important;
-          height: 210px !important;
-          background: url("../../assets/img/jj12.png") center center no-repeat;
-          float: left;
-          margin-right: 20px;
-          margin-bottom: 49px !important;
-        }
-        .jj-content2-item2 {
-          width: 193px !important;
-          height: 210px !important;
-          background: rgba(255, 255, 255, 1);
-          border: 1px solid rgba(238, 238, 238, 1);
-          border-radius: 4px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          float: left;
-          margin-right: 20px;
-          margin-bottom: 28px !important;
-          img {
-            margin-top: 21px !important;
-          }
-          .jj-content2-p {
-            font-size: 16px;
-            font-family: PingFang SC;
-            font-weight: 400;
-            color: rgba(51, 51, 51, 1);
-            margin-top: 19px !important;
-          }
-          .jj-content2-text {
-            font-size: 14px;
-            font-family: PingFang SC;
-            font-weight: 400;
-            color: rgba(153, 153, 153, 1);
-            margin-top: 20px !important;
-            line-height: 22px;
-          }
-          .jj-content2-text2s {
-            width: 143px;
-            height: 37px;
-            margin-top: 10px !important;
-          }
-          .jj-content2-text2 {
-            margin-top: 0 !important;
-          }
-        }
-        .jj-content2-item2:hover {
-          box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1150px) {
-  .jj-index-intro2 {
-    background-color: #f7fcff;
-    padding-bottom: 49px !important;
-    .jj-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight:600;
-    }
-    .jj2-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .jj-content2-wrap {
-        overflow: hidden;
-        margin: 0 30px !important;
-        .jj-content2-item1 {
-          width: 260px !important;
-          height: 210px !important;
-          background: url("../../assets/img/jj5.png") center center no-repeat;
-          float: left;
-          margin-right: 21px !important;
-          margin-bottom: 28px !important;
-        }
-        .jj-content2-item3 {
-          width: 260px !important;
-          height: 210px !important;
-          background: url("../../assets/img/jj12.png") center center no-repeat;
-          float: left;
-          margin-right: 20px;
-          margin-bottom: 49px !important;
-        }
-        .jj-content2-item2 {
-          width: 193px !important;
-          height: 210px !important;
-          background: rgba(255, 255, 255, 1);
-          border: 1px solid rgba(238, 238, 238, 1);
-          border-radius: 4px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          float: left;
-          margin-right: 20px;
-          margin-bottom: 28px !important;
-          img {
-            margin-top: 21px !important;
-          }
-          .jj-content2-p {
-            font-size: 16px;
-            font-family: PingFang SC;
-            font-weight: 400;
-            color: rgba(51, 51, 51, 1);
-            margin-top: 19px !important;
-          }
-          .jj-content2-text {
-            font-size: 14px;
-            font-family: PingFang SC;
-            font-weight: 400;
-            color: rgba(153, 153, 153, 1);
-            margin-top: 20px !important;
-            line-height: 22px;
-          }
-          .jj-content2-text2s {
-            width: 143px;
-            height: 37px;
-            margin-top: 10px !important;
-          }
-          .jj-content2-text2 {
-            margin-top: 0 !important;
-          }
-        }
-        .jj-content2-item2:hover {
-          box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-        }
-      }
-    }
-  }
-}
 
 .jj-index-intro2 {
   background-color: #f7fcff;
@@ -330,27 +78,28 @@ export default {
     align-items: center;
 
     .jj-content2-wrap {
+      width: 1050px;
       overflow: hidden;
-      margin: 0 300px;
+      // margin: 0 300px;
       .jj-content2-item1 {
-        width: 420px;
-        height: 260px;
+        width: 350px;
+        height: 240px;
         background: url("../../assets/img/jj5.png") center center no-repeat;
         float: left;
-        margin-right: 20px;
+        margin-right: 17px;
         margin-bottom: 40px;
       }
       .jj-content2-item3 {
-        width: 420px;
-        height: 260px;
+        width: 350px;
+        height: 240px;
         background: url("../../assets/img/jj12.png") center center no-repeat;
         float: left;
-        margin-right: 20px;
+        margin-right: 17px;
         margin-bottom: 40px;
       }
       .jj-content2-item2 {
-        width: 240px;
-        height: 260px;
+        width: 200px;
+        height: 240px;
         background: rgba(255, 255, 255, 1);
         border: 1px solid rgba(238, 238, 238, 1);
         border-radius: 4px;
@@ -358,7 +107,7 @@ export default {
         flex-direction: column;
         align-items: center;
         float: left;
-        margin-right: 20px;
+        margin-right: 17px;
         margin-bottom: 40px;
         img {
           margin-top: 31px;

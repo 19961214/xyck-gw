@@ -51,17 +51,18 @@ export default {
     align-items: center;
     //   padding-bottom: 60px;
     .img-wrap {
-      width: 400px !important;
-      height: 390px;
+      display: inline-block;
+
+      padding-top: 59px;
       img {
-        width: 100%;
-        height: 100%;
+        width: 450px !important;
+        height: 428px !important;
       }
     }
     .img-wrap2 {
       width: 450px !important;
       height: 350px;
-      padding: 0 19px 27px 0 !important;
+      padding: 59px 19px 27px 0 !important;
       .img-wrap-text1 {
         color: #15abfe;
         font-size: 30px;
@@ -97,9 +98,9 @@ export default {
         color: #fff;
       }
     }
-    .img-wrap2:hover {
-      box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-    }
+    // .img-wrap2:hover {
+    //   box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+    // }
   }
 }
 
@@ -111,18 +112,19 @@ export default {
   //   padding-bottom: 60px;
   .img-wrap {
     display: inline-block;
-    width: 455px;
-    height: 430px;
+    padding-top: 59px;
+    float: left;
     img {
-      width: 100%;
-      height: 100%;
+      width: 455px;
+    height: 430px;
     }
   }
   .img-wrap2 {
     display: inline-block;
-    width: 600px;
+    float: left;
+    width: 450px;
     height: 350px;
-    padding: 59px 0 67px 60px;
+    padding: 59px 0 80px 60px;
     .img-wrap-text1 {
       color: #15abfe;
       font-size: 30px;
@@ -158,8 +160,8 @@ export default {
       color: #fff;
     }
   }
-  .img-wrap2:hover {
-    box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-  }
+  // .img-wrap2:hover {
+  //   box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+  // }
 }
 </style>

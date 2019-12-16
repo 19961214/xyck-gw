@@ -12,7 +12,7 @@
         <div class="product-nav-item">应用案例</div>
         <div class="product-nav-item2">助力企业商业决策、<div>税务筹划</div></div>
         <div class="product-nav-item">政策合理性</div>
-      </div>
+      </div> 
     </div>
     <teamItem1></teamItem1>
     <teamItem2></teamItem2>
@@ -68,7 +68,7 @@ export default {
     width: 1000px;
     height: 78px;
     background: rgba(247, 252, 255, 1);
-    border: 1px solid rgba(247, 252, 255, 1);
+    border: 1px solid #eee;
     overflow: hidden;
     transform: translateY(230px);
     display: flex;
@@ -104,10 +104,12 @@ export default {
     .product-nav-item:hover {
       color: #15abfe;
       background-color: #fff;
+      border: 1px solid #eee;
     }
     .product-nav-item2:hover {
       color: #15abfe;
       background-color: #fff;
+      border: 1px solid #eee;
     }
   }
 }

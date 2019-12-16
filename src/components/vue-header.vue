@@ -3,36 +3,38 @@
     <el-col :span="24">
       <div :class="{'headerBack':headerColor}" class="bg-black">
         <el-row class="nav">
-          <el-col :span="2" :offset="2">
-            <div class="header-img-wrap">
-              <img src="../assets/img/logo1.png" alt />
+          <div class="nav-wrap">
+            <div>
+              <div class="header-img-wrap">
+                <img src="../assets/img/logo1.png" alt />
+              </div>
             </div>
-          </el-col>
-          <router-link to="/index">
-            <el-col :span="2" :offset="1">首页</el-col>
-          </router-link>
-          <router-link to="/article">
-            <el-col :span="2" :offset="0">关于厦云</el-col>
-          </router-link>
-          <router-link to="/product">
-            <el-col :span="2" :offset="0">产品介绍</el-col>
-          </router-link>
-          <router-link to="/team">
-            <el-col :span="2" :offset="0">解决方案</el-col>
-          </router-link>
-          <router-link to="/story">
-            <el-col :span="2" :offset="0">活动资讯</el-col>
-          </router-link>
+            <router-link to="/index">
+              <div>首页</div>
+            </router-link>
+            <router-link to="/article">
+              <div>关于厦云</div>
+            </router-link>
+            <router-link to="/product">
+              <div>产品介绍</div>
+            </router-link>
+            <router-link to="/team">
+              <div>解决方案</div>
+            </router-link>
+            <router-link to="/story">
+              <div>活动资讯</div>
+            </router-link>
 
-          <router-link to="/us">
-            <el-col :span="2" :offset="0">联系我们</el-col>
-          </router-link>
-          <router-link to="/gous">
-            <el-col :span="2" :offset="0">加入我们</el-col>
-          </router-link>
-          <el-col class="phone" :span="4" :offset="1">
-            <img class="phone-img" src="../assets/img/tel.png" alt />0571-87299551
-          </el-col>
+            <!-- <router-link to="/us">
+              <div :span="2" :offset="0">联系我们</div>
+            </router-link>
+            <router-link to="/gous">
+              <div :span="2" :offset="0">加入我们</div>
+            </router-link> -->
+            <div class="phone" :span="4" :offset="1">
+              <img class="phone-img" src="../assets/img/tel1.png" alt />0571-87299551
+            </div>
+          </div>
         </el-row>
       </div>
       <div class="select">
@@ -60,8 +62,8 @@ export default {
         { label: "产品介绍", value: "product" },
         { label: "解决方案", value: "team" },
         { label: "活动资讯", value: "story" },
-        { label: "联系我们", value: "us" },
-        { label: "加入我们", value: "gous" }
+        // { label: "联系我们", value: "us" },
+        // { label: "加入我们", value: "gous" }
       ],
       option: "index",
       headerColor: true
@@ -73,7 +75,7 @@ export default {
   methods: {
     link: function() {
       this.$router.push({ path: "/" + this.option });
-    },
+    }
     // menu() {
     //   // this.scroll =
     //   //   document.documentElement.scrollTop || document.body.srcollTop;
@@ -128,7 +130,14 @@ export default {
   height: 60px;
   line-height: 60px;
   .nav {
+    display: flex;
     font-size: 14px;
+    justify-content: center;
+    .nav-wrap{
+      width: 1000px;
+      display: flex;
+      justify-content: space-around;
+    }
     .header-img-wrap {
       width: 136px;
       height: 60px;
@@ -137,7 +146,7 @@ export default {
       align-items: center;
       img {
         width: 136px;
-        height: 50px;
+        height: 58px;
       }
     }
     .router-link-active {
@@ -162,14 +171,15 @@ export default {
       }
     }
     .phone {
-      color: #FF9933;
+      color: #ff9933;
       font-size: 14px;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-left: 200px;
       .phone-img {
-        width: 21px;
-        height: 20px;
+        width: 20px;
+        height: 21px;
         margin-right: 5px;
       }
     }

@@ -89,107 +89,14 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1260px) {
-  .gy-index-intro2 {
-    background-color: #f7fcff;
-    .gy-intro-title2 {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .gy-content2-wrap {
-      display: flex;
-      justify-content: center;
-      .gy-content-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 20px !important;
-        .item-header-photo {
-          width: 164px !important;
-          height: 140px !important;
-          background: rgba(255, 255, 255, 1);
-          border: 1px solid rgba(238, 238, 238, 1);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .item-content-bottom {
-          width: 164px !important;
-          height: 450px !important;
-          // background: rgba(255, 255, 255, 1);
-          background: linear-gradient(to bottom, #fff, #f7fcff);
-          opacity: 0.8;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          overflow: hidden;
-          .item-bottom-line {
-            width: 164px !important;
-            height: 4px;
-            background: rgba(71, 181, 255, 1);
-            transform: translateX(-216px);
-          }
-          .gy-name {
-            padding-top: 44px !important;
-            color: #333;
-            font-size: 20px !important;
-          }
-          .gy-text2 {
-            margin-top: 17px;
-            color: #666;
-            font-size: 14px;
-          }
-          .gy-text3 {
-            display: inline-block;
-            width: 135px !important;
-            opacity: 0;
-            font-size: 14px;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 1);
-            line-height: 22px;
-            padding: 18px 16px 0 10px !important;
-          }
-        }
-      }
-      .gy-content-item:hover > .item-content-bottom > .gy-name {
-        transform: translateY(-100px);
-        opacity: 0;
-        transition: all 0.8s;
-      }
-      .gy-content-item:hover > .item-content-bottom > .gy-text2 {
-        transform: translateY(-100px);
-        opacity: 0;
-        transition: all 0.8s;
-      }
-      .gy-content-item:hover > .item-content-bottom > .gy-text3 {
-        opacity: 1;
-        transform: translateY(-100px);
-        transition: all 0.8s;
-      }
-      .gy-content-item:hover > .item-content-bottom > .item-bottom-line {
-        transform: translateX(0px);
-        transition: all 0.8s;
-      }
-      .gy-content-item:hover > .item-content-bottom {
-        background: rgba(108, 119, 127, 1);
-        transition: all 0.8s;
-      }
-    }
-  }
-}
 
 .gy-index-intro2 {
   background-color: #f7fcff;
   .gy-intro-title2 {
     width: 100%;
-    height: 143px;
+    height: 98px;
     color: #333;
-    font-size: 24px;
+    font-size: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,10 +108,10 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-left: 30px;
+      margin-left: 25px;
       .item-header-photo {
-        width: 216px;
-        height: 200px;
+        width: 180px;
+        height: 140px;
         background: rgba(255, 255, 255, 1);
         border: 1px solid rgba(238, 238, 238, 1);
         display: flex;
@@ -212,8 +119,8 @@ export default {
         align-items: center;
       }
       .item-content-bottom {
-        width: 216px;
-        height: 391px;
+        width: 180px;
+        height: 450px;
         // background: rgba(255, 255, 255, 1);
         background: linear-gradient(to bottom, #fff, #f7fcff);
         opacity: 0.8;
@@ -222,15 +129,15 @@ export default {
         align-items: center;
         overflow: hidden;
         .item-bottom-line {
-          width: 216px;
+          width: 180px;
           height: 4px;
           background: rgba(71, 181, 255, 1);
           transform: translateX(-216px);
         }
         .gy-name {
-          padding-top: 49px;
+          padding-top: 44px;
           color: #333;
-          font-size: 14px;
+          font-size: 20px;
         }
         .gy-text2 {
           margin-top: 17px;
@@ -239,13 +146,13 @@ export default {
         }
         .gy-text3 {
           display: inline-block;
-          width: 173px;
+          width: 135px;
           opacity: 0;
           font-size: 14px;
           font-weight: 400;
           color: rgba(255, 255, 255, 1);
           line-height: 22px;
-          padding: 29px 21px 0 19px;
+          padding: 18px 16px 0 10px;
         }
       }
     }

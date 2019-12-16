@@ -5,7 +5,8 @@
       <div class="jj-intro-title">助力企业商业决策、税务筹划</div>
 
       <div class="jj-content3-wrap">
-        <div class="jj-content3-item">
+        <div class="jj-content3-wraps">
+          <div class="jj-content3-item">
           <img src="../../assets/img/jj13.png" alt />
           <p class="jj-content3-text1">与企业签订任务外包协议</p>
           <p
@@ -28,6 +29,8 @@
             class="jj-content3-text2"
           >享受税务筹划，专属顾问，项目落地托管服务，为客户在税优地设立个人独资企业/个人工作室，并提供一站式代理服务，从而为客户达到成本最低化，收益最大化的目的。</p>
         </div>
+        </div>
+        
       </div>
     </el-row>
   </div>
@@ -39,63 +42,6 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1350px) {
-  .jj-index-intro3 {
-    background-color: #fafafa;
-    padding-bottom: 87px;
-    .jj-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 600;
-    }
-    .jj-content3-wrap {
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .jj-content3-item {
-        width: 190px !important;
-        height: 230px !important;
-        background: rgba(255, 255, 255, 1);
-        box-shadow: 0px 14px 20px 0px rgba(97, 97, 97, 0.15);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        float: left;
-        margin-right: 20px !important;
-        position: relative;
-        img {
-          position: absolute;
-        top: 20px;
-        left: -40px;
-        }
-        .jj-content3-text1 {
-          font-size: 16px !important;
-          font-family: PingFang SC;
-          font-weight: 600;
-          color: #333;
-          margin-top: 39px !important;
-        }
-        .jj-content3-text2 {
-          display: inline-block;
-          width: 229px !important;
-          font-size: 14px;
-          font-family: PingFang SC;
-          font-weight: 300;
-          color: #666;
-          line-height: 22px;
-          margin-top: 26px !important;
-          padding: 0 36px 0 35px !important;
-        }
-      }
-    }
-  }
-}
 .jj-index-intro3 {
   background-color: #fafafa;
   padding-bottom: 87px;
@@ -114,6 +60,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    .jj-content3-wraps{
+      display: flex;
+      width: 1000px;
+    }
     .jj-content3-item {
       width: 290px;
       height: 300px;
@@ -124,7 +74,7 @@ export default {
       align-items: center;
       float: left;
       margin-right: 51px;
-      padding: 71px 35px 0 40px;
+      // padding: 71px 35px 0 40px;
       position: relative;
       img {
         position: absolute;
@@ -132,22 +82,25 @@ export default {
         left: -40px;
       }
       .jj-content3-text1 {
-        font-size: 18px;
+        font-size: 16px;
         font-family: PingFang SC;
         font-weight: 600;
         color: #333;
-        margin-top: 50px;
+        margin-top: 71px;
+        // margin-left: 40px;
       }
       .jj-content3-text2 {
         display: inline-block;
-        width: 286px;
+        // width: 286px;
         font-size: 14px;
         font-family: PingFang SC;
         font-weight: 300;
         color: #666;
         line-height: 22px;
-        margin-top: 25px;
-        padding: 0 41px 0 38px;
+        margin-left: 40px;
+        margin-right: 35px;
+        margin-top: 18px;
+        // padding: 0 41px 0 38px;
       }
     }
   }

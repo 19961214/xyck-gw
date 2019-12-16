@@ -69,58 +69,6 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1270px) {
-  .index-intro1 {
-    background-color: #fff;
-    padding-bottom: 60px;
-    .index-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .hd1-content1-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .hd1-content-wrap {
-        width: 210px !important;
-        height: 280px !important;
-        display: inline-block;
-        background: rgba(255, 255, 255, 1);
-        border: 1px solid rgba(238, 238, 238, 1);
-        border-radius: 4px;
-        position: relative;
-        margin-left: 20px !important;
-        cursor: pointer;
-        img {
-          width: 210px !important;
-          height: 160px !important;
-        }
-        .hd1-content-text1 {
-          color: #333;
-          font-size: 16px;
-          padding: 19px 24px 0 19px !important;
-          line-height: 22px;
-        }
-        .hd1-content-text2 {
-          color: #333;
-          font-size: 16px;
-          position: absolute;
-          right: 13px !important;
-          bottom: 17px !important;
-        }
-      }
-      .hd1-content-wrap:hover {
-        box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-      }
-    }
-  }
-}
 .index-intro1 {
   background-color: #fff;
   padding-bottom: 60px;
@@ -139,22 +87,22 @@ export default {
     justify-content: center;
     align-items: center;
     .hd1-content-wrap {
-      width: 270px;
-      height: 320px;
+      width: 231px;
+      height: 274px;
       display: inline-block;
       background: rgba(255, 255, 255, 1);
       border: 1px solid rgba(238, 238, 238, 1);
       border-radius: 4px;
       position: relative;
-      margin-left: 40px;
+      margin-left: 25px;
       cursor: pointer;
       img {
-        width: 270px;
-        height: 205px;
+        width: 231px;
+        height: 176px;
       }
       .hd1-content-text1 {
         color: #333;
-        font-size: 16px;
+        font-size: 14px;
         padding: 14px 22px 0 15px;
         line-height: 22px;
       }

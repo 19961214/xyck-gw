@@ -3,7 +3,7 @@
     <el-row class="index-intro2">
       <div class="index-intro-title">合作伙伴</div>
 
-      <el-col :span="16" :offset="4">
+      <div class="index-intro2-wrap">
         <div class="hz-content-wrap">
           <div class="content-wrap">
             <div class="img-item-wrap">
@@ -103,7 +103,8 @@
             </div>
           </div>
         </div>
-      </el-col>
+      </div>
+        
     </el-row>
   </div>
 </template>
@@ -122,6 +123,10 @@ export default {
   -o-background-size: cover;
   background-position: center 0;
   padding-bottom: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .index-intro-title {
     width: 100%;
     height: 143px;
@@ -131,6 +136,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .index-intro2-wrap{
+    width: 1000px;
   }
   .hz-content-wrap {
     width: 100%;

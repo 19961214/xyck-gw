@@ -134,9 +134,9 @@ export default {
       }
     }
   }
-  .cp5-item:hover {
-    box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-  }
+  // .cp5-item:hover {
+  //   box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+  // }
   .cp5-item-top {
     margin-top: 0;
   }

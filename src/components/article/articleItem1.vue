@@ -9,7 +9,7 @@
             class="gy-content1-text2"
           >杭州厦云创科信息技术有限公司，系厦门大学师兄弟创立，旨在响应政府号召，链接并赋能分享经济平台和自由职业者的集大数据分析及应用，云计算技术开发、创业孵化于一体的科技企业。 团队聚集来自人力资源、互联网、IT技术等行业的精英，团队高管曾任职于平安银行、腾讯、阿里、顺丰等公司重要岗位，采用“互联网+税收优化”解决方案，与政府深圳合作，结合大数据、AI等先进技术实现厦云云生态网络，通过科技打造更专业的人财税一体化商业服务。</div>
         </div>
-        <div class="gy-img-wrap">
+        <div class="gy-img-wrap gy-img-wrap2">
           <img src="../../assets/img/gy1.png" alt />
         </div>
       </div>
@@ -35,78 +35,29 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1260px) {
-  .gy-index-intro1 {
-    background-color: #fff;
-    padding-top: 70px !important;
-    padding-bottom: 40px !important;
 
-    .gy-content1-wrap {
-      // width: 100%;
-      display: inline-block !important;
-      text-align: center;
-      // margin-left: 100px !important;
-      display: flex !important;
-      justify-content: center !important;
-      .gy-content1-text {
-        width: 450px !important;
-        height: 260px !important;
-
-        padding-bottom: 38px !important;
-        display: inline-block !important;
-
-        .gy-content1-text1 {
-          color: #333;
-          font-size: 24px;
-        }
-        .gy-content1-text2 {
-          width: 397px !important;
-          line-height: 22px;
-          margin-top: 28px;
-          color: #666;
-          font-size: 14px;
-        }
-      }
-      .gy-content1-texts {
-        padding: 0 0 0 30px !important;
-      }
-      .gy-img-wrap {
-        display: inline-block !important;
-        width: 450px !important;
-        height: 260px !important;
-        padding-bottom: 40px;
-        img {
-          display: inline-block !important;
-          width: 450px !important;
-          height: 260px !important;
-        }
-      }
-    }
-  }
-}
 .gy-index-intro1 {
   background-color: #fff;
-  padding-top: 91px;
-  padding-bottom: 60px;
+  padding-top: 70px;
+  padding-bottom: 40px;
   .gy-content1-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    .gy-content1-text {
-      width: 600px;
-      height: 300px;
-      float: left;
-      padding-bottom: 40px;
+    // width: 1000px;
+    display: inline-block;
+      text-align: center;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+    .gy-content1-text {
+      width: 450px;
+        height: 260px;
+
+        padding-bottom: 38px;
+        display: inline-block;
       .gy-content1-text1 {
         color: #333;
         font-size: 24px;
       }
       .gy-content1-text2 {
-        width: 538px;
+        width: 397px;
         line-height: 22px;
         margin-top: 28px;
         color: #666;
@@ -114,17 +65,22 @@ export default {
       }
     }
     .gy-content1-texts {
-      padding: 0 0 0 61px;
+      padding: 0 0 0 30px;
+      margin-left: 50px;
     }
     .gy-img-wrap {
-      width: 600px;
-      height: 300px;
-      padding-bottom: 40px;
-      float: left;
+      display: inline-block;
+        width: 450px;
+        height: 260px;
+        padding-bottom: 40px;
       img {
-        width: 100%;
-        height: 100%;
+        display: inline-block;
+          width: 450px;
+          height: 260px;
       }
+    }
+    .gy-img-wrap2{
+      margin-left: 50px;
     }
   }
 }

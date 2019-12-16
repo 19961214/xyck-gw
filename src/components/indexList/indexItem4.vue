@@ -4,7 +4,8 @@
     <el-row class="index-intro">
       <div class="index-intro-title">我们能为您提供国内合法、合规、稳定的税务服务落地</div>
       <div class="index3-content-wrap">
-        <div class="content-wrap wrap1">
+        <div class="index3-content-wraps">
+          <div class="content-wrap wrap1">
           <div class="content-title">
             <div class="content-title1">企业服务</div>
             <div class="content-title2">掌税通</div>
@@ -29,6 +30,8 @@
             <div class="line2" @click="gotoCall">获取免费方案</div>
           </div>
         </div>
+        </div>
+        
       </div>
     </el-row>
   </div>
@@ -45,111 +48,6 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1024px) {
-  .index-intro {
-    background-color: rgb(247, 252, 255);
-    padding-bottom: 87px;
-    .index-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .index3-content-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .wrap1 {
-        margin-right: 20px !important;
-      }
-      .content-wrap {
-        width: 440px !important;
-        height: 360px !important;
-        background-color: #fff;
-        padding: 39px 37px 40px 30px !important;
-        .content-title {
-          display: flex;
-          .content-title1 {
-            color: #333;
-            font-size: 20px;
-          }
-          .content-title2 {
-            width: 65px;
-            height: 20px;
-            font-size: 14px !important;
-            color: #fff;
-            background-color: #15abfe;
-            text-align: center;
-            line-height: 20px;
-            border-radius: 10px;
-            margin-left: 10px;
-          }
-          .line {
-            background-color: #ff7515;
-          }
-        }
-        .content-text {
-          margin-top: 52px;
-          color: #999;
-          font-size: 14px;
-          line-height: 22px;
-        }
-        .content-btn-wrap {
-          display: flex;
-          justify-content: center;
-          .content-btn {
-            width: 160px;
-            height: 40px;
-            background-color: #fff;
-            border: 1px solid #15abfe;
-            color: #15abfe;
-            border-radius: 4px;
-            font-size: 14px;
-            text-align: center;
-            line-height: 40px;
-            margin-top: 43px !important;
-            cursor: pointer;
-          }
-          .content-btn:hover {
-            background-color: #15abfe;
-            border: 1px solid #15abfe;
-            border-radius: 4px;
-            color: #fff;
-            cursor: pointer;
-          }
-          .line2 {
-            width: 160px;
-            height: 40px;
-            background-color: #fff;
-            border: 1px solid #ff7515;
-            color: #ff7515;
-            border-radius: 4px;
-            font-size: 14px;
-            text-align: center;
-            line-height: 40px;
-            margin-top: 60px !important;
-            cursor: pointer;
-          }
-          .line2:hover {
-            background-color: #ff7515;
-            border: 1px solid #ff7515;
-            border-radius: 4px;
-            color: #fff;
-            cursor: pointer;
-          }
-        }
-      }
-      .content-wrap:hover {
-        box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-      }
-    }
-  }
-}
-
 .index-intro {
   background: url("../../assets/img/index4-1.png");
   background-repeat: no-repeat;
@@ -173,16 +71,23 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    .index3-content-wraps{
+      width: 1000px;
+      display: flex
+    }
     .wrap1 {
-      margin-right: 40px;
+      margin-right: 34px;
     }
     .content-wrap {
-      width: 580px;
+      width: 483px;
       height: 320px;
       background-color: #fff;
-      padding: 40px 67px 30px 40px;
+      // padding: 40px 67px 30px 40px;
+      position: relative;
       .content-title {
         display: flex;
+        margin-top: 43px;
+        margin-left: 30px;
         .content-title1 {
           color: #333;
           font-size: 20px;
@@ -202,12 +107,18 @@ export default {
         }
       }
       .content-text {
-        margin-top: 52px;
+        margin-top: 27px;
         color: #999;
         font-size: 14px;
         line-height: 22px;
+        margin-left: 30px;
+        margin-right: 37px;
       }
       .content-btn-wrap {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
         display: flex;
         justify-content: center;
         .content-btn {
@@ -220,7 +131,7 @@ export default {
           font-size: 14px;
           text-align: center;
           line-height: 40px;
-          margin-top: 57px;
+          margin-bottom: 30px;
           cursor: pointer;
         }
         .content-btn:hover {
@@ -240,7 +151,7 @@ export default {
           font-size: 14px;
           text-align: center;
           line-height: 40px;
-          margin-top: 57px;
+          margin-bottom: 30px;
           cursor: pointer;
         }
         .line2:hover {

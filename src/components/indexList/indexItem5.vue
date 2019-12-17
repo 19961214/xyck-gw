@@ -60,7 +60,7 @@ export default {
   align-items: center;
   .index-intro-title {
     width: 100%;
-    height: 143px;
+    margin: 60px 0;
     color: #fff;
     font-size: 24px;
     font-weight:600;
@@ -102,9 +102,9 @@ export default {
       cursor:pointer;
     }
     .content2-btn:hover{
-      background-color: #fff;
-      color: #15abfe;
-      border: 1px solid #fff;
+      background-color: #15abfe;
+      color: #fff;
+      border: 1px solid #15abfe;
     }
   }
 }

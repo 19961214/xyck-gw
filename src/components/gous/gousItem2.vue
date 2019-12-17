@@ -3,7 +3,6 @@
     <!-- 产品介绍 -->
     <el-row class="jr-index-intro1">
       <div class="jr-intro-title">热招职位</div>
-      <el-col :span="16" :offset="4">
         <div class="jr-content2-wrap">
           <div class="jr-content2-item1">
             <div>全部职位</div>
@@ -66,7 +65,6 @@
             <p class="jr-bottom-text3">投递简历时请在邮件标题中注明您的姓名以及应聘职位</p>
           </div>
         </div>
-      </el-col>
     </el-row>
   </div>
 </template>
@@ -90,6 +88,9 @@ export default {
 .jr-index-intro1 {
   background-color: #fff;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .jr-intro-title {
     width: 100%;
     height: 143px;
@@ -100,6 +101,7 @@ export default {
     align-items: center;
   }
   .jr-content2-wrap {
+    width: 1000px;
     .jr-content2-item {
       padding: 0 21px 0 21px;
       background-color: #fff;

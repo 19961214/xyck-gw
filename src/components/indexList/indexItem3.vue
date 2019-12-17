@@ -73,11 +73,10 @@ export default {
   align-items: center;
   .index-intro-title {
     width: 100%;
-    height: 103px;
+    margin: 60px 0 20px 0;
     color: #333;
     font-size: 24px;
     text-align: center;
-    line-height: 143px;
     font-weight: 600;
   }
   .content3-list-wrap {
@@ -96,6 +95,7 @@ export default {
       // display: inline-block;
       width: 235px;
       height: 260px;
+      box-shadow:0px 0px 20px 0px rgba(21,171,254,0.1);
       position: relative;
       overflow: hidden;
       margin-left: 20px;
@@ -117,17 +117,19 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 29px 48px 54px 51px;
+        padding: 29px 30px 54px 30px;
         background-color: #fff;
         margin-top: -2px;
         transition: all 0.5s;
         .content3-text1 {
+          font-family: PingFang SC;
+          font-weight: 600;
           color: #333;
           font-size: 16px;
         }
         .content3-text2 {
           font-size: 14px;
-          color: #333;
+          color: #999;
           margin-top: 32px;
           line-height: 22px;
         }
@@ -139,7 +141,7 @@ export default {
       }
     }
     .content3-list:hover {
-      box-shadow: 0px 0px 30px 0px rgba(6, 100, 172, 0.4);
+      box-shadow:0px 0px 20px 0px rgba(21,171,254,0.2);
     }
     .content3-list:hover > .content3-img1 {
       transform: translateY(-70px);

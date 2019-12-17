@@ -2,7 +2,7 @@
   <div>
     <!-- 产品介绍 -->
     <div class="index-intro1" style="background-color: #fff;">
-      <div class="index-intro-title">产品介绍</div>
+      <div class="index-intro-title1">产品介绍</div>
       <div class="index1-content-wrap">
         <div class="index1-content-wraps">
           <div class="img-wrap">
@@ -73,12 +73,13 @@ export default {
 .index-intro1 {
   width: 100%;
   background-color: #f9fcff;
-  padding-bottom: 72px;
-  .index-intro-title {
+  padding-bottom: 40px;
+  .index-intro-title1 {
     font-size: 24px;
     font-weight: 600;
     color: rgba(51, 51, 51, 1);
-    line-height: 90px;
+    // line-height: 90px;
+    margin: 60px 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -92,9 +93,12 @@ export default {
     .index1-content-wraps {
       width: 1000px;
       overflow: hidden;
+      display: flex;
+      // justify-content: space-around;
+      justify-content: space-between;
       .img-wrap {
-        width: 550px;
-        height: 372px;
+        width: 515px;
+        height: 348px;
         float: left;
         img {
           width: 100%;
@@ -117,8 +121,8 @@ export default {
           color: rgba(51, 51, 51, 1);
           line-height: 36px;
           .img-wrap-quan {
-            width: 11px;
-            height: 11px;
+            width: 8px;
+            height: 8px;
             border: 2px solid rgba(21, 171, 254, 1);
             border-radius: 50%;
             margin-right: 10px;
@@ -148,6 +152,9 @@ export default {
             top: 5px;
           }
         }
+        .img-wrap-text4:hover{
+          background: #37b6fc;
+        }
       }
     }
   }
@@ -156,11 +163,12 @@ export default {
   width: 100%;
   background-color: #f9fcff;
   padding-top: 92px;
-  .index-intro-title {
+  padding-bottom: 40px;
+  .index-intro-title1 {
     font-size: 24px;
     font-weight: 600;
     color: rgba(51, 51, 51, 1);
-    line-height: 90px;
+    margin: 60px 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -174,9 +182,12 @@ export default {
     .index1-content-wraps {
       width: 1000px;
       overflow: hidden;
+      display: flex;
+      // justify-content: space-around;
+      justify-content: space-between;
       .img-wrap {
-        width: 550px;
-        height: 372px;
+        width: 515px;
+        height: 348px;
         float: left;
         img {
           width: 100%;
@@ -199,8 +210,8 @@ export default {
           color: rgba(51, 51, 51, 1);
           line-height: 36px;
           .img-wrap-quan {
-            width: 11px;
-            height: 11px;
+            width: 8px;
+            height: 8px;
             border: 2px solid #FBA013;
             border-radius: 50%;
             margin-right: 10px;
@@ -210,7 +221,7 @@ export default {
         .img-wrap-text4 {
           width: 160px;
           height: 40px;
-          margin-top: 60px;
+          margin-top: 40px;
           background: #FBA013;
           box-shadow: 0px 6px 10px 0px rgba(251,160,19,0.34);
           border-radius: 20px;
@@ -229,6 +240,9 @@ export default {
             right: 5px;
             top: 5px;
           }
+        }
+        .img-wrap-text4:hover{
+          background: #fbb03d;
         }
       }
     }

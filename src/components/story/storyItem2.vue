@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-        
+
       <!-- <el-col :span="16" :offset="4">
         <div class="hd2-content-wrap">
           <img src="../../assets/img/hd2.png" alt />
@@ -92,7 +92,7 @@ export default {
     justify-content: center;
     align-items: center;
   }
-  .index-intro1-hd-wrap{
+  .index-intro1-hd-wrap {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@ export default {
   .hd2-content-wrap {
     width: 1000px;
     height: 130px;
-    background-color: #fafafa;
+    background-color: #fff;
     border-bottom: 1px solid #f2f2f2;
     display: flex;
     position: relative;
@@ -114,11 +114,11 @@ export default {
     }
     .hd2-content2 {
       margin: 19px 0 20px 30px;
-      
+
       .hd2-content2-text1 {
         font-size: 16px;
         font-weight: 400;
-        color: rgba(21, 171, 254, 1);
+        color: #333333;
         line-height: 26px;
       }
       .hd2-content2-text2 {
@@ -139,7 +139,11 @@ export default {
     }
   }
   .hd2-content-wrap:hover {
-    box-shadow: 0px 0px 30px 0px rgba(3, 49, 83, 0.15);
+    // box-shadow: 0px 0px 30px 0px rgba(3, 49, 83, 0.15);
+    background-color: #fafafa;
+  }
+  .hd2-content-wrap:hover > .hd2-content2 > .hd2-content2-text1 {
+    color: rgba(21, 171, 254, 1);
   }
 }
 </style>

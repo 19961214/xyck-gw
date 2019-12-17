@@ -58,7 +58,7 @@ export default {
   padding-bottom: 87px;
   .index-intro-title {
     width: 100%;
-    height: 143px;
+    margin: 60px 0;
     color: #333;
     font-size: 24px;
     display: flex;
@@ -84,6 +84,7 @@ export default {
       background-color: #fff;
       // padding: 40px 67px 30px 40px;
       position: relative;
+      box-shadow:0px 0px 20px 0px rgba(153,153,153,0.1);
       .content-title {
         display: flex;
         margin-top: 43px;
@@ -95,6 +96,7 @@ export default {
         .content-title2 {
           width: 65px;
           height: 20px;
+          font-size: 12px;
           color: #fff;
           background-color: #15abfe;
           text-align: center;
@@ -110,7 +112,7 @@ export default {
         margin-top: 27px;
         color: #999;
         font-size: 14px;
-        line-height: 22px;
+        line-height: 26px;
         margin-left: 30px;
         margin-right: 37px;
       }
@@ -124,10 +126,11 @@ export default {
         .content-btn {
           width: 160px;
           height: 40px;
-          background-color: #fff;
+          background-color: #15abfe;
           border: 1px solid #15abfe;
-          color: #15abfe;
-          border-radius: 4px;
+          box-shadow:0px 6px 10px 0px rgba(21,171,254,0.34);
+          color: #fff;
+          border-radius:20px;
           font-size: 14px;
           text-align: center;
           line-height: 40px;
@@ -135,19 +138,19 @@ export default {
           cursor: pointer;
         }
         .content-btn:hover {
-          background-color: #15abfe;
-          border: 1px solid #15abfe;
-          border-radius: 4px;
+          background-color: #37b6fc;
+          border: 1px solid #37b6fc;
           color: #fff;
           cursor: pointer;
         }
         .line2 {
           width: 160px;
           height: 40px;
-          background-color: #fff;
-          border: 1px solid #ff7515;
-          color: #ff7515;
-          border-radius: 4px;
+          background-color: #FBA013;
+          border: 1px solid #FBA013;
+          box-shadow:0px 6px 10px 0px rgba(255,117,21,0.34);
+          color: #fff;
+          border-radius:20px;
           font-size: 14px;
           text-align: center;
           line-height: 40px;
@@ -155,16 +158,15 @@ export default {
           cursor: pointer;
         }
         .line2:hover {
-          background-color: #ff7515;
-          border: 1px solid #ff7515;
-          border-radius: 4px;
+          background-color: #fbb03d;
+          border: 1px solid #fbb03d;
           color: #fff;
           cursor: pointer;
         }
       }
     }
     .content-wrap:hover {
-      box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+      box-shadow:0px 0px 20px 0px rgba(153,153,153,0.2);
     }
   }
 }

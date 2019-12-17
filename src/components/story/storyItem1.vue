@@ -4,7 +4,7 @@
     <el-row class="index-intro1">
       <div class="index-intro-title">新闻动态</div>
       <div class="hd1-content1-wrap">
-        <div class="hd1-content-wrap hd1-content-left" @click="gotoitem">
+        <div class="hd1-content-left" @click="gotoitem">
           <img src="../../assets/img/item.png" alt />
           <div class="hd1-content-text1">中小企业怎么做税务筹划 中小企如何做好税务筹划</div>
           <div class="hd1-content-text2">2019.04.03</div>
@@ -108,22 +108,46 @@ export default {
       }
       .hd1-content-text2 {
         color: #333;
-        font-size: 16px;
+        font-size: 14px;
         position: absolute;
         right: 16px;
         bottom: 19px;
       }
     }
-    .hd1-content-wrap:hover {
-      box-shadow: 0px 0px 30px 0px rgba(12, 61, 99, 0.15);
-    }
+    // .hd1-content-wrap:hover {
+    //   box-shadow: 0px 0px 30px 0px rgba(12, 61, 99, 0.15);
+    // }
   }
 
   .hd1-content-bottom {
     margin-top: 40px;
   }
-  // .hd1-content-left{
-  //   margin-left: 0;
-  // }
+  .hd1-content-left{
+    width: 231px;
+      height: 274px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(238, 238, 238, 1);
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      img {
+        width: 231px;
+        height: 176px;
+      }
+      .hd1-content-text1 {
+        color: #333;
+        font-size: 14px;
+        padding: 14px 22px 0 15px;
+        line-height: 22px;
+      }
+      .hd1-content-text2 {
+        color: #333;
+        font-size: 14px;
+        position: absolute;
+        right: 16px;
+        bottom: 19px;
+      }
+  }
 }
 </style>

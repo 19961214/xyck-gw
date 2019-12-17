@@ -170,6 +170,7 @@ export default {
     justify-content: center;
     align-items: center;
     font-weight:600;
+    
   }
   .lb-content4-wrap {
     width: 100%;
@@ -198,10 +199,10 @@ export default {
           .jj-content4-text1 {
             font-size: 20px;
             font-family: PingFang SC;
-            font-weight: 500;
+            font-weight: 600;
             color: rgba(21, 171, 254, 1);
             line-height: 90px;
-            padding: 67px 0 0 60px;
+            padding: 10px 0 0 60px;
           }
           .jj-content4-text2 {
             font-size: 14px;

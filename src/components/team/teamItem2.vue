@@ -19,7 +19,7 @@
             <p class="jj-content2-text">企业佣金结算复杂，人力成本</p>
             <p class="jj-content2-text jj-content2-text2">居高不下</p>
           </div>
-          <div class="jj-content2-item2">
+          <div class="jj-content2-item4">
             <img src="../../assets/img/jj8.png" alt />
             <p class="jj-content2-p">风险增加</p>
             <p class="jj-content2-text">金税三期国地税合并，企业</p>
@@ -41,7 +41,7 @@
             <img src="../../assets/img/jj11.png" alt />
             <p class="jj-content2-p">成本高风险大</p>
             <br />
-            <p class="jj-content2-text jj-content2-text2s">成本居高不下。难以合规报税，经营有风险</p>
+            <p class="jj-content2-text jj-content2-text2s" style="margin-top:0;">成本居高不下。难以合规报税，经营有风险</p>
             <p class="jj-content2-text jj-content2-text2"></p>
           </div>
           <div class="jj-content2-item3"></div>
@@ -86,7 +86,7 @@ export default {
         height: 240px;
         background: url("../../assets/img/jj5.png") center center no-repeat;
         float: left;
-        margin-right: 17px;
+        margin-right: 16px;
         margin-bottom: 40px;
       }
       .jj-content2-item3 {
@@ -94,8 +94,48 @@ export default {
         height: 240px;
         background: url("../../assets/img/jj12.png") center center no-repeat;
         float: left;
-        margin-right: 17px;
+        // margin-right: 17px;
         margin-bottom: 40px;
+      }
+      .jj-content2-item4{
+        width: 200px;
+        height: 240px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(238, 238, 238, 1);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: left;
+        margin-bottom: 40px;
+        img {
+          margin-top: 31px;
+        }
+        .jj-content2-p {
+          font-size: 16px;
+          font-family: PingFang SC;
+          font-weight: 600;
+          color: rgba(51, 51, 51, 1);
+          margin-top: 21px;
+        }
+        .jj-content2-text {
+          font-size: 14px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(153, 153, 153, 1);
+          margin-top: 20px;
+          line-height: 22px;
+        }
+        .jj-content2-text2s {
+          width: 143px;
+          height: 37px;
+        }
+        .jj-content2-text2 {
+          margin-top: 0;
+        }
+      }
+      .jj-content2-item4:hover {
+        box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
       }
       .jj-content2-item2 {
         width: 200px;
@@ -107,7 +147,7 @@ export default {
         flex-direction: column;
         align-items: center;
         float: left;
-        margin-right: 17px;
+        margin-right: 16px;
         margin-bottom: 40px;
         img {
           margin-top: 31px;
@@ -115,7 +155,7 @@ export default {
         .jj-content2-p {
           font-size: 16px;
           font-family: PingFang SC;
-          font-weight: 400;
+          font-weight: 600;
           color: rgba(51, 51, 51, 1);
           margin-top: 21px;
         }

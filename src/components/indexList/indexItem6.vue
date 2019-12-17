@@ -129,7 +129,7 @@ export default {
   align-items: center;
   .index-intro-title {
     width: 100%;
-    height: 143px;
+    margin: 60px 0;
     color: #333;
     font-size: 24px;
     font-weight:600;
@@ -162,7 +162,7 @@ export default {
           display: flex;
           justify-content: center;
           align-items: center;
-          box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
+          box-shadow: 0px 0px 15px 0px rgba(153, 153, 153, 0.1);
           border-radius: 4px;
           float: left;
         }

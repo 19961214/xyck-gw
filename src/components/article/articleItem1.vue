@@ -40,18 +40,21 @@ export default {
   background-color: #fff;
   padding-top: 70px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .gy-content1-wrap {
-    // width: 1000px;
-    display: inline-block;
-      text-align: center;
-      display: flex;
-      justify-content: center;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
     .gy-content1-text {
       width: 450px;
         height: 260px;
-
         padding-bottom: 38px;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       .gy-content1-text1 {
         color: #333;
         font-size: 24px;
@@ -67,6 +70,7 @@ export default {
     .gy-content1-texts {
       padding: 0 0 0 30px;
       margin-left: 50px;
+      float: right;
     }
     .gy-img-wrap {
       display: inline-block;

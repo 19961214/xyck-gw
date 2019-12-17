@@ -38,7 +38,7 @@ export default {
 
 .jj-index-intro5 {
   background-color: #f7fcff;
-  padding-bottom: 87px;
+  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,10 +60,10 @@ export default {
       margin-right: 26px;
       display: inline-block;
       .jj-content5-item1 {
-        font-size: 16px;
+        font-size: 14px;
         font-family: PingFang SC;
-        font-weight: 400;
-        color: rgba(51, 51, 51, 1);
+        font-weight: 600;
+        color: #333;
         line-height: 26px;
         margin-top: 20px;
       }
@@ -71,7 +71,7 @@ export default {
         font-size: 14px;
         font-family: PingFang SC;
         font-weight: 400;
-        color: rgba(102, 102, 102, 1);
+        color: #666;
         line-height: 22px;
         margin-top: 20px;
       }

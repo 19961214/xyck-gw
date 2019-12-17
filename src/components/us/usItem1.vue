@@ -69,113 +69,11 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1300px) {
-  .lx-index-intro2 {
-    background-color: #fff;
-    padding-bottom: 87px;
-    .lx-intro-title {
-      width: 100%;
-      height: 98px !important;
-      color: #333;
-      font-size: 22px !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .lx-content-wrap {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .lx-content1-wrap {
-        width: 88% !important;
-        height: 200px !important;
-        background: rgba(255, 255, 255, 1);
-        box-shadow: 0px 0px 20px 0px rgba(32, 148, 235, 0.15);
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .lx-content1-top {
-          font-size: 16px !important;
-          font-family: PingFang SC;
-          font-weight: 400;
-          color: rgba(51, 51, 51, 1);
-          line-height: 90px;
-        }
-        .lx-content1-bottom {
-          display: flex;
-          .lx-content1-girl {
-            display: flex;
-            padding: 0 65px;
-            .lx-content1-text {
-              margin-left: 19px;
-              font-size: 14px;
-              font-family: PingFang SC;
-              font-weight: 600;
-              color: rgba(102, 102, 102, 1);
-              line-height: 22px;
-              .lx-content1-text1 {
-                color: #666;
-              }
-              .lx-content1-text2 {
-                color: #666;
-              }
-              .lx-content1-text3 {
-                color: #15abfe;
-              }
-            }
-          }
-        }
-      }
-      .lx-content2-wrap {
-        width: 88% !important;
-        height: 120px !important;
-        background: rgba(255, 255, 255, 1);
-        box-shadow: 0px 0px 20px 0px rgba(32, 148, 235, 0.1);
-        border-radius: 4px;
-        margin-top: 20px !important;
-        overflow: hidden;
-        img {
-          padding: 10px;
-          float: left;
-        }
-        .lx-content2-text {
-          float: left;
-          .lx-content2-text1 {
-            font-size: 20px;
-            font-family: PingFang SC;
-            font-weight: 400;
-            color: rgba(51, 51, 51, 1);
-            line-height: 90px;
-          }
-          .lx-content2-text2 {
-            font-size: 14px;
-            font-family: PingFang SC;
-            font-weight: 400;
-            color: rgba(153, 153, 153, 1);
-            line-height: 22px;
-          }
-        }
-        .lx-content2-texts {
-          font-size: 14px;
-          font-family: PingFang SC;
-          font-weight: 400;
-          color: rgba(21, 171, 254, 1);
-          margin-right: 19px !important;
-          line-height: 140px;
-          float: right;
-        }
-      }
-      .lx-content2-wrap:hover {
-        box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-      }
-    }
-  }
-}
+
 .lx-index-intro2 {
   background-color: #fff;
   padding-bottom: 87px;
+  margin-top: 30px;
   .lx-intro-title {
     width: 100%;
     height: 143px;
@@ -191,7 +89,7 @@ export default {
     flex-direction: column;
     align-items: center;
     .lx-content1-wrap {
-      width: 63%;
+      width: 1000px;
       height: 240px;
       background: rgba(255, 255, 255, 1);
       box-shadow: 0px 0px 20px 0px rgba(32, 148, 235, 0.15);
@@ -208,6 +106,7 @@ export default {
       }
       .lx-content1-bottom {
         display: flex;
+        
         .lx-content1-girl {
           display: flex;
           padding: 0 65px;
@@ -232,7 +131,7 @@ export default {
       }
     }
     .lx-content2-wrap {
-      width: 63%;
+      width: 1000px;
       height: 140px;
       background: rgba(255, 255, 255, 1);
       box-shadow: 0px 0px 20px 0px rgba(32, 148, 235, 0.1);

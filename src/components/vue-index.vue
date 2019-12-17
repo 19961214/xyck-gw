@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="index-content1">
     <div class="index-item1-wrap">
       <!-- <img  class="index-item1-img" src="../assets/img/index-1.png" alt /> -->
       <div class="index-item1-text-wrap">
@@ -69,7 +69,10 @@ export default {
       this.isPhoneShow = !this.isPhoneShow;
     }
   },
-  mounted() {},
+  mounted() {
+    var dis = document.getElementById("index-content1");
+    dis.scrollIntoView();
+  },
   components: {
     indexItem1,
     indexItem2,

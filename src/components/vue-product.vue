@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="product-content3">
     <div class="product-item1-wrap">
       <!-- <img  class="index-item1-img" src="../assets/img/index-1.png" alt /> -->
       <div class="index-item1-text-wrap">
@@ -7,18 +7,18 @@
         <div class="index-item1-text2">Our products</div>
       </div>
       <div class="product-nav">
-        <div class="product-nav-item">掌税通</div>
-        <div class="product-nav-item">掌钱进</div>
-        <div class="product-nav-item">掌掌财APP</div>
-        <div class="product-nav-item">掌掌财小程序</div>
-        <div class="product-nav-item">我们的优势</div>
+        <div class="product-nav-item" @click="productItem1">掌税通</div>
+        <div class="product-nav-item" @click="productItem2">掌钱进</div>
+        <div class="product-nav-item" @click="productItem3">掌掌财APP</div>
+        <div class="product-nav-item" @click="productItem4">掌掌财小程序</div>
+        <div class="product-nav-item" @click="productItem5">我们的优势</div>
       </div>
     </div>
-    <productItem1></productItem1>
-    <productItem2></productItem2>
-    <productItem3></productItem3>
-    <productItem4></productItem4>
-    <productItem5></productItem5>
+    <productItem1 id="productItem1"></productItem1>
+    <productItem2 id="productItem2"></productItem2>
+    <productItem3 id="productItem3"></productItem3>
+    <productItem4 id="productItem4"></productItem4>
+    <productItem5 id="productItem5"></productItem5>
   </div>
 </template>
 
@@ -37,8 +37,32 @@ export default {
     productItem4,
     productItem5
   },
-  methods: {},
-  mounted() {}
+  methods: {
+    productItem1() {
+      const dis = document.getElementById("productItem1");
+      dis.scrollIntoView();
+    },
+    productItem2() {
+      const dis = document.getElementById("productItem2");
+      dis.scrollIntoView();
+    },
+    productItem3() {
+      const dis = document.getElementById("productItem3");
+      dis.scrollIntoView();
+    },
+    productItem4() {
+      const dis = document.getElementById("productItem4");
+      dis.scrollIntoView();
+    },
+    productItem5() {
+      const dis = document.getElementById("productItem5");
+      dis.scrollIntoView();
+    }
+  },
+  mounted() {
+    var dis = document.getElementById("product-content3");
+    dis.scrollIntoView();
+  }
 };
 </script>
 <style lang="less">
@@ -79,7 +103,7 @@ export default {
   .product-nav {
     width: 1000px;
     height: 78px;
-    background: rgba(247, 252, 255, 1);
+    background: #fff;
     border: 1px solid #eee;
     overflow: hidden;
     transform: translateY(210px);
@@ -101,7 +125,7 @@ export default {
     }
     .product-nav-item:hover {
       color: #15abfe;
-      background-color: #fff;
+      background-color: rgba(247, 252, 255, 1);
       border: 1px solid #eee;
     }
   }

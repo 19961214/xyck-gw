@@ -2,13 +2,14 @@
   <div>
     <el-row class="lx-index-intro3">
       <div class="lx-intro-title">公司地址</div>
-      <el-col :span="16" :offset="4">
+      <div class="map-wraps">
         <div class="map-wrap">
           <img class="map-img" src="../../assets/img/map.png" alt />
           <div class="map-text">浙江省杭州市西湖区桃岭路桃源坞基金小镇16幢3A</div>
         </div>
         <div id="allmap"></div>
-      </el-col>
+      </div>
+        
     </el-row>
   </div>
 </template>
@@ -43,6 +44,9 @@ export default {
 .lx-index-intro3 {
   background-color: #f4fafe;
   padding-bottom: 87px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .lx-intro-title {
     width: 100%;
     height: 143px;
@@ -51,6 +55,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .map-wraps{
+    width: 1000px;
   }
   .map-wrap {
     width: 100%;

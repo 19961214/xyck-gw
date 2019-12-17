@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="story-content5">
     <div class="hd-item1-wrap">
       <!-- <img  class="index-item1-img" src="../assets/img/index-1.png" alt /> -->
       <div class="index-item1-text-wrap">
@@ -39,8 +39,8 @@ export default {
 	storyItem2
   },
   mounted() {
-      var dis = document.getElementById("cp-content3");
-      dis.scrollIntoView();
+    var dis = document.getElementById("story-content5");
+    dis.scrollIntoView();
   }
 };
 </script>

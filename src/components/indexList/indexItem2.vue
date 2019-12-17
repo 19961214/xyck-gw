@@ -109,11 +109,12 @@ export default {
     font-size: 24px;
     font-weight: 600;
     color: rgba(51, 51, 51, 1);
-    line-height: 90px;
+    margin: 60px 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
   }
   .index2-intro2-content-wrap {
     width: 100%;
@@ -151,12 +152,15 @@ export default {
           line-height: 30px;
           .img-wrap-text-wrap {
             .img-wrap-quan {
-              width: 8px;
-              height: 8px;
+              width: 6px;
+              height: 6px;
               border: 2px solid rgba(21, 171, 254, 1);
               border-radius: 50%;
               margin-right: 10px;
               display: inline-block;
+            }
+            .img-wrap-text3{
+              font-weight: 500;
             }
           }
         }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="article-content2">
     <div class="gy-item1-wrap">
       <!-- <img  class="index-item1-img" src="../assets/img/index-1.png" alt /> -->
       <div class="index-item1-text-wrap">
@@ -52,6 +52,8 @@ export default {
     },
   },
   mounted() {
+    var dis = document.getElementById("article-content2");
+    dis.scrollIntoView();
   }
 };
 </script>
@@ -100,7 +102,7 @@ export default {
   .product-nav {
     width: 1000px;
     height: 78px;
-    background: rgba(247, 252, 255, 1);
+    background: #fff;
     border: 1px solid #eee;
     overflow: hidden;
     transform: translateY(210px);
@@ -123,7 +125,7 @@ export default {
     }
     .product-nav-item:hover {
       color: #15abfe;
-      background-color: #fff;
+      background-color: rgba(247, 252, 255, 1);
       border: 1px solid #eee;
     }
   }

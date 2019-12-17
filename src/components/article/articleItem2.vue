@@ -3,7 +3,7 @@
     <el-row class="gy-index-intro2">
       <div class="gy-intro-title2">创始人团队</div>
       <div class="gy-content2-wrap">
-        <div class="gy-content-item">
+        <div class="gy-content-item" style="margin-left: 0;">
           <div class="item-header-photo">
             <img src="../../assets/img/chenliqiang.png" alt />
           </div>
@@ -92,6 +92,7 @@ export default {
 
 .gy-index-intro2 {
   background-color: #f7fcff;
+  padding-bottom: 100px;
   .gy-intro-title2 {
     width: 100%;
     height: 98px;

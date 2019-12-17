@@ -31,78 +31,23 @@ export default {
 };
 </script>
 <style lang="less">
-@media (max-width: 1240px) {
-  #cp-index-intro1 {
-    margin-top: 30px !important;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    //   padding-bottom: 60px;
-    .img-wrap {
-      display: inline-block;
 
-      padding-top: 59px;
-      img {
-        width: 450px !important;
-        height: 350px !important;
-      }
-    }
-    .img-wrap2 {
-      width: 450px !important;
-      height: 350px;
-      padding: 59px 19px 27px 0 !important;
-      .img-wrap-text1 {
-        color: #15abfe;
-        font-size: 30px;
-      }
-      .cp-img-wrap-text2 {
-        width: 430px;
-        margin-top: 41px;
-        color: #333333;
-        font-size: 14px;
-        line-height: 26px;
-      }
-      .cp-img-wrap-text3 {
-        width: 258px;
-        margin-top: 30px;
-        color: #ff9900;
-        font-size: 14px;
-        line-height: 26px;
-      }
-      .cp-img-wrap-text4 {
-        width: 140px;
-        height: 40px;
-        border: 1px solid rgba(21, 171, 254, 1);
-        border-radius: 20px;
-        text-align: center;
-        line-height: 40px;
-        color: #15abfe;
-        font-size: 16px;
-        margin-top: 27px;
-        cursor: pointer;
-      }
-      .cp-img-wrap-text4:hover {
-        background-color: #15abfe;
-        color: #fff;
-      }
-    }
-    // .img-wrap2:hover {
-    //   box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
-    // }
-  }
-}
 
 #cp-index-intro1 {
+  padding-top: 60px;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
   //   padding-bottom: 60px;
-  .img-wrap {
+  .cp-img-wrap{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img-wrap {
     display: inline-block;
-    float: left;
     padding-top: 59px;
     img {
       width: 550px;
@@ -111,10 +56,9 @@ export default {
   }
   .img-wrap2 {
     display: inline-block;
-    float: left;
     width: 450px;
     height: 350px;
-    padding: 59px 0 80px 60px;
+    // padding: 59px 0 80px 60px;
     .img-wrap-text1 {
       color: #15abfe;
       font-size: 30px;
@@ -134,22 +78,25 @@ export default {
       line-height: 26px;
     }
     .cp-img-wrap-text4 {
-      width: 140px;
+      width: 160px;
       height: 40px;
       border: 1px solid rgba(21, 171, 254, 1);
+      box-shadow:0px 6px 10px 0px rgba(0,153,255,0.34);
       border-radius: 20px;
       text-align: center;
       line-height: 40px;
-      color: #15abfe;
-      font-size: 16px;
+      background-color: #15abfe;
+      color: #fff;
+      font-size: 14px;
       margin-top: 27px;
       cursor: pointer;
     }
     .cp-img-wrap-text4:hover {
-      background-color: #15abfe;
-      color: #fff;
+      background-color: #37b6fc;
     }
   }
+  }
+  
   // .img-wrap2:hover {
   //   box-shadow: 0px 0px 30px 0px rgba(32, 148, 235, 0.15);
   // }

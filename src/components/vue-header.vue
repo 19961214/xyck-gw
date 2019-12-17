@@ -6,7 +6,7 @@
           <div class="nav-wrap">
             <div>
               <div class="header-img-wrap">
-                <img src="../assets/img/logo1.png" alt />
+                <img src="../assets/img/logo.png" alt />
               </div>
             </div>
             <router-link to="/index">
@@ -146,7 +146,7 @@ export default {
       align-items: center;
       img {
         width: 136px;
-        height: 58px;
+        height: 60px;
       }
     }
     .router-link-active {

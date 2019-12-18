@@ -4,7 +4,7 @@
   "description": "A company website of GOTH",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --port 8080 --host 192.168.1.103",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --port 8080",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "devDependencies": {
@@ -24,6 +24,7 @@
     "webpack-dev-server": "^2.2.0"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "babel-polyfill": "^6.26.0",
     "element-ui": "^1.4.8",
     "less": "^2.7.3",

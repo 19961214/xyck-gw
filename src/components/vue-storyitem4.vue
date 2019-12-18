@@ -127,7 +127,7 @@ export default {
     .item-wrap {
       // margin-top: 40px;
       margin-bottom: 60px;
-      padding: 39px 0 0 31px; 
+      padding: 0 0 0 31px; 
       .item-title {
         color: #999;
         font-size: 14px;

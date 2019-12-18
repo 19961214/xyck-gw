@@ -1,54 +1,52 @@
 <template>
-  <el-row>
-    <el-col :span="24">
-      <div :class="{'headerBack':headerColor}" class="bg-black">
-        <el-row class="nav">
-          <div class="nav-wrap">
-            <div>
-              <div class="header-img-wrap">
-                <img src="../assets/img/logo.png" alt />
-              </div>
+  <div>
+    <div :class="{'headerBack':headerColor}" class="bg-black">
+      <el-row class="nav">
+        <div class="nav-wrap">
+          <div>
+            <div class="header-img-wrap">
+              <img src="../assets/img/logo.png" alt />
             </div>
-            <router-link to="/index">
-              <div>首页</div>
-            </router-link>
-            <router-link to="/article">
-              <div>关于厦云</div>
-            </router-link>
-            <router-link to="/product">
-              <div>产品介绍</div>
-            </router-link>
-            <router-link to="/team">
-              <div>解决方案</div>
-            </router-link>
-            <router-link to="/story">
-              <div>活动资讯</div>
-            </router-link>
+          </div>
+          <router-link to="/index">
+            <div>首页</div>
+          </router-link>
+          <router-link to="/article">
+            <div>关于厦云</div>
+          </router-link>
+          <router-link to="/product">
+            <div>产品介绍</div>
+          </router-link>
+          <router-link to="/team">
+            <div>解决方案</div>
+          </router-link>
+          <router-link to="/story">
+            <div>活动资讯</div>
+          </router-link>
 
-            <!-- <router-link to="/us">
+          <!-- <router-link to="/us">
               <div :span="2" :offset="0">联系我们</div>
             </router-link>
             <router-link to="/gous">
               <div :span="2" :offset="0">加入我们</div>
-            </router-link> -->
-            <div class="phone" :span="4" :offset="1">
-              <img class="phone-img" src="../assets/img/tel1.png" alt />0571-87299551
-            </div>
+          </router-link>-->
+          <div class="phone">
+            <img class="phone-img" src="../assets/img/tel1.png" alt />0571-87299551
           </div>
-        </el-row>
-      </div>
-      <div class="select">
-        <el-select v-model="option" placeholder="请选择" @change="link">
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          ></el-option>
-        </el-select>
-      </div>
-    </el-col>
-  </el-row>
+        </div>
+      </el-row>
+    </div>
+    <div class="select">
+      <el-select v-model="option" placeholder="请选择" @change="link">
+        <el-option
+          v-for="item in options"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value"
+        ></el-option>
+      </el-select>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -61,7 +59,7 @@ export default {
         { label: "关于厦云", value: "article" },
         { label: "产品介绍", value: "product" },
         { label: "解决方案", value: "team" },
-        { label: "活动资讯", value: "story" },
+        { label: "活动资讯", value: "story" }
         // { label: "联系我们", value: "us" },
         // { label: "加入我们", value: "gous" }
       ],
@@ -133,7 +131,7 @@ export default {
     display: flex;
     font-size: 14px;
     justify-content: center;
-    .nav-wrap{
+    .nav-wrap {
       width: 1000px;
       display: flex;
       justify-content: space-around;

@@ -13,7 +13,7 @@
           助力企业商业决策、
           <div>税务筹划</div>
         </div>
-        <div class="product-nav-item" @click="teamItem5">政策合理性</div>
+        <div class="product-nav-item" @click="teamItem5">政策合规性</div>
       </div>
     </div>
     <teamItem1 id="teamItem1"></teamItem1>

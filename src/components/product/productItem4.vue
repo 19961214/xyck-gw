@@ -11,10 +11,10 @@
           <div
             class="cp-img-wrap-text2"
           >掌掌财小程序是厦云创科推出的一款针对自由职业者使用的移动端应用产品，主要服务于自由职业者解决佣金收款流程复杂、纸质合同签署困难、资产记录不清晰等问题。用户可通过掌掌财小程序完成在线实名认证、电子合同签约、查询自己收款记录等服务。</div>
-          <div class="cp-img-wrap-text3">轻量级应用，无需登录APP也可一步实现电子合同签约</div>
-          <div class="cp-img-wrap-text3">收款记录实时查询，便捷高效</div>
+          <div class="cp-img-wrap-text3s">轻量级应用，无需登录APP也可一步实现电子合同签约</div>
+          <div class="cp-img-wrap-text3s" style="margin-top: 0;">收款记录实时查询，便捷高效</div>
           <!-- <div class="cp-img-wrap-text4" @click="gotoCall">申请试用</div> -->
-          <div class="cp-img-wrap-text5">扫码关注掌掌财小程序</div>
+          <div class="cp-img-wrap-text5"> <img class="cp-img-wrap-text5-img" src="../../assets/img/code.jpg" alt /><span>扫码关注掌掌财小程序</span></div>
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  //   padding-bottom: 60px;
+  padding-bottom: 60px;
   .cp-img-wrap{
     width: 1000px;
     display: flex;
@@ -80,9 +80,9 @@ export default {
       font-size: 14px;
       line-height: 26px;
     }
-    .cp-img-wrap-text3 {
+    .cp-img-wrap-text3s {
       width: 335px;
-      margin-top: 20px;
+      margin-top: 10px;
       color: #ff9900;
       font-size: 14px;
       line-height: 26px;
@@ -92,8 +92,16 @@ export default {
       font-weight: 400;
       color: rgba(21, 171, 254, 1);
       line-height: 26px;
-      margin: 40px 0 0 90px;
       cursor: pointer;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-top: 30px;
+      .cp-img-wrap-text5-img{
+        margin-right: 20px;
+        width: 100px;
+        height: 100px;
+      }
     }
   }
     }

@@ -4,19 +4,42 @@
     <el-row>
       <el-col :span="16" :offset="4">
         <div class="call-content">
+          <div class="call-content-top">
+            <div class="call-content-return" @click="goback">
+              <img
+                class="call-content-return-img call-content-return-imgs"
+                src="../assets/img/return1.png"
+                alt
+              />
+              <span>返回</span>
+            </div>
+            <div class="call-content-return" @click="goback">
+              <img
+                class="call-content-return-img call-content-return-img2"
+                src="../assets/img/return2.png"
+                alt
+              />
+              <span>返回</span>
+            </div>
+          </div>
           <div class="call-content-text1">联系客服</div>
           <div class="call-content-text2">留下您的联系方式，我们的客服将与您联系，并向您提供免费税务筹划方案。</div>
           <div class="call-content-text3">
             <img src="../assets/img/call1.png" alt />
-            <input class="call-content-input1" v-model="input1" type="text" placeholder="姓名" />
+            <input class="call-content-input1" v-model="date.contact" type="text" placeholder="姓名" />
           </div>
           <div class="call-content-text4">
             <img src="../assets/img/call2.png" alt />
-            <input class="call-content-input2" v-model="input2" type="text" placeholder="电话号码" />
+            <input class="call-content-input2" v-model="date.phone" type="text" placeholder="电话号码" />
           </div>
           <div class="call-content-text5">
             <img src="../assets/img/call3.png" alt />
-            <input class="call-content-input3" v-model="input3" type="text" placeholder="企业名称" />
+            <input
+              class="call-content-input3"
+              v-model="date.companyName"
+              type="text"
+              placeholder="企业名称"
+            />
           </div>
           <div class="call-content-text6" @click="selectCommit">提交</div>
         </div>
@@ -26,33 +49,62 @@
 </template>
 
 <script>
-
+import { getData } from "../api/index";
 export default {
   name: "vue-index",
   data() {
     return {
-      input1: "",
-      input2: "",
-      input3: ""
+      date: {
+        contact: "",
+        phone: "",
+        companyName: ""
+      }
     };
   },
   methods: {
-    selectCommit() {
-      // var FileSaver = require("file-saver");
-      if (this.input1 && this.input2 && this.input3) {
-        this.input1 = "";
-        this.input2 = "";
-        this.input3 = "";
-        // let data = {
-        //   name: "hanmeimei",
-        //   age: 88
-        // };
-        // var content = JSON.stringify(data);
-        // var blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-        // FileSaver.saveAs(blob, "user.txt");
-        alert("您的信息我们已收到，稍后会有客服人员联系您，请注意接听来电，谢谢！");
+    goback() {
+      this.$router.back(-1);
+    },
+    async selectCommit() {
+      if (this.date.contact && this.date.phone && this.date.companyName) {
+        const parameter = this.date;
+        console.log(parameter);
+        const result = await getData(parameter);
+        console.log(result);
+        if (result.code == 0) {
+          this.$alert(
+            "您的信息我们已收到，稍后会有客服人员联系您，请注意接听来电，谢谢！",
+            "提示",
+            {
+              confirmButtonText: "确定",
+              callback: action => {
+                this.date.contact = "";
+                this.date.phone = "";
+                this.date.companyName = "";
+                this.$router.back(-1);
+              }
+            }
+          );
+        } else {
+          this.$alert(
+            "您的信息我们已收到，稍后会有客服人员联系您，请注意接听来电，谢谢！",
+            "提示",
+            {
+              confirmButtonText: "确定",
+              callback: action => {
+                this.date.contact = "";
+                this.date.phone = "";
+                this.date.companyName = "";
+                this.$router.back(-1);
+              }
+            }
+          );
+        }
       } else {
-        alert("输入不能为空");
+        // alert("输入不能为空");
+        this.$alert("输入不能为空，请输入完整！", "提示", {
+          confirmButtonText: "确定"
+        });
       }
     }
   },
@@ -70,6 +122,43 @@ export default {
   background-color: #1a334d;
 }
 .call-content {
+  .call-content-top {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    .call-content-return {
+      position: absolute;
+      top: 26px;
+      right: 25px;
+      font-size: 14px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: rgba(153, 153, 153, 1);
+      line-height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .call-content-return-img {
+        margin-right: 4px;
+      }
+      .call-content-return-img1 {
+        z-index: 100;
+      }
+      .call-content-return-img2 {
+        z-index: -1;
+      }
+    }
+    .call-content-return:hover {
+      color: rgba(21, 171, 254, 1);
+    }
+    .call-content-return:hover > .call-content-return-img1 {
+      z-index: -1;
+    }
+    .call-content-return:hover > .call-content-return-img2 {
+      z-index: 100;
+    }
+  }
   height: 600px;
   margin: 40px 0 80px 0;
   box-shadow: 0px 0px 20px 0px rgba(32, 148, 235, 0.15);
@@ -113,8 +202,8 @@ export default {
   // .call-content-text3:hover >.call-content-input1{
   //   background-color: #ccc;
   // }
-  .call-content-text3:hover{
-    border: 2px solid #15ABFE;
+  .call-content-text3:hover {
+    border: 2px solid #15abfe;
   }
   .call-content-text4 {
     margin-top: 15px;
@@ -137,8 +226,8 @@ export default {
   // .call-content-text4:hover >.call-content-input2{
   //   background-color: #ccc;
   // }
-  .call-content-text4:hover{
-    border: 2px solid #15ABFE;
+  .call-content-text4:hover {
+    border: 2px solid #15abfe;
   }
   .call-content-text5 {
     margin-top: 15px;
@@ -161,8 +250,8 @@ export default {
   // .call-content-text5:hover >.call-content-input3{
   //   background-color: #ccc;
   // }
-  .call-content-text5:hover{
-    border: 2px solid #15ABFE;
+  .call-content-text5:hover {
+    border: 2px solid #15abfe;
   }
   .call-content-text6 {
     width: 100px;
@@ -175,8 +264,8 @@ export default {
     margin-top: 40px;
     cursor: pointer;
   }
-  .call-content-text6:hover{
-    background-color: #0183D2;
+  .call-content-text6:hover {
+    background-color: #0183d2;
   }
 }
 </style>

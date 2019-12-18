@@ -50,7 +50,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  //   padding-bottom: 60px;
+  padding-bottom: 60px;
   .cp-img-wrap{
     width: 1000px;
     display: flex;

@@ -37,7 +37,7 @@ export default {
 <style lang="less">
 
 .jj-index-intro5 {
-  background-color: #f7fcff;
+  background-color: #fff;
   padding-bottom: 200px;
   display: flex;
   flex-direction: column;

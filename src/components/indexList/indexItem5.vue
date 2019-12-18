@@ -6,7 +6,7 @@
         <div class="content">
           <div class="content-item">
             <img src="../../assets/img/back5-2.png" alt />
-            <div>1.商务谈判</div>
+            <div>1.商务洽谈</div>
           </div>
           <div class="content-item">
             <img src="../../assets/img/back5-3.png" alt />
@@ -18,11 +18,11 @@
           </div>
           <div class="content-item">
             <img src="../../assets/img/back5-5.png" alt />
-            <div>4.代理发放</div>
+            <div>4.发放佣金</div>
           </div>
           <div class="content-item content-item5">
             <img src="../../assets/img/back5-6.png" alt />
-            <div>5.开票回执</div>
+            <div>5.开票报税</div>
           </div>
         </div>
         <div class="content2">

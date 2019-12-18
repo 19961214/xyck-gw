@@ -82,7 +82,7 @@ export default {
 </script>
 <style lang="less">
 .cp5-index-intro5 {
-  padding-top: 60px;
+  // padding-top: 60px;
   background-color: #fff;
   padding-bottom: 140px;
   .cp5-content-wrap {

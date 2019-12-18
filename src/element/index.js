@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';
 import {
 	Row,
@@ -20,6 +21,7 @@ Vue.use(Select);
 Vue.use(Option);
 Vue.use(Carousel);
 Vue.use(CarouselItem);
+Vue.use(ElementUI);
 export default {
 	
 }

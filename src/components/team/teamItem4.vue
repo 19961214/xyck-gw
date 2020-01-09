@@ -84,7 +84,7 @@ export default {
   name: "teamItem4"
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 @media (max-width: 1170px) {
   .jj-index-intro4 {
     background-color: #fff;

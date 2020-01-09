@@ -30,7 +30,7 @@ export default {
   mounted() {}
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 
 
 #cp-index-intro1 {

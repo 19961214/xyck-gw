@@ -52,12 +52,22 @@ export default {
     },
   },
   mounted() {
+    if (
+      navigator.userAgent.match(
+        /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+      )
+    ) {
+      console.log(222);
+      location.href = "https://h5.xyck.com/article";
+    } else {
+      console.log(333);
+    }
     var dis = document.getElementById("article-content2");
     dis.scrollIntoView();
   }
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 @import url("../assets/css/reset.css");
 .gy-item1-wrap {
   width: 100%;

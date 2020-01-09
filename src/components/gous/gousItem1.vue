@@ -19,7 +19,7 @@ export default {
   name: "gousItem1"
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .jr-index-intro1 {
   background-color: #fff;
   padding-bottom: 60px;

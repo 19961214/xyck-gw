@@ -68,7 +68,7 @@ export default {
   name: "usItem1"
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 
 .lx-index-intro2 {
   background-color: #fff;

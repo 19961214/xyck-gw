@@ -60,7 +60,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 @import url("../assets/css/reset.css");
 .gy-item1-wrap {
   width: 100%;

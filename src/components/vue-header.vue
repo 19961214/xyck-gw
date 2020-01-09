@@ -97,7 +97,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style scoped lang="less">
 @import url("../assets/css/reset.css");
 @media (max-width: 768px) {
   .bg-black {

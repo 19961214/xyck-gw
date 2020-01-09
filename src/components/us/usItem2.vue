@@ -40,7 +40,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .lx-index-intro3 {
   background-color: #f4fafe;
   padding-bottom: 87px;

@@ -34,7 +34,7 @@ export default {
   name: "articleItem1"
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 
 .gy-index-intro1 {
   background-color: #fff;

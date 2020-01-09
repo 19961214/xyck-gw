@@ -97,7 +97,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 @media (max-width: 1024px) {
 }
 

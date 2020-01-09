@@ -56,7 +56,7 @@ export default {
   name: "teamItem2"
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 
 .jj-index-intro2 {
   background-color: #f7fcff;

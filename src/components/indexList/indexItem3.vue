@@ -56,7 +56,7 @@ export default {
   name: "indexItem3"
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 
 .index-intro8 {
   height: 682px;

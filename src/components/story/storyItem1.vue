@@ -54,21 +54,21 @@ export default {
   name: "storyItem1",
   methods: {
     gotoitem() {
-      this.$router.push({ path: "/story/item1" });
+      this.$router.push({ path: "/item1" });
     },
     gotoitem2() {
-      this.$router.push({ path: "/story/item2" });
+      this.$router.push({ path: "/item2" });
     },
     gotoitem3() {
-      this.$router.push({ path: "/story/item3" });
+      this.$router.push({ path: "/item3" });
     },
     gotoitem4() {
-      this.$router.push({ path: "/story/item4" });
+      this.$router.push({ path: "/item4" });
     }
   }
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .index-intro1 {
   background-color: #fff;
   padding-bottom: 60px;

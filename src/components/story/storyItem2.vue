@@ -71,15 +71,15 @@ export default {
   name: "storyItem2",
   methods: {
     gotoitem5() {
-      this.$router.push({ path: "/story/item5" });
+      this.$router.push({ path: "/item5" });
     },
     gotoitem6() {
-      this.$router.push({ path: "/story/item6" });
+      this.$router.push({ path: "/item6" });
     }
   }
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .index-intro1 {
   background-color: #fff;
   padding-bottom: 60px;

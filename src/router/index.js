@@ -42,27 +42,27 @@ const routes = [
 		component: resolve => require(['../components/vue-call.vue'], resolve)
 	},
 	{
-		path: '/story/item1', 
+		path: '/item1', 
 		component: resolve => require(['../components/vue-storyitem.vue'], resolve)
 	},
 	{
-		path: '/story/item2', 
+		path: '/item2', 
 		component: resolve => require(['../components/vue-storyitem2.vue'], resolve)
 	},
 	{
-		path: '/story/item3', 
+		path: '/item3', 
 		component: resolve => require(['../components/vue-storyitem3.vue'], resolve)
 	},
 	{
-		path: '/story/item4', 
+		path: '/item4', 
 		component: resolve => require(['../components/vue-storyitem4.vue'], resolve)
 	},
 	{
-		path: '/story/item5', 
+		path: '/item5', 
 		component: resolve => require(['../components/vue-storyitem5.vue'], resolve)
 	},
 	{
-		path: '/story/item6', 
+		path: '/item6', 
 		component: resolve => require(['../components/vue-storyitem6.vue'], resolve)
 	},
 	// {

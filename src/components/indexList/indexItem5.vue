@@ -44,7 +44,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .index-intro3 {
   padding-bottom: 35px;
   height: 500px;

@@ -40,7 +40,7 @@ export default {
   name: "teamItem3"
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .jj-index-intro3 {
   background-color: #fafafa;
   padding-bottom: 87px;

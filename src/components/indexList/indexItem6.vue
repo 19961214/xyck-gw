@@ -114,7 +114,7 @@ export default {
   name: "indexItem2"
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .index-intro2 {
   background: url("../../assets/img/index6-1.png");
   background-repeat: no-repeat;

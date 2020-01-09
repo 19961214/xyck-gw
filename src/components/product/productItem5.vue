@@ -80,7 +80,7 @@ export default {
   name: "indexItem1"
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .cp5-index-intro5 {
   // padding-top: 60px;
   background-color: #fff;

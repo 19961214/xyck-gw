@@ -47,7 +47,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .index-intro {
   background: url("../../assets/img/index4-1.png");
   background-repeat: no-repeat;

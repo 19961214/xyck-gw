@@ -68,7 +68,7 @@ export default {
   mounted() {}
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 
 .index-intro1 {
   width: 100%;

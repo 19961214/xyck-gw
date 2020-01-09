@@ -61,15 +61,25 @@ export default {
   name: "vue-index",
   data() {
     return {
-      isPhoneShow:false
+      isPhoneShow: false
     };
   },
   methods: {
-    isPhone(){
+    isPhone() {
       this.isPhoneShow = !this.isPhoneShow;
     }
   },
   mounted() {
+    if (
+      navigator.userAgent.match(
+        /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+      )
+    ) {
+      console.log(222);
+      location.href = "https://h5.xyck.com/index";
+    } else {
+      console.log(333);
+    }
     var dis = document.getElementById("index-content1");
     dis.scrollIntoView();
   },
@@ -83,7 +93,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 @import url("../assets/css/reset.css");
 @media (max-width: 1024px) {
 }
@@ -100,7 +110,7 @@ export default {
   .phone-fiexd2 {
     position: relative;
     box-shadow: 0px 0px 30px 0px rgba(1, 119, 255, 0.15);
-    .phone-fiexd2-img{
+    .phone-fiexd2-img {
       width: 198px;
       height: 90px;
     }
